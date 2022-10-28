@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta name="author" content="腾飞小灯塔">
+
+
+
+    <meta name="description" content="DO one thing well">
+
+
+
+<title>出国NO.5| 从西交自动化到南加大CS | 腾飞小灯塔</title>
+
+
+
+    <link rel="icon" href="/hhhh/favicon.ico">
+
+
+
+
+    <!-- stylesheets list from _config.yml -->
+    
+    <link rel="stylesheet" href="/hhhh/css/style.css">
+    
+
+
+
+    <!-- scripts list from _config.yml -->
+    
+    <script src="/hhhh/js/script.js"></script>
+    
+    <script src="/hhhh/js/tocbot.min.js"></script>
+    
+
+
+
+    
+    
+        
+    
+
+
+<meta name="generator" content="Hexo 5.4.2"></head>
+
+<body>
+    <script>
+        // this function is used to check current theme before page loaded.
+        (() => {
+            const currentTheme = window.localStorage && window.localStorage.getItem('theme') || '';
+            const isDark = currentTheme === 'dark';
+            const pagebody = document.getElementsByTagName('body')[0]
+            if (isDark) {
+                pagebody.classList.add('dark-theme');
+                // mobile
+                document.getElementById("mobile-toggle-theme").innerText = "· Dark"
+            } else {
+                pagebody.classList.remove('dark-theme');
+                // mobile
+                document.getElementById("mobile-toggle-theme").innerText = "· Light"
+            }
+        })();
+    </script>
+
+    <div class="wrapper">
+        <header>
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-header header-logo"><a href="/hhhh/">腾飞小灯塔</a></div>
+            <div class="menu navbar-right">
+                
+                    <a class="menu-item" href="/hhhh/archives">文章</a>
+                
+                    <a class="menu-item" href="/hhhh/category">分类</a>
+                
+                    <a class="menu-item" href="/hhhh/tag">标签</a>
+                
+                    <a class="menu-item" href="/hhhh/about">关于</a>
+                
+                <input id="switch_default" type="checkbox" class="switch_default">
+                <label for="switch_default" class="toggleBtn"></label>
+            </div>
+        </div>
+    </nav>
+
+    
+    <nav class="navbar-mobile" id="nav-mobile">
+        <div class="container">
+            <div class="navbar-header">
+                <div>
+                    <a href="/hhhh/">腾飞小灯塔</a><a id="mobile-toggle-theme">·&nbsp;Light</a>
+                </div>
+                <div class="menu-toggle" onclick="mobileBtn()">&#9776; Menu</div>
+            </div>
+            <div class="menu" id="mobile-menu">
+                
+                    <a class="menu-item" href="/hhhh/archives">文章</a>
+                
+                    <a class="menu-item" href="/hhhh/category">分类</a>
+                
+                    <a class="menu-item" href="/hhhh/tag">标签</a>
+                
+                    <a class="menu-item" href="/hhhh/about">关于</a>
+                
+            </div>
+        </div>
+    </nav>
+
+</header>
+<script>
+    var mobileBtn = function f() {
+        var toggleMenu = document.getElementsByClassName("menu-toggle")[0];
+        var mobileMenu = document.getElementById("mobile-menu");
+        if(toggleMenu.classList.contains("active")){
+           toggleMenu.classList.remove("active")
+            mobileMenu.classList.remove("active")
+        }else{
+            toggleMenu.classList.add("active")
+            mobileMenu.classList.add("active")
+        }
+    }
+</script>
+            <div class="main">
+                <div class="container">
+    
+    
+        <div class="post-toc">
+    <div class="tocbot-list">
+    </div>
+    <div class="tocbot-list-menu">
+        <a class="tocbot-toc-expand" onclick="expand_toc()">Expand all</a>
+        <a onclick="go_top()">Back to top</a>
+        <a onclick="go_bottom()">Go to bottom</a>
+    </div>
+</div>
+
+<script>
+    var tocbot_timer;
+    var DEPTH_MAX = 6; // 为 6 时展开所有
+    var tocbot_default_config = {
+        tocSelector: '.tocbot-list',
+        contentSelector: '.post-content',
+        headingSelector: 'h1, h2, h3, h4, h5',
+        orderedList: false,
+        scrollSmooth: true,
+        onClick: extend_click,
+    };
+
+    function extend_click() {
+        clearTimeout(tocbot_timer);
+        tocbot_timer = setTimeout(function() {
+            tocbot.refresh(obj_merge(tocbot_default_config, {
+                hasInnerContainers: true
+            }));
+        }, 420); // 这个值是由 tocbot 源码里定义的 scrollSmoothDuration 得来的
+    }
+
+    document.ready(function() {
+        tocbot.init(obj_merge(tocbot_default_config, {
+            collapseDepth: 1
+        }));
+    });
+
+    function expand_toc() {
+        var b = document.querySelector('.tocbot-toc-expand');
+        var expanded = b.getAttribute('data-expanded');
+        expanded ? b.removeAttribute('data-expanded') : b.setAttribute('data-expanded', true);
+        tocbot.refresh(obj_merge(tocbot_default_config, {
+            collapseDepth: expanded ? 1 : DEPTH_MAX
+        }));
+        b.innerText = expanded ? 'Expand all' : 'Collapse all';
+    }
+
+    function go_top() {
+        window.scrollTo(0, 0);
+    }
+
+    function go_bottom() {
+        window.scrollTo(0, document.body.scrollHeight);
+    }
+
+    function obj_merge(target, source) {
+        for (var item in source) {
+            if (source.hasOwnProperty(item)) {
+                target[item] = source[item];
+            }
+        }
+        return target;
+    }
+</script>
+    
+
+    
+    <article class="post-wrap">
+        <header class="post-header">
+            <h1 class="post-title">出国NO.5| 从西交自动化到南加大CS</h1>
+            
+                <div class="post-meta">
+                    
+
+                    
+                    
+                        <span class="post-category">
+                    分类:
+                            
+                                <a href="/hhhh/categories/%E5%87%BA%E5%9B%BD/">出国</a>
+                            
+                        </span>
+                    
+
+                     
+                    <span id="/hhhh/2022/09/03/%E5%87%BA%E5%9B%BD5/" class="leancloud-visitors view" data-flag-title="出国NO.5| 从西交自动化到南加大CS">
+                        <text class="post-meta-item-text">
+                            <!--阅读数:-->
+                            <i class="iconfont icon-view"></i>
+                        </text>
+
+                        <text class="leancloud-visitors-count">   </text>
+                      </span>
+                    
+                </div>
+            
+        </header>
+
+        <div class="post-content">
+            <p>欢迎大家了解灯塔，同时也<em><strong>诚邀各位朋友投稿</strong></em>，为大家提供更多经验与帮助。投稿以个人经验、备考过程为主，若受院校和项目要求限制，可弱化复试及具体考核内容等；若关注个人隐私问题，可对分享稿件进行匿名化处理。具体投稿规则见 <strong><a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s/ZTUy56GrBbcmk7wQmwudPg">征稿说明。</a></strong></p>
+<p>禁止一切商用，不提供原作者其他联系方式。</p>
+<hr>
+<br>
+
+<h1 id="基本信息"><a href="#基本信息" class="headerlink" title="基本信息"></a>基本信息</h1><p><strong>姓名：</strong> 石宜涛</p>
+<p><strong>学院：</strong> 电信学部</p>
+<p><strong>专业：</strong> 自动化</p>
+<p><strong>GPA：</strong> 92+（智育）</p>
+<p><strong>保研排名：</strong> 40+/197</p>
+<p><strong>语言成绩：</strong> 托福100+（口语23） GRE 320+ 六级510+</p>
+<p><strong>获奖情况：</strong> 校一等奖学金，美赛H奖</p>
+<p><strong>科研经历：</strong> 一篇论文一作（IE检索），一段中科院计算所科研助理实习：一段Duke大学远程暑研，以及大创、若干段校内实验室科研（非常水）</p>
+<p><strong>Offer：</strong> 南加州大学-计算机科学（硕），哥伦比亚大学-电子电气（硕），帝国理工大学-机器人学（硕），密歇根大学安娜堡分校-计算机视觉（硕）</p>
+<p><strong>Rej：</strong> 宾夕法尼亚大学-计算机与信息技术（硕），华盛顿大学-计算机科学（硕）</p>
+<p><strong>待定：</strong> 加州大学伯克利分校-计算机科学（硕），莱斯大学-计算机科学（硕），卡内基梅隆大学-电子计算机（硕），伦敦大学学院-计算机视觉（硕）……</p>
+<p><strong>目前打算的去向：</strong> 南加州大学-计算机科学（硕）</p>
+<h2 id="为什么留学？"><a href="#为什么留学？" class="headerlink" title="为什么留学？"></a>为什么留学？</h2><p>在高中时我有幸看到了Yale大学的招生宣传视频，国外大学顶尖教育资源和优越的教学设施让我印象深刻，久久难以忘怀，由此出国深造的念头便埋在了我心里。考虑到我就读的高中教学师资质量优异，加之美本的家庭经济压力较大，我放弃了就读美本，也没有考虑在本科阶段转学或出国交流。不过很早就确定的出国留学这一信念使我的大学阶段目标明确。在高考完的那个暑假我就签了中介，开始了我的留学规划。</p>
+<h1 id="漫漫转码路"><a href="#漫漫转码路" class="headerlink" title="漫漫转码路"></a>漫漫转码路</h1><h2 id="大一的我"><a href="#大一的我" class="headerlink" title="大一的我"></a>大一的我</h2><p>怀着对新生活的期待以及自主招生进入交大的小确信徘徊在图书馆与宿舍间，一是为大学的卷GPA奋斗之路开个好头，二是为大一结束时的专业分流赢得先机。</p>
+<p>在分流之际，我一度在计算机、自动化和电气三个专业中纠结过：</p>
+<p>出于兴趣，也为了毕业后就业的考虑，我希望去北美读计算机，但是西交计算机的排名与自动化和电气比起来略逊一筹；电气是强电，专业课与计算机差的有点远，可能会影响申请；自动化则排名靠前，我校人工智能曾被分类在自动化系下（此时人工智能非常火爆），而我仔细查看了计算机和自动化的课表，发现差距并不大。最后有王牌专业情结的我还是选择了自动化专业。</p>
+<p>如果说学弟学妹和我一样希望去北美读CS，请尽量直接选择计算机。不是计算机科班出身，申请CS硕士会极大的增加申请的难度。</p>
+<h2 id="大二的我"><a href="#大二的我" class="headerlink" title="大二的我"></a>大二的我</h2><p>自动化专业作为18届的内卷巅峰，生源可谓是出奇的好，学生大佬云集的环境也促使我更加努力的学习。此时为了补救我大一时选专业的失误，我额外修读了方案外的计算机课程，这也让我一度处于一个周末考四门的尴尬境地。夙兴夜寐，勤勤恳恳，在大二我在多修两门课的情况下居然刷新了gpa93+的pb，在学校实验室打打下手（最后太忙没坚持下来），甚至还在假期里忙里偷闲去中科院计算所做了一段科研。同时我也开始着手申请大二下的国际交换项目，在众多交换项目中我选择了计算机排名Top10的威斯康星麦迪逊分校计算机专业的交换项目。</p>
+<p>然而在一切都准备好时，一场突如其来的疫情打乱了我的规划，我的交换、乃至留学都变得遥遥无期。线上进行的课程尤其适合摆烂，那个学期的早课除了每次都点名要我开麦的杨老师的模电之外皆在睡梦中度过，（虽然几门课程成绩都还凑合，但还是希望学弟学妹们不要效仿并引以为戒）。最后GPA、交换一个都没把握住，陷入了长时间的消沉和自我怀疑中。</p>
+<h2 id="大三的我"><a href="#大三的我" class="headerlink" title="大三的我"></a>大三的我</h2><p>大三开学前我便萌生了转专业的念头，因为本校的计算机和软件工程专业并不像本专业一样内卷，以我的成绩可以取得更好的排名，而且CS科班出身会让我的申请难度进一步降低，（我有好几个项目都是因为我是非计算机专业惨收拒信）。但最终在师长的专业分析指导和家长的利弊考量及自我犹豫纠结中，我放弃了最后平级转专业的机会。随后我又考虑降转，但面对一年的时间成本只好作罢。大三上的时光犹如梦魇一般，连轴转的课程设置让我精疲力竭，我无暇顾及科研和语言准备，只能狼狈地守住GPA。大三下的我由于课程较少开始着手准备留学，由于已经临近申请季，时间变得仓促起来，我一边申请了Duke大学地远程实验项目，一边每天要抽4个小时学托福，只能暑研暑研和托福学习同时进行。苦于托福久久不能出分，我GRE只留了15天准备，过了一段成天泡在图书馆睁眼闭眼是单词地生活后，终于成功越过了语言关。</p>
+<h2 id="大四的我"><a href="#大四的我" class="headerlink" title="大四的我"></a>大四的我</h2><p>终于到了申请季，我也几乎没有什么课了，总是剧本杀中消遣度日，偶尔刷刷力扣。</p>
+<h1 id="选校建议"><a href="#选校建议" class="headerlink" title="选校建议"></a>选校建议</h1><p>在申请季我选校定了12所，大多是美国CS，辅以CE、EE，（英国项目是中介提供的免费申请服务，用于保底）。</p>
+<h2 id="专业：转码"><a href="#专业：转码" class="headerlink" title="专业：转码"></a>专业：转码</h2><p>每个人因自身条件不同，都有各自对未来目标的考量。本人对于学术研究没有什么热情，只希望毕业后就业优先，所以我的择校都是以就业转码为首要目的。目前的就业形势下，像我这种普通中国留学生想要在美国找到一份与代码无关的高薪体面工作是极其困难的。就我认识的许多在美国留学的学长学姐，无论是EE专业的还是金融专业的，大多在最后选择了转码，有的是直接转行软件工程师，有的则是转向计量、金融分析的偏代码岗。这也是CSMS及其相关项目竞争如此激烈的原因。</p>
+<p>如果学弟学妹有和我一样的想法，申请CS，或者转CS的项目都是很好的选择，当然CS项目也要比其他专业的申请难度大许多，所以如果本科是电类非计算机的同学可以CS、CE、EE混申，防止CS过度内卷导致“全聚德”的惨剧。当然申的时候可以优先考虑申请EECS在同一学院，选课还比较自由的转码友好型项目。如果是别的专业还可以考虑DS/MIS/BA相关专业的转码友好项目来进行转码。 </p>
+<p>之前就有学弟学妹不理解，认为转码直接mcit、cs37、mpcs、mcs、align一波全家桶就完事了，为什么要拿ce，ds或者mis转码。然而现实是这些数量稀少的转专业cs的项目中，一旦有一两个出了问题，很多人就直接失去了生存空间，（比如说今年的NEU CS align 项目大放拒信，很多GPA非常高的清北甚至海本的也被拒了，所以还是建议大家申个别偏软的DS/MIS/BA/CE/EE项目保底，虽然不是CS科班，但不少大厂就业并不太看重这点，凭能力一样可以找到好工作）。</p>
+<p>如果有的选，谁愿意曲线救国啊。</p>
+<p>在这里列举一些转码同学可以考虑的项目：最热门的两个头牌项目当属USC CS37和NEU CS align，（很多背景不错的同学用这两个项目保底，就业数据很好也导致这几年bar持续升高），藤校的话Penn的mcit，此外Chicago的mpcs，UCI的mcs，还有UCSD, UTD, GWU, Rice, NYU, WUstl…… 这些学校转码都十分友好，不直接转码可以退而求其次考虑哥大CE，杜克ECE，以及一些DS,MIS,BA的转码友好项目等，大家可以去一亩三分地论坛自行了解。</p>
+<p>大家切记：转码之路缺的背景，可以通过文书软实力来弥补，文书不用刻意强调你自学了多少语言，而是直接说你用什么具体的知识做了什么项目，通过项目展示你的CS功底，无论是你的coding ability还是programming skills，还是你的算法能力。不要因为自身专业背景的劣势而气馁，只要用心准备科研，耐心打磨文书，一样可以CSMS上岸。</p>
+<h2 id="地区"><a href="#地区" class="headerlink" title="地区"></a>地区</h2><p>学校的地区也是一个非常重要的考虑因素，因为在面试时许多湾区公司倾向于本地区的学生，中部地区和偏僻的学校的面试和岗位信息的资源也要远远差于湾区学校，所以申请的时候一定要关注地区，（这也是我最后放弃了计算机Top6的密歇根大学而选择一个无论专排还是综排都要差些的南加大csms的主要原因）。</p>
+<h2 id="排名"><a href="#排名" class="headerlink" title="排名"></a>排名</h2><p>最后请大家切记不要被名校情结蒙蔽了双眼。读名校确实风光，但如果专业不好，读完硕不好就业也只能回国，（这是有前车之鉴的，在某工学院最好的Top2藤校EE，CE硕士找不到工作而回国的案例不在少数，如果希望在美国工作，请大家不要头铁（哥大：你直接报我身份证号得了~））。</p>
+<h1 id="写在最后"><a href="#写在最后" class="headerlink" title="写在最后"></a>写在最后</h1><p>结果导向型思维奠定了我大学四年生活的基调：摆中带卷。</p>
+<p>除了在好友盛情邀请下参加了的数模美赛和大创，其他大学阶段的竞赛我几乎没有参加过（看到灯塔里的大佬们奖项琳琅满目，实在是自愧不如）。由于一早确定不保研，德育分我也一直处于摆烂状态懒得去搞，这也导致了我综合成绩不高（最后勉强能够保研确实是意外之喜了)。</p>
+<p>出国读研主要需要GPA，托福，GRE和科研实习这四部分材料。所以我对于这些以外的活动并不太热情。我也很庆幸自己在保持了一个不错的GPA之余，相对轻松的过完了大学阶段，最后也有了一个理想的去向。</p>
+<p>希望大家不要被个别低分逆袭或是大牛横扫的宣传案例所迷惑，还是要自己去了解大部分申请者的结果和经验教训，正确认清自身的实力制定合理的目标，不要心存侥幸心理。好的GPA是硕士申请成功的一半，不是每个人都是天选之子，不切实际的破釜沉舟地冲击梦校更容易迎来“全聚德”。最后希望大家可以尽早地对自己的申请作出规划，提早准备。</p>
+<p>我很喜欢汪国真的一句话：</p>
+<p><strong>既然选择了远方，便只顾风雨兼程。<br>选择出国亦是如此。</strong></p>
+<p>希望我的经历能为学弟学妹们提供一些微不足道的帮助。愿你我都有灿烂的未来。</p>
+
+        </div>
+        
+            <section class="post-copyright">
+                
+                
+                
+                
+                     <p class="copyright-item">
+                         <span>灯塔宗旨:</span>
+                         <span>XJTUers<br>愿你们在未来的每一步<strong>都坚实而有力量</strong></span>
+                     </p>
+                
+
+            </section>
+        
+        <section class="post-tags">
+            <div>
+                <span>标签:</span>
+                <span class="tag">
+                    
+                    
+                        <a href="/hhhh/tags/%E8%87%AA%E5%8A%A8%E5%8C%96%E5%88%86%E5%A1%94/"># 自动化分塔</a>
+                    
+                        
+                </span>
+            </div>
+            <div>
+                <a href="javascript:window.history.back();">返回</a>
+                <span>· </span>
+                <a href="/hhhh/">主页</a>
+            </div>
+        </section>
+
+        <section class="post-nav">
+            
+                <a class="prev" rel="prev" href="/hhhh/2022/09/09/%E8%80%83%E7%A0%9414-2/">考研No.14|从西交能动到复旦金融(上)</a>
+            
+            
+            <a class="next" rel="next" href="/hhhh/2019/10/25/%E5%BE%81%E7%A8%BF%E8%AF%B4%E6%98%8E/">征稿说明</a>
+            
+        </section>
+         <br>
+        
+            <section id="comments" class="comments">
+              <style>
+                  .comments{ margin-top: 30px;}
+                  .v .vlist .vcard .vcontent {padding-top: 0;}
+                  .vcontent p { color:grey; margin-bottom: 10px;}
+                  .v * {line-height: normal;}
+                  .v .vwrap  {border-radius: 0px; padding: 10px;}
+                  .v .vbtn {border-radius: 0px;}
+                  .v code, .v pre {border-radius: 0px;}
+                  .v .vlist .vcard .vhead .vsys {border-radius: 1px; padding: 2px;}
+                  .v .vlist .vcard .vhead .vnick {color: #2d96bd;}
+                  .v .vlist .vcard .vh .vmeta .vat{color: #c7254e;}
+                  .v .vlist .vcard {padding-top: 0;}
+                  .v .vlist .vcard .vimg { width: 2.5em; height: 2.5em; }
+                  .v .vlist .vcard .vquote .vimg { width: 2.5em; height: 2.5em; }
+              </style>
+              <div class="valine_comment"></div>
+<!--载入js，在</body>之前插入即可-->
+<!--Leancloud 操作库:-->
+<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<!--Valine 的核心代码库-->
+<script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+<script>
+    new Valine({
+        el: '.valine_comment',
+        app_id: 'OlOZQ7cjJE81tquJMz4o7DVt-gzGzoHsz',
+        app_key: 'n3MoqzwZo9E0zkeB4hjq2Rfa',
+        placeholder: '欢迎交流讨论...',
+        notify: 'false',
+        verify: 'false',
+        avatar: 'monsterid',
+        visitor: ''
+    });
+</script>
+            </section>
+        
+    </article>
+</div>
+
+            </div>
+            <footer id="footer" class="footer">
+    <div class="copyright">
+        <span>© 腾飞小灯塔 | Powered by <a href="https://hexo.io" target="_blank">Hexo</a> & <a href="https://github.com/Siricee/hexo-theme-Chic" target="_blank">Chic</a></span>
+    </div>
+</footer>
+
+    </div>
+</body>
+
+</html>

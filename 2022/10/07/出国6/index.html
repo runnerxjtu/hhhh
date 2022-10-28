@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta name="author" content="腾飞小灯塔">
+
+
+
+    <meta name="description" content="DO one thing well">
+
+
+
+<title>出国NO.6| 从西交金禾到剑桥金融经济学 | 腾飞小灯塔</title>
+
+
+
+    <link rel="icon" href="/hhhh/favicon.ico">
+
+
+
+
+    <!-- stylesheets list from _config.yml -->
+    
+    <link rel="stylesheet" href="/hhhh/css/style.css">
+    
+
+
+
+    <!-- scripts list from _config.yml -->
+    
+    <script src="/hhhh/js/script.js"></script>
+    
+    <script src="/hhhh/js/tocbot.min.js"></script>
+    
+
+
+
+    
+    
+        
+    
+
+
+<meta name="generator" content="Hexo 5.4.2"></head>
+
+<body>
+    <script>
+        // this function is used to check current theme before page loaded.
+        (() => {
+            const currentTheme = window.localStorage && window.localStorage.getItem('theme') || '';
+            const isDark = currentTheme === 'dark';
+            const pagebody = document.getElementsByTagName('body')[0]
+            if (isDark) {
+                pagebody.classList.add('dark-theme');
+                // mobile
+                document.getElementById("mobile-toggle-theme").innerText = "· Dark"
+            } else {
+                pagebody.classList.remove('dark-theme');
+                // mobile
+                document.getElementById("mobile-toggle-theme").innerText = "· Light"
+            }
+        })();
+    </script>
+
+    <div class="wrapper">
+        <header>
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-header header-logo"><a href="/hhhh/">腾飞小灯塔</a></div>
+            <div class="menu navbar-right">
+                
+                    <a class="menu-item" href="/hhhh/archives">文章</a>
+                
+                    <a class="menu-item" href="/hhhh/category">分类</a>
+                
+                    <a class="menu-item" href="/hhhh/tag">标签</a>
+                
+                    <a class="menu-item" href="/hhhh/about">关于</a>
+                
+                <input id="switch_default" type="checkbox" class="switch_default">
+                <label for="switch_default" class="toggleBtn"></label>
+            </div>
+        </div>
+    </nav>
+
+    
+    <nav class="navbar-mobile" id="nav-mobile">
+        <div class="container">
+            <div class="navbar-header">
+                <div>
+                    <a href="/hhhh/">腾飞小灯塔</a><a id="mobile-toggle-theme">·&nbsp;Light</a>
+                </div>
+                <div class="menu-toggle" onclick="mobileBtn()">&#9776; Menu</div>
+            </div>
+            <div class="menu" id="mobile-menu">
+                
+                    <a class="menu-item" href="/hhhh/archives">文章</a>
+                
+                    <a class="menu-item" href="/hhhh/category">分类</a>
+                
+                    <a class="menu-item" href="/hhhh/tag">标签</a>
+                
+                    <a class="menu-item" href="/hhhh/about">关于</a>
+                
+            </div>
+        </div>
+    </nav>
+
+</header>
+<script>
+    var mobileBtn = function f() {
+        var toggleMenu = document.getElementsByClassName("menu-toggle")[0];
+        var mobileMenu = document.getElementById("mobile-menu");
+        if(toggleMenu.classList.contains("active")){
+           toggleMenu.classList.remove("active")
+            mobileMenu.classList.remove("active")
+        }else{
+            toggleMenu.classList.add("active")
+            mobileMenu.classList.add("active")
+        }
+    }
+</script>
+            <div class="main">
+                <div class="container">
+    
+    
+        <div class="post-toc">
+    <div class="tocbot-list">
+    </div>
+    <div class="tocbot-list-menu">
+        <a class="tocbot-toc-expand" onclick="expand_toc()">Expand all</a>
+        <a onclick="go_top()">Back to top</a>
+        <a onclick="go_bottom()">Go to bottom</a>
+    </div>
+</div>
+
+<script>
+    var tocbot_timer;
+    var DEPTH_MAX = 6; // 为 6 时展开所有
+    var tocbot_default_config = {
+        tocSelector: '.tocbot-list',
+        contentSelector: '.post-content',
+        headingSelector: 'h1, h2, h3, h4, h5',
+        orderedList: false,
+        scrollSmooth: true,
+        onClick: extend_click,
+    };
+
+    function extend_click() {
+        clearTimeout(tocbot_timer);
+        tocbot_timer = setTimeout(function() {
+            tocbot.refresh(obj_merge(tocbot_default_config, {
+                hasInnerContainers: true
+            }));
+        }, 420); // 这个值是由 tocbot 源码里定义的 scrollSmoothDuration 得来的
+    }
+
+    document.ready(function() {
+        tocbot.init(obj_merge(tocbot_default_config, {
+            collapseDepth: 1
+        }));
+    });
+
+    function expand_toc() {
+        var b = document.querySelector('.tocbot-toc-expand');
+        var expanded = b.getAttribute('data-expanded');
+        expanded ? b.removeAttribute('data-expanded') : b.setAttribute('data-expanded', true);
+        tocbot.refresh(obj_merge(tocbot_default_config, {
+            collapseDepth: expanded ? 1 : DEPTH_MAX
+        }));
+        b.innerText = expanded ? 'Expand all' : 'Collapse all';
+    }
+
+    function go_top() {
+        window.scrollTo(0, 0);
+    }
+
+    function go_bottom() {
+        window.scrollTo(0, document.body.scrollHeight);
+    }
+
+    function obj_merge(target, source) {
+        for (var item in source) {
+            if (source.hasOwnProperty(item)) {
+                target[item] = source[item];
+            }
+        }
+        return target;
+    }
+</script>
+    
+
+    
+    <article class="post-wrap">
+        <header class="post-header">
+            <h1 class="post-title">出国NO.6| 从西交金禾到剑桥金融经济学</h1>
+            
+                <div class="post-meta">
+                    
+
+                    
+                    
+                        <span class="post-category">
+                    分类:
+                            
+                                <a href="/hhhh/categories/%E5%87%BA%E5%9B%BD/">出国</a>
+                            
+                        </span>
+                    
+
+                     
+                    <span id="/hhhh/2022/10/07/%E5%87%BA%E5%9B%BD6/" class="leancloud-visitors view" data-flag-title="出国NO.6| 从西交金禾到剑桥金融经济学">
+                        <text class="post-meta-item-text">
+                            <!--阅读数:-->
+                            <i class="iconfont icon-view"></i>
+                        </text>
+
+                        <text class="leancloud-visitors-count">   </text>
+                      </span>
+                    
+                </div>
+            
+        </header>
+
+        <div class="post-content">
+            <p>欢迎大家了解灯塔，同时也<em><strong>诚邀各位朋友投稿</strong></em>，为大家提供更多经验与帮助。投稿以个人经验、备考过程为主，若受院校和项目要求限制，可弱化复试及具体考核内容等；若关注个人隐私问题，可对分享稿件进行匿名化处理。具体投稿规则见 <strong><a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s/ZTUy56GrBbcmk7wQmwudPg">征稿说明。</a></strong></p>
+<p>禁止一切商用，不提供原作者其他联系方式。</p>
+<hr>
+<br>
+
+<h1 id="基本情况"><a href="#基本情况" class="headerlink" title="基本情况"></a>基本情况</h1><p><strong>姓名：</strong>  于晨阳<br><strong>学院：</strong> 金禾经济研究中心</p>
+<p><strong>专业：</strong> 经济学（数量经济与金融）</p>
+<p><strong>总GPA：</strong> 90.25（成绩单总成绩）</p>
+<p><strong>申请时GPA：</strong> 90.37</p>
+<p><strong>WES认证申请时GPA：</strong> 3.87/4.0</p>
+<p><strong>保研排名：</strong> 20名开外</p>
+<p><strong>语言成绩：</strong> 雅思8.0（听力9.0阅读8.5写作7.0口语7.0）；托福109（听力27阅读30口语23写作29）GRE330（语文160数学170写作4.0）六级579</p>
+<p><strong>获奖情况：</strong> 校一等奖学金（大一时获）；美赛O奖（大二时获）；某数据挖掘竞赛省级二等奖</p>
+<p><strong>科研经历：</strong> 一篇UCLA助研水刊一作；一篇美赛论文共同第一作者</p>
+<p><strong>实习经历：</strong> 两段远程水行研，一段私募量化</p>
+<p><strong>先修课背景：</strong> 只多选了数据结构与算法、python。</p>
+<p><strong>证书：</strong> ACCA准会员；CFA一级通过；BEC商务英语高级</p>
+<p><strong>校园经历：</strong> 四年校辩论队经历，同时曾任校辩论队队长；牛津大学暑校</p>
+<p><strong>Offer（部分）：</strong> 剑桥大学金融经济学硕士（最终去向）；伦敦政治经济学院定量风险管理方法硕士；南洋理工大学金融工程硕士；香港大学金融学硕士；约翰霍普金斯大学金融数学硕士</p>
+<p><strong>Rej：</strong> 大量Rej，就不详细展示了。</p>
+<h1 id="关于毕业去向的选择"><a href="#关于毕业去向的选择" class="headerlink" title="关于毕业去向的选择"></a>关于毕业去向的选择</h1><p>在毕业去向的选择方面，我的建议是一定要结合自身学习特点和背景情况进行选择。</p>
+<p>我首先放弃的是保研的选项，因为金禾保研的学分成绩基本要接近93分左右。所以我在转入金禾的第一秒就放弃了保研，也没有在保研方面做过任何信息收集和尝试。其次，由于我天性爱玩，从而无法保持长时间学习；同时受高考失利的影响对大考较为恐惧，因此首先放弃的是考研这条道路。随后，考虑到目前本科生在金融方面的就业前景受学历的影响较大，本科直接就业对于我而言也并非是最佳选择。因此，留学成为我的最终选择。</p>
+<h1 id="如何用好各项申请背景"><a href="#如何用好各项申请背景" class="headerlink" title="如何用好各项申请背景"></a>如何用好各项申请背景</h1><h3 id="1、三维成绩："><a href="#1、三维成绩：" class="headerlink" title="1、三维成绩："></a>1、三维成绩：</h3><p>准备官方成绩单即可</p>
+<h3 id="2、-软性背景："><a href="#2、-软性背景：" class="headerlink" title="2、 软性背景："></a>2、 软性背景：</h3><p>1） 要着重突出在经历中体现出的自己的贡献和能力。比如，科研当中要突出自己参与了哪些部分的研究，运用了什么方法、什么工具，得到了哪些成果之类的。在简历和文书中要突出细节、写得详细。</p>
+<p>2） 如果有实际的成果，可以在简历和文书中附上。比如论文、奖项等。</p>
+<p>3） 可以选取最能体现自己的能力和贡献的经历，向相关经历的见证人（导师、老师等）要推荐信作推荐。</p>
+<h1 id="个人理解下的申请背景重要度排序"><a href="#个人理解下的申请背景重要度排序" class="headerlink" title="个人理解下的申请背景重要度排序"></a>个人理解下的申请背景重要度排序</h1><p>对于商科项目而言，如果申请的是授课型硕士的话，那么三维成绩毫无疑问是排名第一位的。你的三维成绩（GPA、语言成绩、GRE/GMAT成绩）基本上决定了你可以去什么层次的学校，也决定了在你所对应层次的学校中你的申请高度。</p>
+<p>至于其他背景而言，我个人认为实习所体现的内容是较为重要的，因为毕竟商科还是偏应用导向的学科。其次是海外经历，然而受疫情因素的影响，目前只有较少一部分的中国申请者能够获得海外交流的机会，因此这一因素也有一定的弱化。然而如果能够克服时间、金钱成本获得海外交流并能够获取推荐信的话，对于申请的帮助还是非常大的。再其次则是科研和先修课所体现的能力。这一因素受申请的项目不同而差异较大。就拿我申请的剑桥大学金融经济学硕士而言，该项目的官网介绍就说明这一项目并不是为了进一步深造、攻读博士学位而设置的项目，因此就意味着申请者应当已经具备一定的学术研究能力。然而，对于就业导向型的、课程设置没有太多技术性课程的项目，科研的重要性则次之。最后就是推荐信校园经历和证书这几项背景。这几项背景除非特别亮眼，否则对申请大局影响不大。也就是说，它们仅能起到锦上添花的作用。</p>
+<h1 id="申请背景提升经验分享"><a href="#申请背景提升经验分享" class="headerlink" title="申请背景提升经验分享"></a>申请背景提升经验分享</h1><h3 id="关于三维："><a href="#关于三维：" class="headerlink" title="关于三维："></a>关于三维：</h3><p>1） GPA：没什么好说的。全方位地内卷就行了。GPA越高越好。</p>
+<p>2） GRE/GMAT考试：这一考试单独拿出来就又可以讲很多内容了。总而言之，要趁早准备、趁早准备、趁早准备。由于GRE考试是有5年的有效期，因此非常建议大家在大二甚至大一就将其拿下，后面就可以有充足的时间准备申请，或是备战语言考试。GRE考试本身的复习，建议大家参考新东方杨鹏17天背词法。由于GRE考试需要大量的单词积累，因此这个考试你不做好心理准备、吃苦背单词的话是很难拿下的。我就是大二暑假用了不到一个月的时间脱产备考，效果非常好。我那时备考的方法就是基于杨鹏17天背词法，以每天300词的量滚动复习、滚动背诵。痛苦是痛苦，但是效率很高。大家可以百度一下。我个人是非常不建议在学期内细水长流拉长战线备考GRE的：因为一方面大家都知道学期内事情很多，计划容易被打乱；其次细水长流的背法很难兼顾到旧词，而旧词的复习的重要性是远远大于新词的记忆的。</p>
+<p>3） 语言考试：雅思、托福由于只有两年的有效期，因此只能放在大三备考（多数学校要求语言考试有效期覆盖入学时点）。这两门考试坦白讲有一定的运气成分，我本人也是考了五次雅思，在最后一次才又考出了第一次的水平。所以，可以在大三早些时候就反复尝试刷分。关于雅思的备考，我比较推荐顾家北和慎小嶷的口语和写作书，帮助是比较大的。</p>
+<h3 id="关于科研："><a href="#关于科研：" class="headerlink" title="关于科研："></a>关于科研：</h3><p>多找老师。科研机会还是很多的。</p>
+<h3 id="关于竞赛："><a href="#关于竞赛：" class="headerlink" title="关于竞赛："></a>关于竞赛：</h3><p>早些规划。想清楚自己什么竞赛要重点参加，目标是获得什么层次的奖项。同时一定要突出自己在竞赛当中的能力和贡献。那些挂了名的竞赛是没有什么意义的。</p>
+<p>关于竞赛的准备，建议多抱大腿。我的数学建模竞赛就是非常早地联系了自己的大腿队友（金禾第一、金工大佬），再多加练习、反复打练习赛进行磨合、学习各种技能，最终取得了比较理想的结果。</p>
+<h3 id="关于实习："><a href="#关于实习：" class="headerlink" title="关于实习："></a>关于实习：</h3><p>实习的准备又可以另开一篇专门去讲了。其实我的实习是在我的各项背景当中比较薄弱的部分，这里不重点去分享了。大家可以联系之前分享过的实习方面做的比较好的学长学姐取经。</p>
+<h1 id="申请需准备的各项材料"><a href="#申请需准备的各项材料" class="headerlink" title="申请需准备的各项材料"></a>申请需准备的各项材料</h1><h3 id="1、-各项背景的相关材料（官方成绩单、成果证明）等。"><a href="#1、-各项背景的相关材料（官方成绩单、成果证明）等。" class="headerlink" title="1、 各项背景的相关材料（官方成绩单、成果证明）等。"></a>1、 各项背景的相关材料（官方成绩单、成果证明）等。</h3><p>这些都比较好准备：成绩单就去官网开证明，论文就把论文附在additional documents里面。实习证明不太需要，网申基本不用上传。</p>
+<h3 id="2、-文书。"><a href="#2、-文书。" class="headerlink" title="2、 文书。"></a>2、 文书。</h3><p>文书是目标大学了解你的最好方式，也相当于是在向目标大学全面地介绍自己。这就要求自己的文书要能够突出自己如何符合申请项目的特点和要求，同时结合学校的文化风格让自己获得青睐。因此，不同大学文书的写作应该是具有学校特点的、千差万别的，从而能够结合不同的项目特点着重突出自己某一方面的能力。</p>
+<p>在文书的写作方面，不要通篇只模板化地突出你的优秀，而是要用一条逻辑链把各项经历都串起来，从而循序渐进地突出个人特质与目标申请项目的契合。举个例子，我用来申请量化金融方面的项目的文书逻辑是按照对量化金融应用程度和理解的过程，循序渐进地串联各项经历：计量经济学Stata应用——竞赛经历及科研经历——实习经历——称赞学校并突出学校与自己的匹配——职业规划及展望。</p>
+<p>在内容的书写方面，则要重点突出经历中的能力和所作的事情，而在这方面需要注意的则与简历的创作逻辑基本类似，要尽可能地详细。在大体框架确定后，即可反复修改和润色，尽可能贴近地道的英语表达。</p>
+<h3 id="3、-推荐信。"><a href="#3、-推荐信。" class="headerlink" title="3、 推荐信。"></a>3、 推荐信。</h3><p>推荐信则要提前做好推荐人选择与规划，以及相关的分类工作。我的推荐信是一封海外科研；一封学校的老师（课程最高分）；一封实习领导的。在申请前最好提前联系好推荐人。国内的推荐信一般是自己先写好，然后交由推荐人审阅无误后使用。至于推荐信的创作，与文书、简历的创作逻辑大同小异，仍是应着重突出自身经历中体现出的各项能力。国内推荐人一般采取推荐人转发邮件+自己填写网推的方式。此外，对于部分顶尖项目而言，注意IP地址和背调（极少数大学会涉及这些问题）。具体而言，就是说提交申请、每封推荐信的提交时这4个IP地址最好不重复。当然，极少数大学会涉及这些问题。我申请的学校中仅有哥大金数这个项目进行了明确的推荐人背景调查。具体形式是给推荐人发送邮件，确认其推荐信的真实性。</p>
+<h3 id="4、-笔试、面试准备。"><a href="#4、-笔试、面试准备。" class="headerlink" title="4、 笔试、面试准备。"></a>4、 笔试、面试准备。</h3><p>部分大学会有面试，少部分大学会有笔试。上Chase Dream论坛找好笔经、面经就好。往往每年重复度会比较高。面试分为两种：视频面试和真人面试，而前者居多。面试大多为行为面试，部分涉及技术型面试。要熟悉简历上和文书中提及的关于技术方面的一些内容。可以通过反复练习面经，准备素材。</p>
+<h3 id="5、-中介选择。"><a href="#5、-中介选择。" class="headerlink" title="5、 中介选择。"></a>5、 中介选择。</h3><p>首先大家会感兴趣的问题就是是否选择中介。关于这个问题，重要地是衡量自己信息收集能力和时间精力。有些同学可能在申请季开始后仍未考出语言成绩，这样的话如果同时兼顾选校、申请填写、文书创作和其他事务性的工作的话，就会造成较大的压力。如果自己时间非常充分，同时信息搜集能力比较强、具有文书创作能力和修改能力的话，那么也可以选择自行申请，不依赖于中介的帮助。中介的服务重点是文书方面的创作。那么这就要求我们货比三家，多打听多详细问，尽可能了解中介机构的文书创作过程，确保自己的参与程度足够，以及所有创作流程和申请流程的透明。</p>
+<h1 id="申请项目和专业的选择"><a href="#申请项目和专业的选择" class="headerlink" title="申请项目和专业的选择"></a>申请项目和专业的选择</h1><p><em><strong>大体注重如下几个方面：</strong></em></p>
+<h4 id="1、项目本身性质（是否是STEM（对于美国方面）），以及对应国别的签证政策。"><a href="#1、项目本身性质（是否是STEM（对于美国方面）），以及对应国别的签证政策。" class="headerlink" title="1、项目本身性质（是否是STEM（对于美国方面）），以及对应国别的签证政策。"></a>1、项目本身性质（是否是STEM（对于美国方面）），以及对应国别的签证政策。</h4><p>比如美国的项目可能有opt时间，能够学生毕业后可以获得实习的时间。这一点就要结合自身留学的目的和长久的职业规划作出选择。</p>
+<h4 id="2、项目费用及时长。"><a href="#2、项目费用及时长。" class="headerlink" title="2、项目费用及时长。"></a>2、项目费用及时长。</h4><h4 id="3、项目课程设置、网上评价。"><a href="#3、项目课程设置、网上评价。" class="headerlink" title="3、项目课程设置、网上评价。"></a>3、项目课程设置、网上评价。</h4><p>课程设置是很关键的一环，很多项目就是套着名校的光环，但实际上给学生上一堆水课糊弄学生，一定要注意避免。</p>
+<h4 id="4、项目参考排名。排名仅仅是参考。"><a href="#4、项目参考排名。排名仅仅是参考。" class="headerlink" title="4、项目参考排名。排名仅仅是参考。"></a>4、项目参考排名。排名仅仅是参考。</h4><p>排名对于目标回国就业的同学相对比较重要。</p>
+<h4 id="5、名校和水项目之间的权衡。"><a href="#5、名校和水项目之间的权衡。" class="headerlink" title="5、名校和水项目之间的权衡。"></a>5、名校和水项目之间的权衡。</h4><p>同3、4，要结合自身留学求学的目的作选择。</p>
+<h4 id="6、项目门槛。"><a href="#6、项目门槛。" class="headerlink" title="6、项目门槛。"></a>6、项目门槛。</h4><p>可以多申请一些项目，更好地实现自身水平和项目的最大程度契合。</p>
+<h4 id="7、申请时各项目之间的搭配。"><a href="#7、申请时各项目之间的搭配。" class="headerlink" title="7、申请时各项目之间的搭配。"></a>7、申请时各项目之间的搭配。</h4><p>这涉及到留位费的问题。香港的第一批申请项目、英国的先到先得型项目大多可以在十一月、十二月左右出申请结果，而美国的项目往往较迟，来年二、三月可能才有结果。因此，可以做好申请规划，避免缴纳太多的项目留位费。</p>
+<h1 id="结语"><a href="#结语" class="headerlink" title="结语"></a>结语</h1><p>上述的分享都是基于我的个人经验和观察得出，难免会与其他申请者的看法有所出入。这篇文章也难免有班门弄斧的嫌疑，因为2022年毕业的金禾学生有大量申请结果比我理想的同学，他们的经验将更加具有代表性和参考性。因此我的看法仅供参考，如果有任何问题的话可以联系我的微信：15835212223。</p>
+<p>在金禾的三年，我最大的收获是心态方面的提升。<strong>很多时候我们的焦虑都来自于自身所处的外部环境给自己带来的不自觉的比较。实际上，世界那么大、生活那么多彩，有太多值得我们注意的美好的事情、太多值得我们去品鉴的有趣的经历。</strong>  我自己在大三下学期的时候因为课程压力、找实习等方面都陷入过深深的焦虑中，但是幸而没有让我停下探索、欣赏生活的脚步。无论申请结果怎样，我都认为我非常幸运——幸运地遇到了志同道合的竞赛队友、遇到了辩论队的诸位同仁、遇到了一个个给我的生活带来精彩的朋友们、遇到一位位悉心帮助和指导我的老师们，以及不同于传统意义上的“学霸”的金禾班的同学们。我真心地祝愿每一位在求学路上探索的同学们，都能获得这一份幸运——一份属于自己理想的幸运。</p>
+
+        </div>
+        
+            <section class="post-copyright">
+                
+                
+                
+                
+                     <p class="copyright-item">
+                         <span>灯塔宗旨:</span>
+                         <span>XJTUers<br>愿你们在未来的每一步<strong>都坚实而有力量</strong></span>
+                     </p>
+                
+
+            </section>
+        
+        <section class="post-tags">
+            <div>
+                <span>标签:</span>
+                <span class="tag">
+                    
+                    
+                        <a href="/hhhh/tags/%E9%87%91%E7%A6%BE%E5%88%86%E5%A1%94/"># 金禾分塔</a>
+                    
+                        
+                </span>
+            </div>
+            <div>
+                <a href="javascript:window.history.back();">返回</a>
+                <span>· </span>
+                <a href="/hhhh/">主页</a>
+            </div>
+        </section>
+
+        <section class="post-nav">
+            
+                <a class="prev" rel="prev" href="/hhhh/2022/10/21/%E4%BF%9D%E7%A0%9458/">保研NO.58|从西交环境设计到中科大科技传播</a>
+            
+            
+            <a class="next" rel="next" href="/hhhh/2022/10/01/%E8%80%83%E7%A0%9416/">考研NO.16|从西交自动化到中科院自动化</a>
+            
+        </section>
+         <br>
+        
+            <section id="comments" class="comments">
+              <style>
+                  .comments{ margin-top: 30px;}
+                  .v .vlist .vcard .vcontent {padding-top: 0;}
+                  .vcontent p { color:grey; margin-bottom: 10px;}
+                  .v * {line-height: normal;}
+                  .v .vwrap  {border-radius: 0px; padding: 10px;}
+                  .v .vbtn {border-radius: 0px;}
+                  .v code, .v pre {border-radius: 0px;}
+                  .v .vlist .vcard .vhead .vsys {border-radius: 1px; padding: 2px;}
+                  .v .vlist .vcard .vhead .vnick {color: #2d96bd;}
+                  .v .vlist .vcard .vh .vmeta .vat{color: #c7254e;}
+                  .v .vlist .vcard {padding-top: 0;}
+                  .v .vlist .vcard .vimg { width: 2.5em; height: 2.5em; }
+                  .v .vlist .vcard .vquote .vimg { width: 2.5em; height: 2.5em; }
+              </style>
+              <div class="valine_comment"></div>
+<!--载入js，在</body>之前插入即可-->
+<!--Leancloud 操作库:-->
+<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<!--Valine 的核心代码库-->
+<script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+<script>
+    new Valine({
+        el: '.valine_comment',
+        app_id: 'OlOZQ7cjJE81tquJMz4o7DVt-gzGzoHsz',
+        app_key: 'n3MoqzwZo9E0zkeB4hjq2Rfa',
+        placeholder: '欢迎交流讨论...',
+        notify: 'false',
+        verify: 'false',
+        avatar: 'monsterid',
+        visitor: ''
+    });
+</script>
+            </section>
+        
+    </article>
+</div>
+
+            </div>
+            <footer id="footer" class="footer">
+    <div class="copyright">
+        <span>© 腾飞小灯塔 | Powered by <a href="https://hexo.io" target="_blank">Hexo</a> & <a href="https://github.com/Siricee/hexo-theme-Chic" target="_blank">Chic</a></span>
+    </div>
+</footer>
+
+    </div>
+</body>
+
+</html>

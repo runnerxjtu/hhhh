@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta name="author" content="腾飞小灯塔">
+
+
+
+    <meta name="description" content="DO one thing well">
+
+
+
+<title>保研NO.59|从西交基础到上交基础 | 腾飞小灯塔</title>
+
+
+
+    <link rel="icon" href="/hhhh/favicon.ico">
+
+
+
+
+    <!-- stylesheets list from _config.yml -->
+    
+    <link rel="stylesheet" href="/hhhh/css/style.css">
+    
+
+
+
+    <!-- scripts list from _config.yml -->
+    
+    <script src="/hhhh/js/script.js"></script>
+    
+    <script src="/hhhh/js/tocbot.min.js"></script>
+    
+
+
+
+    
+    
+        
+    
+
+
+<meta name="generator" content="Hexo 5.4.2"></head>
+
+<body>
+    <script>
+        // this function is used to check current theme before page loaded.
+        (() => {
+            const currentTheme = window.localStorage && window.localStorage.getItem('theme') || '';
+            const isDark = currentTheme === 'dark';
+            const pagebody = document.getElementsByTagName('body')[0]
+            if (isDark) {
+                pagebody.classList.add('dark-theme');
+                // mobile
+                document.getElementById("mobile-toggle-theme").innerText = "· Dark"
+            } else {
+                pagebody.classList.remove('dark-theme');
+                // mobile
+                document.getElementById("mobile-toggle-theme").innerText = "· Light"
+            }
+        })();
+    </script>
+
+    <div class="wrapper">
+        <header>
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-header header-logo"><a href="/hhhh/">腾飞小灯塔</a></div>
+            <div class="menu navbar-right">
+                
+                    <a class="menu-item" href="/hhhh/archives">文章</a>
+                
+                    <a class="menu-item" href="/hhhh/category">分类</a>
+                
+                    <a class="menu-item" href="/hhhh/tag">标签</a>
+                
+                    <a class="menu-item" href="/hhhh/about">关于</a>
+                
+                <input id="switch_default" type="checkbox" class="switch_default">
+                <label for="switch_default" class="toggleBtn"></label>
+            </div>
+        </div>
+    </nav>
+
+    
+    <nav class="navbar-mobile" id="nav-mobile">
+        <div class="container">
+            <div class="navbar-header">
+                <div>
+                    <a href="/hhhh/">腾飞小灯塔</a><a id="mobile-toggle-theme">·&nbsp;Light</a>
+                </div>
+                <div class="menu-toggle" onclick="mobileBtn()">&#9776; Menu</div>
+            </div>
+            <div class="menu" id="mobile-menu">
+                
+                    <a class="menu-item" href="/hhhh/archives">文章</a>
+                
+                    <a class="menu-item" href="/hhhh/category">分类</a>
+                
+                    <a class="menu-item" href="/hhhh/tag">标签</a>
+                
+                    <a class="menu-item" href="/hhhh/about">关于</a>
+                
+            </div>
+        </div>
+    </nav>
+
+</header>
+<script>
+    var mobileBtn = function f() {
+        var toggleMenu = document.getElementsByClassName("menu-toggle")[0];
+        var mobileMenu = document.getElementById("mobile-menu");
+        if(toggleMenu.classList.contains("active")){
+           toggleMenu.classList.remove("active")
+            mobileMenu.classList.remove("active")
+        }else{
+            toggleMenu.classList.add("active")
+            mobileMenu.classList.add("active")
+        }
+    }
+</script>
+            <div class="main">
+                <div class="container">
+    
+    
+        <div class="post-toc">
+    <div class="tocbot-list">
+    </div>
+    <div class="tocbot-list-menu">
+        <a class="tocbot-toc-expand" onclick="expand_toc()">Expand all</a>
+        <a onclick="go_top()">Back to top</a>
+        <a onclick="go_bottom()">Go to bottom</a>
+    </div>
+</div>
+
+<script>
+    var tocbot_timer;
+    var DEPTH_MAX = 6; // 为 6 时展开所有
+    var tocbot_default_config = {
+        tocSelector: '.tocbot-list',
+        contentSelector: '.post-content',
+        headingSelector: 'h1, h2, h3, h4, h5',
+        orderedList: false,
+        scrollSmooth: true,
+        onClick: extend_click,
+    };
+
+    function extend_click() {
+        clearTimeout(tocbot_timer);
+        tocbot_timer = setTimeout(function() {
+            tocbot.refresh(obj_merge(tocbot_default_config, {
+                hasInnerContainers: true
+            }));
+        }, 420); // 这个值是由 tocbot 源码里定义的 scrollSmoothDuration 得来的
+    }
+
+    document.ready(function() {
+        tocbot.init(obj_merge(tocbot_default_config, {
+            collapseDepth: 1
+        }));
+    });
+
+    function expand_toc() {
+        var b = document.querySelector('.tocbot-toc-expand');
+        var expanded = b.getAttribute('data-expanded');
+        expanded ? b.removeAttribute('data-expanded') : b.setAttribute('data-expanded', true);
+        tocbot.refresh(obj_merge(tocbot_default_config, {
+            collapseDepth: expanded ? 1 : DEPTH_MAX
+        }));
+        b.innerText = expanded ? 'Expand all' : 'Collapse all';
+    }
+
+    function go_top() {
+        window.scrollTo(0, 0);
+    }
+
+    function go_bottom() {
+        window.scrollTo(0, document.body.scrollHeight);
+    }
+
+    function obj_merge(target, source) {
+        for (var item in source) {
+            if (source.hasOwnProperty(item)) {
+                target[item] = source[item];
+            }
+        }
+        return target;
+    }
+</script>
+    
+
+    
+    <article class="post-wrap">
+        <header class="post-header">
+            <h1 class="post-title">保研NO.59|从西交基础到上交基础</h1>
+            
+                <div class="post-meta">
+                    
+
+                    
+                    
+                        <span class="post-category">
+                    分类:
+                            
+                                <a href="/hhhh/categories/%E4%BF%9D%E7%A0%94/">保研</a>
+                            
+                        </span>
+                    
+
+                     
+                    <span id="/hhhh/2022/10/28/%E4%BF%9D%E7%A0%9459/" class="leancloud-visitors view" data-flag-title="保研NO.59|从西交基础到上交基础">
+                        <text class="post-meta-item-text">
+                            <!--阅读数:-->
+                            <i class="iconfont icon-view"></i>
+                        </text>
+
+                        <text class="leancloud-visitors-count">   </text>
+                      </span>
+                    
+                </div>
+            
+        </header>
+
+        <div class="post-content">
+            <p>欢迎大家了解灯塔，同时也<em><strong>诚邀各位朋友投稿</strong></em>，为大家提供更多经验与帮助。投稿以个人经验、备考过程为主，若受院校和项目要求限制，可弱化复试及具体考核内容等；若关注个人隐私问题，可对分享稿件进行匿名化处理。具体投稿规则见 <strong><a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s/ZTUy56GrBbcmk7wQmwudPg">征稿说明。</a></strong></p>
+<p>禁止一切商用，不提供原作者其他联系方式。</p>
+<hr>
+<br>
+
+<h1 id="基本信息"><a href="#基本信息" class="headerlink" title="基本信息"></a>基本信息</h1><p><strong>姓名：</strong>    木子学长</p>
+<p><strong>院系及专业：</strong> 医学部基础医学</p>
+<p><strong>专业排名：</strong> 夏令营4/17，保研3/17</p>
+<p><strong>英语成绩：</strong> CET-4（495)，CET-6（497），雅思（6.0）</p>
+<h3 id="科研经历："><a href="#科研经历：" class="headerlink" title="科研经历："></a>科研经历：</h3><p>分别主持和参与一项省级大创项目，两项腾飞杯校级三等奖，全国大学生创新研究暨实验设计论坛分区赛一等奖总决赛铜奖，SCI综述一篇（三作）</p>
+<h3 id="获奖情况："><a href="#获奖情况：" class="headerlink" title="获奖情况："></a>获奖情况：</h3><p>国家励志奖学金，校级三等奖学金，优秀学生，优秀学生干部，优秀团干部，优秀团员，优秀党员</p>
+<h3 id="夏令营情况："><a href="#夏令营情况：" class="headerlink" title="夏令营情况："></a>夏令营情况：</h3><p>北京大学基础医学院（offer），PTN项目（递补优营），协和医学院基础医学（offer），清华大学，上海交通大学基础医学（offer），浙江大学基础医学（offer），中科院深圳脑所（offer），西湖大学生命科学院（offer），南方科技大学（入营未参加）</p>
+<h3 id="最终去向："><a href="#最终去向：" class="headerlink" title="最终去向："></a>最终去向：</h3><p>上海交通大学基础医学</p>
+<h1 id="前期准备"><a href="#前期准备" class="headerlink" title="前期准备"></a>前期准备</h1><p>从确定自己能保研到最终确定学校前前后后也经过了四五个月的时间，这四五个月对我来说是一个自我认知的过程，在这段时间里逐渐认识到自己不是那么厉害，但也不是那么差。在这里很感谢邀请我来做经验分享，虽然我的成绩可能并不是很好，学弟学妹们的成绩一定会比我好，但是我也很乐意给大家分享一下我自己的一些经验看法，帮大家避避坑排排雷。<br>首先自己的绩点是最重要的，只有拿到了推免资格才会有后续的故事，所以低年级的学弟学妹看到这里请抓紧时间学习专业课，不要自我放弃，不到最后一刻一切都还有变数。</p>
+<p>然后在三四月份的时候，我们专业上一级的学长学姐给我们开了一次保研考研经验分享会，当时学长学姐给我们分享了参加夏令营具体要怎么准备以及准备什么。我也是从那时候起开始意识到是真的要开始准备夏令营了。所以在大家确定自己可以保研后可以多看一些经验分享贴或者问一问同专业的学长学姐，这样比自己摸索要省很多时间与精力，一定要自己积极主动多去了解，这样就可以少踩很多坑。<br>在申请夏令营之前呢，一定要先想好自己想要研究的方向或者想要学习的专业，有自己的一个未来计划，这样才能保证自己报的老师不会太乱太杂。到四五月份的时候大部分的学校夏令营报名通知就开始陆续公布了，这个时候一定要自己简单汇总一下，大致哪个学校需要什么材料以及截止日期，一定要注意报名的截止日期，不然很容易错过，这个信息可以去保研相关的公众号上面查找，医学生的话我推荐关注一下从医行公众号，关于医学的相关信息这个公众号上基本上都会有（不是广告）。<br>而在决定好要报名哪些学校以后就要开始准备材料了，一般学校要的材料都大致相同，我这里简单罗列一下：<br>1、身份证正反面扫描件</p>
+<p>2、学生证扫描件</p>
+<p>3、成绩单扫描件</p>
+<p>4、1500字自我陈述</p>
+<p>5、英语成绩证明</p>
+<p>6、成绩排名证明</p>
+<p>7、 获奖证明及科研竞赛证明</p>
+<p>8、两封推荐信<br>这些材料可以所有学校做一个统一的，比如个人陈述和推荐信可以写一份模板，然后再根据不同学校的要求去做更改就行。这些材料一定要趁早准备，以防有的学校快截至报名而自己材料没有做好。如果感觉自己的六级成绩不太行的话可以看时间考个雅思托福，然后推荐信一定要趁早找老师签字，老师不一定随时都有空，一定要给老师留一些时间去帮你写推荐信。<br>材料准备好之后就要选学校投简历了，如果有目标专业的话可以去问一下相关专业资历比较深的老师，因为国内圈子就这么大，老师一般都会相互认识，所以可以参考一下老师的意见。如果有目标学校可以提前了解一下学校的导师，跟老师发邮件提前联系一下，想去老师课题组就要让老师知道你。如果没有方向的话那就清北复交无脑冲，我当时是因为最早报了浙大的夏令营没过几天老师就给我打电话说我想去的话暑假可以来实验室看一下见个面，也算是有半个offer了，所以之后就报浙大level以上的学校了。最后给大家推荐一下nibs，也就是北生所，他有两个项目timber和PTN，都挺香的，生物学或者医学专业的同学可以了解一下。</p>
+<h1 id="面试及笔试经验"><a href="#面试及笔试经验" class="headerlink" title="面试及笔试经验"></a>面试及笔试经验</h1><p>等收到入营通知之后呢，就要开始准备笔试和面试了，首先各个学校的要求都是不一样的，要根据学校的要求来准备，不过大致来说的话主要分为三个部分，笔试，面试，专业知识问答，下面我分三部分来讲。</p>
+<h3 id="笔试"><a href="#笔试" class="headerlink" title="笔试"></a>笔试</h3><p>首先是笔试，我参加的这几个夏令营就只有PTN和上交有笔试，PTN的笔试形式是两个小时看一篇英文文献，然后列出提纲并回答相关问题。上交的笔试形式是题目的形式，一道英译汉一道汉译英，一道计算溶液配比，简述做好科研关键的品质，提出科学问题并写出如何研究，最后是智商题。其实笔试部分还是考察英语能力和文献阅读能力，所以还是要在平时学好英语，英语能力短期提升可能不太现实，如果跟着做实验的话最好多看一些文献。</p>
+<h3 id="面试"><a href="#面试" class="headerlink" title="面试"></a>面试</h3><p>其次是面试，面试的话各个学校要求也都不太相同，时间有3min，5min，10min不等，有要求中文也有要求英文，所以准备的话可以准备一个大致时间的ppt，再根据不同学校的要求增加或删减相关内容，这里要注意的一点就是一定不要在PPT里放不太了解的内容，不然会被老师抓着追问。</p>
+<h3 id="专业知识问答"><a href="#专业知识问答" class="headerlink" title="专业知识问答"></a>专业知识问答</h3><p>最后是专业知识问答，一般学校都会先给一段英文文献要求阅读并翻译，这个还是要在平时积累，临近面试的话只能针对性地看一些文章，所以平时的英语能力提升还是非常重要的。然后老师会问一些你的简历里面所提及的一些实验经历和技术，所以放在简历和ppt里面的科研经历自己一定要熟悉相关细节，实验的话三大基础实验—WB、PCR、RT-PCR的实验原理和实验流程一定要熟知，例如用的什么酶，加多少模板量等，其他实验就多多益善了。如果你有已发表或者是师姐带着发的文章的话也一定要熟知文章的细节。<br><em><strong>还会有面试官会问一些性格和职业规划方面的问题，这里提醒一下大家一定要有比较清楚的职业规划，至少十年之内想要怎么发展是肯定要想好的。性格方面大家就如实回答就好。</strong></em></p>
+<h1 id="写在后面"><a href="#写在后面" class="headerlink" title="写在后面"></a>写在后面</h1><p>经历了这么几个月一个人的兵荒马乱，我发现保研其实是一个自我认知的过程，在这个过程中你会发现自己没有那么厉害当然也没有那么差。并且保研也不会是一帆风顺的，也会被拒会被老师问的哑口无言，但是只要拼尽全力，坚持到最后一刻，结局一定不会差。</p>
+
+        </div>
+        
+            <section class="post-copyright">
+                
+                
+                
+                
+                     <p class="copyright-item">
+                         <span>灯塔宗旨:</span>
+                         <span>XJTUers<br>愿你们在未来的每一步<strong>都坚实而有力量</strong></span>
+                     </p>
+                
+
+            </section>
+        
+        <section class="post-tags">
+            <div>
+                <span>标签:</span>
+                <span class="tag">
+                    
+                    
+                        <a href="/hhhh/tags/%E5%8C%BB%E5%AD%A6%E5%88%86%E5%A1%94/"># 医学分塔</a>
+                    
+                        
+                </span>
+            </div>
+            <div>
+                <a href="javascript:window.history.back();">返回</a>
+                <span>· </span>
+                <a href="/hhhh/">主页</a>
+            </div>
+        </section>
+
+        <section class="post-nav">
+            
+            
+            <a class="next" rel="next" href="/hhhh/2022/10/21/%E4%BF%9D%E7%A0%9458/">保研NO.58|从西交环境设计到中科大科技传播</a>
+            
+        </section>
+         <br>
+        
+            <section id="comments" class="comments">
+              <style>
+                  .comments{ margin-top: 30px;}
+                  .v .vlist .vcard .vcontent {padding-top: 0;}
+                  .vcontent p { color:grey; margin-bottom: 10px;}
+                  .v * {line-height: normal;}
+                  .v .vwrap  {border-radius: 0px; padding: 10px;}
+                  .v .vbtn {border-radius: 0px;}
+                  .v code, .v pre {border-radius: 0px;}
+                  .v .vlist .vcard .vhead .vsys {border-radius: 1px; padding: 2px;}
+                  .v .vlist .vcard .vhead .vnick {color: #2d96bd;}
+                  .v .vlist .vcard .vh .vmeta .vat{color: #c7254e;}
+                  .v .vlist .vcard {padding-top: 0;}
+                  .v .vlist .vcard .vimg { width: 2.5em; height: 2.5em; }
+                  .v .vlist .vcard .vquote .vimg { width: 2.5em; height: 2.5em; }
+              </style>
+              <div class="valine_comment"></div>
+<!--载入js，在</body>之前插入即可-->
+<!--Leancloud 操作库:-->
+<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<!--Valine 的核心代码库-->
+<script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+<script>
+    new Valine({
+        el: '.valine_comment',
+        app_id: 'OlOZQ7cjJE81tquJMz4o7DVt-gzGzoHsz',
+        app_key: 'n3MoqzwZo9E0zkeB4hjq2Rfa',
+        placeholder: '欢迎交流讨论...',
+        notify: 'false',
+        verify: 'false',
+        avatar: 'monsterid',
+        visitor: ''
+    });
+</script>
+            </section>
+        
+    </article>
+</div>
+
+            </div>
+            <footer id="footer" class="footer">
+    <div class="copyright">
+        <span>© 腾飞小灯塔 | Powered by <a href="https://hexo.io" target="_blank">Hexo</a> & <a href="https://github.com/Siricee/hexo-theme-Chic" target="_blank">Chic</a></span>
+    </div>
+</footer>
+
+    </div>
+</body>
+
+</html>

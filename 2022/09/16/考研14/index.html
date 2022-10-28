@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta name="author" content="腾飞小灯塔">
+
+
+
+    <meta name="description" content="DO one thing well">
+
+
+
+<title>考研No.14|从西交能动到复旦金融(下) | 腾飞小灯塔</title>
+
+
+
+    <link rel="icon" href="/hhhh/favicon.ico">
+
+
+
+
+    <!-- stylesheets list from _config.yml -->
+    
+    <link rel="stylesheet" href="/hhhh/css/style.css">
+    
+
+
+
+    <!-- scripts list from _config.yml -->
+    
+    <script src="/hhhh/js/script.js"></script>
+    
+    <script src="/hhhh/js/tocbot.min.js"></script>
+    
+
+
+
+    
+    
+        
+    
+
+
+<meta name="generator" content="Hexo 5.4.2"></head>
+
+<body>
+    <script>
+        // this function is used to check current theme before page loaded.
+        (() => {
+            const currentTheme = window.localStorage && window.localStorage.getItem('theme') || '';
+            const isDark = currentTheme === 'dark';
+            const pagebody = document.getElementsByTagName('body')[0]
+            if (isDark) {
+                pagebody.classList.add('dark-theme');
+                // mobile
+                document.getElementById("mobile-toggle-theme").innerText = "· Dark"
+            } else {
+                pagebody.classList.remove('dark-theme');
+                // mobile
+                document.getElementById("mobile-toggle-theme").innerText = "· Light"
+            }
+        })();
+    </script>
+
+    <div class="wrapper">
+        <header>
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-header header-logo"><a href="/hhhh/">腾飞小灯塔</a></div>
+            <div class="menu navbar-right">
+                
+                    <a class="menu-item" href="/hhhh/archives">文章</a>
+                
+                    <a class="menu-item" href="/hhhh/category">分类</a>
+                
+                    <a class="menu-item" href="/hhhh/tag">标签</a>
+                
+                    <a class="menu-item" href="/hhhh/about">关于</a>
+                
+                <input id="switch_default" type="checkbox" class="switch_default">
+                <label for="switch_default" class="toggleBtn"></label>
+            </div>
+        </div>
+    </nav>
+
+    
+    <nav class="navbar-mobile" id="nav-mobile">
+        <div class="container">
+            <div class="navbar-header">
+                <div>
+                    <a href="/hhhh/">腾飞小灯塔</a><a id="mobile-toggle-theme">·&nbsp;Light</a>
+                </div>
+                <div class="menu-toggle" onclick="mobileBtn()">&#9776; Menu</div>
+            </div>
+            <div class="menu" id="mobile-menu">
+                
+                    <a class="menu-item" href="/hhhh/archives">文章</a>
+                
+                    <a class="menu-item" href="/hhhh/category">分类</a>
+                
+                    <a class="menu-item" href="/hhhh/tag">标签</a>
+                
+                    <a class="menu-item" href="/hhhh/about">关于</a>
+                
+            </div>
+        </div>
+    </nav>
+
+</header>
+<script>
+    var mobileBtn = function f() {
+        var toggleMenu = document.getElementsByClassName("menu-toggle")[0];
+        var mobileMenu = document.getElementById("mobile-menu");
+        if(toggleMenu.classList.contains("active")){
+           toggleMenu.classList.remove("active")
+            mobileMenu.classList.remove("active")
+        }else{
+            toggleMenu.classList.add("active")
+            mobileMenu.classList.add("active")
+        }
+    }
+</script>
+            <div class="main">
+                <div class="container">
+    
+    
+        <div class="post-toc">
+    <div class="tocbot-list">
+    </div>
+    <div class="tocbot-list-menu">
+        <a class="tocbot-toc-expand" onclick="expand_toc()">Expand all</a>
+        <a onclick="go_top()">Back to top</a>
+        <a onclick="go_bottom()">Go to bottom</a>
+    </div>
+</div>
+
+<script>
+    var tocbot_timer;
+    var DEPTH_MAX = 6; // 为 6 时展开所有
+    var tocbot_default_config = {
+        tocSelector: '.tocbot-list',
+        contentSelector: '.post-content',
+        headingSelector: 'h1, h2, h3, h4, h5',
+        orderedList: false,
+        scrollSmooth: true,
+        onClick: extend_click,
+    };
+
+    function extend_click() {
+        clearTimeout(tocbot_timer);
+        tocbot_timer = setTimeout(function() {
+            tocbot.refresh(obj_merge(tocbot_default_config, {
+                hasInnerContainers: true
+            }));
+        }, 420); // 这个值是由 tocbot 源码里定义的 scrollSmoothDuration 得来的
+    }
+
+    document.ready(function() {
+        tocbot.init(obj_merge(tocbot_default_config, {
+            collapseDepth: 1
+        }));
+    });
+
+    function expand_toc() {
+        var b = document.querySelector('.tocbot-toc-expand');
+        var expanded = b.getAttribute('data-expanded');
+        expanded ? b.removeAttribute('data-expanded') : b.setAttribute('data-expanded', true);
+        tocbot.refresh(obj_merge(tocbot_default_config, {
+            collapseDepth: expanded ? 1 : DEPTH_MAX
+        }));
+        b.innerText = expanded ? 'Expand all' : 'Collapse all';
+    }
+
+    function go_top() {
+        window.scrollTo(0, 0);
+    }
+
+    function go_bottom() {
+        window.scrollTo(0, document.body.scrollHeight);
+    }
+
+    function obj_merge(target, source) {
+        for (var item in source) {
+            if (source.hasOwnProperty(item)) {
+                target[item] = source[item];
+            }
+        }
+        return target;
+    }
+</script>
+    
+
+    
+    <article class="post-wrap">
+        <header class="post-header">
+            <h1 class="post-title">考研No.14|从西交能动到复旦金融(下)</h1>
+            
+                <div class="post-meta">
+                    
+
+                    
+                    
+                        <span class="post-category">
+                    分类:
+                            
+                                <a href="/hhhh/categories/%E8%80%83%E7%A0%94/">考研</a>
+                            
+                        </span>
+                    
+
+                     
+                    <span id="/hhhh/2022/09/16/%E8%80%83%E7%A0%9414/" class="leancloud-visitors view" data-flag-title="考研No.14|从西交能动到复旦金融(下)">
+                        <text class="post-meta-item-text">
+                            <!--阅读数:-->
+                            <i class="iconfont icon-view"></i>
+                        </text>
+
+                        <text class="leancloud-visitors-count">   </text>
+                      </span>
+                    
+                </div>
+            
+        </header>
+
+        <div class="post-content">
+            <p>欢迎大家了解灯塔，同时也<em><strong>诚邀各位朋友投稿</strong></em>，为大家提供更多经验与帮助。投稿以个人经验、备考过程为主，若受院校和项目要求限制，可弱化复试及具体考核内容等；若关注个人隐私问题，可对分享稿件进行匿名化处理。具体投稿规则见 <strong><a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s/ZTUy56GrBbcmk7wQmwudPg">征稿说明。</a></strong></p>
+<p>禁止一切商用，不提供原作者其他联系方式。</p>
+<hr>
+<br>
+
+<h1 id="个人情况"><a href="#个人情况" class="headerlink" title="个人情况"></a>个人情况</h1><p><strong>姓名：</strong> 仝潇楠</p>
+<p><strong>本科：</strong> 西安交通大学 能源动力学院 新能源专业</p>
+<p><strong>成绩：</strong> 大一大二均分85+，大三大四摆烂到倒数前三</p>
+<p><strong>考研去向：</strong> 复旦金融专硕</p>
+<h1 id="公共课备考"><a href="#公共课备考" class="headerlink" title="公共课备考"></a>公共课备考</h1><h2 id="数-学"><a href="#数-学" class="headerlink" title="数 学"></a>数 学</h2><h3 id="个人复习情况："><a href="#个人复习情况：" class="headerlink" title="个人复习情况："></a>个人复习情况：</h3><p><strong>第一轮：</strong> 汤家凤全书线代概率论部分、张宇高数18讲、李永乐线代讲义、吉米多维奇高数</p>
+<p><strong>第二轮：</strong> 张宇1000题、李林108</p>
+<p><strong>第三轮：</strong> 李林六套卷、李林四套卷、合工大超越2013-2017模拟卷、张宇四套卷、汤家凤八套卷<br>网课：汤家凤概率论强化、线代强化、张宇高数强化</p>
+<h3 id="说在前面："><a href="#说在前面：" class="headerlink" title="说在前面："></a>说在前面：</h3><p>数学对我来说一直是我的强项，从高考到考研。对数学有信心也是我敢去报复旦的原因之一。</p>
+<p>但是数学对很多同学来说都是有自己的上限的，我见过很多研友，包括本校的，他们学数学比我认真刻苦，比我花时间花得多，但是数学对他们来说始终难以提升上去。这不像专业课和其他公共课，只要努力就可以有好的结果，所以一定对自己的上限有一个清晰的认知啊。</p>
+<p>有一点需要强调一下（咳咳）：考研就用考研数学的书！别翻自己学校的数学教材然后写课后题！考研重点和大一的高数教材的重点一定是有偏差的。【很多人都这么干的，我和我舍友都是（狗头）】所以买全书买全书！</p>
+<h3 id="第一轮："><a href="#第一轮：" class="headerlink" title="第一轮："></a>第一轮：</h3><p>数学全书汤的书更重点基础知识点，而张宇的书偏门奇道很多。举个栗子，概率论我张宇和汤的书都有，对汤的更熟悉，每次查找知识点也是从它上面找，但是只要遇到特殊情况，就把张宇的那本作为工具书来查找使用，有很多汤没讲到的点。不过考研数学大多涉及不到，汤就够用。高数推荐张宇18讲（基础不好的话30讲），例题难度也比较高。线代非常推荐李永乐的讲义！很有条理，醍醐灌顶。</p>
+<p>李永乐老师和李林的书也有很多人推荐，大家也可以查别人经验贴去了解。</p>
+<p>全书必须不断重复去看去学，对全书一定要非常熟悉！</p>
+<p>我只有写全书才有听网课的，听一遍网课讲例题，听完马上再看一遍这一讲的例题，然后写课后题。最好听到哪里全书写到哪里。</p>
+<p>数学最重要的是自己的写题和总结，网课在中后期学习中是最不重要的！网课的作用是引导自己了解知识点，所有的强化、提升，都需要自己去写题和总结。所以网课过一遍最好就别管了。</p>
+<h3 id="第二轮："><a href="#第二轮：" class="headerlink" title="第二轮："></a>第二轮：</h3><p>一般来说第一轮完成后开始写1000题1800题这种分章节的练习题。你八成会发现，全书概率论学完以后回来看，高数连等价无穷小都不记得了。即便写完一遍1000题，回头再看高数发现又给忘了。（我怕自己没掌握好在写了1000题后又买了李林108写了，不过不推荐我这样）不过没关系，下意识的写题思路早已经刻在了脑子里了，知识点忘掉再去学就好了。不过第二轮推荐李林老师的880或者108，个人认为胜过张宇1000题。</p>
+<h3 id="第三轮【套卷】："><a href="#第三轮【套卷】：" class="headerlink" title="第三轮【套卷】："></a>第三轮【套卷】：</h3><p>提高分数上限最重要的环节。在数学全书扎实掌握的前提下，尽可能多地去写套卷。其中最推荐李林和合工大的题，而且买他们出的往年的模拟题去做完全没什么问题。汤和张宇的卷子质量都不如这俩，不推荐去写。</p>
+<p>写套卷那段时间差不多每天早上九点到图书馆，每天一张套卷，十一点吃完饭后回来解决剩下的一两道大题，再对答案，差不多就到下午一两点了。</p>
+<p>我是把真题放在考前一个多月写的，这时候模拟卷已经写过很多了，模拟卷分数基本能控制在140分以上，写了七八套真题几乎都是全对，再去写李林六套卷中有三套满分，四套卷全对。<br>不过在考场上和写模拟题是不同感觉的，尤其是近几年出题人会可以塞几道复杂、非常规的题，很考验考场上心态的。数学近几年变难了不少，大家务必多注重数学的练习。</p>
+<p>我扣掉的6分有1分是大题过程分，另外五分是一个填空计算失误。</p>
+<h2 id="英-语"><a href="#英-语" class="headerlink" title="英  语"></a>英  语</h2><p>英语分英语一和英语二，英语二明显简单很多的，是专门给经管类考试准备的。</p>
+<p>我的英语底子还是不差的，四级569分、六级最高596分。</p>
+<p>考研英语二85分，里面1分是选择题扣分（错了两个完型），其他14分都是后面的主观题扣分。</p>
+<p>常言道“得选择者得天下”，英语选择也是最需要花力气准备的，主观题容易搞。其中选择题里面阅读是最需要花力气的。</p>
+<p>阅读想要高分，除了词汇和阅读能力外最重要的就是对出题人逻辑的把握。只要你足够熟悉出题人逻辑，写题的时候你就绝不会模棱两可，除非有没注意到的细节！考研阅读的逻辑性是非常非常非常强的！拿个阅读满分并不难。</p>
+<h3 id="那阅读逻辑怎么掌握呢？"><a href="#那阅读逻辑怎么掌握呢？" class="headerlink" title="那阅读逻辑怎么掌握呢？"></a>那阅读逻辑怎么掌握呢？</h3><p>这时候就必须推荐唐迟老师了！唐迟老师的罗汉班（讲解真题的）讲得真的醍醐灌顶（这样形容一点也不过分），听上三五节课就会发现正确率有一个质的提升（当然是阅读能力没问题的基础上）。</p>
+<p>那么无论是英一还是英二，都推荐写英一阅读真题，而且写三遍甚至三遍以上（2010年以后），写到炉火纯青（我把英语一写了不到三遍）。写题的时候别去写模拟题，别去看外刊！就杠着真题写。</p>
+<p>因为模拟题里面的出题逻辑，尤其是干扰选项的设置是和真题有较大差别的，而分析错误选项本身就是写英语阅读很重要的步骤。外刊的话嘛，我在拼多多买了经济学人精读，买了华盛顿邮报pdf版啥的，后来屁也没看哈哈。看外刊是很花时间不讨好的，看不懂烦心又对做题没帮助。另外也不推荐各种语法课，词汇课，同样对做题和阅读没啥帮助。</p>
+<p>一般来说，阅读写懂了之后，完形也就不在话下了。新题型是真的简单，不练也没关系。</p>
+<p>至于后面的主观题，第一个是翻译，推荐听新东方田静老师的课。</p>
+<p>另一个大头就是作文了，很多人都不擅长。</p>
+<p>但是考研英语作文就如同八股文，只要下对功夫想拿高分也不难的。英二的大作文套模板是非常好套的。</p>
+<h3 id="一般来说会有这么几种主流的准备英语作文的方式："><a href="#一般来说会有这么几种主流的准备英语作文的方式：" class="headerlink" title="一般来说会有这么几种主流的准备英语作文的方式："></a>一般来说会有这么几种主流的准备英语作文的方式：</h3><ol>
+<li><p>提升英语能力，不断积累，读外刊，读美文等等。时间投入太大，并且很难有效果，不推荐。</p>
+</li>
+<li><p>背英语作文模板，有老师说背下三十个作文，考场上自然下笔如神。但是吧…我高中文言文都背不过，高考十分的默写我拿了四分（真的），还背三十个英语作文？就算能背过，花费的时间也是大量的，不明智。（但也不乏身边有背作文押中题的）</p>
+</li>
+<li><p>自己总结模板，推荐！因为考研作文像是自己DIY电脑，无论玩什么游戏你的电脑壳都可以用一样的，玩3A大作还是只玩个LOL，内部配置更换一下就行了。作文的第一段分析图表数据永远可以用同一句话The xx graph offers us a window into……，第二段分析原因（一般写2-3个原因）也可以永远同一句话：Factors at play abound，至于原因（内部配置），有限的几个主流原因总是可以囊括，经济发展、人均收入提高、社交需求、科技发达、生活压力balabala。</p>
+</li>
+</ol>
+<h3 id="再来看往年作文主题："><a href="#再来看往年作文主题：" class="headerlink" title="再来看往年作文主题："></a>再来看往年作文主题：</h3><p>21年居民锻炼，20年手机阅读目的，19年本科生毕业去向，18年选餐厅的因素，至少两三个原因都能套进去。比如19年这个吧，经济发展了要求更牛的人才，所以研究生多了。人均收入高了，不急着挣钱，所以研究生多了；研究生认识新朋友，社交需求，所以研究生多了；科技发达提供了更多研究型岗位，所以研究生多了；生活压力让年轻人追求更高的学历，所以……反正每个都能套好吧。</p>
+<p>这里提一嘴，考研作文评分最看重的不是行文逻辑，语法对错，而是语言。也就是句式多样化、单词短语高级化是提升分数的有力手段。</p>
+<p>那么也就是说，我们要做的就是选一个绚丽的电脑外壳（那些每篇作文都可以用的套话），再好好准备各种配置（积累描述数据的短语、描述上述原因的句子短语等），每次积累到更高级的再替换掉之前的，每次作文都可以下笔如神了。</p>
+<h3 id="那么怎么积累呢？"><a href="#那么怎么积累呢？" class="headerlink" title="那么怎么积累呢？"></a>那么怎么积累呢？</h3><p>1.作文书 2.公众号 3. 阅读真题</p>
+<p>作文书推荐：王江涛《考研英语高分写作》，最开始英语模板的框架搭建就靠它辣。务必自己搞一个笔记本，在里面挑自己打算应用的“电脑外壳”和“各种配置”记在上面。</p>
+<p>公众号推荐：高斋外刊双语精读 之前找了巨多公众号，还是这个最使用，最后备考也只用了这个。那一个月左右每天在里面找好用的单词、短语记在我的本子上。举个例子，表示发展的：XX have come a long way\XX is gathering steam,替换掉with the development of XX;或者某些好用的句式：A takes over the mantle from B,字面意思是A从B那里取走了斗篷，意译A取代了B的地位，比如描述20年手机阅读的目的可以说手机取代了纸质书籍的地位，很好用。</p>
+<p>在积累了一定之后，做阅读的时候也会开始意识到文章中精彩的容易用的材料，同样记下来。</p>
+<h3 id="推荐英语作文文章"><a href="#推荐英语作文文章" class="headerlink" title="推荐英语作文文章"></a>推荐英语作文文章</h3><p><em><strong>考研英语（一、二）大小作文历年真题汇总电子版（PDF）</strong></em><br><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/400559769">链接</a><br><em><strong>考研英语二作文思路解析</strong></em><br><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/51493142">链接</a></p>
+<p>最后需要做的的就是背单词了。像唐迟老师说的，背单词像是撒在地底下的种子，你不停地浇水，不停地浇水，一直都看不到它有任何动静，但是我们要相信它一定在不断成长，直到我们看到它发芽的一刻。</p>
+<p>背单词一遍又一遍，忘掉才是常态，我们只需要不停重复就好。</p>
+<p>我在考研期间每天背单词时间在50-60分钟，因为每天午饭后和晚饭后会感觉脑子转不动，回图书馆后就定时25分钟背单词，毕竟背单词很容易进入状态而且不费脑子。</p>
+<p>建议纸质书籍，红宝书为上。如果几天懒得背单词后尽快调整好心态重新开始，一拖再拖真就再也不背了，大忌啊！！</p>
+<h2 id="政-治"><a href="#政-治" class="headerlink" title="政  治"></a>政  治</h2><p>考卷由3部分组成：单选题1<em>16、多选题2</em>17、分析题5*10</p>
+<p>政治也是得选择得天下，前期的准备几乎都是为了选择题，最好选择题40分+，分析题大家都是三十多分。</p>
+<p>政治期望分数在70-75左右其实差不多，上海本身就算是旱区，想考高分不那么简单。尤其今年肖四被反押题了，背的东西全在题干里面哈哈哈。</p>
+<h3 id="政治的复习一个公式就可以概括："><a href="#政治的复习一个公式就可以概括：" class="headerlink" title="政治的复习一个公式就可以概括："></a>政治的复习一个公式就可以概括：</h3><p>徐涛网课+肖秀荣《精讲精练》or徐涛《核心考案》+肖1000题*3+肖四肖八。</p>
+<p>（另外很多人推荐腿姐的技巧课，因为后期时间比较紧的缘故，我只听过一两节，了解不深入，所以不多评价了。</p>
+<p>一般大家在八月开始学习政治。政治学习分为五大部分，马原，毛概，纲要，思修，时政。推荐直接上徐涛网课，但是他讲课的顺序和书不一样：马原-思修-纲要-毛概，学习的细节徐涛老师都会讲，我就不多说了。更推荐精讲精练来听课做笔记，因为做1000题的时候会发现很多知识点核心考案上都没有涉及，做起来很难受，每次找不到答案，还得给考案上做笔记。（所以用核心考案听完课后又换成了精讲精练去看去背，多花了很大精力）。政治的刷题只推荐肖老师的，1000题必刷必背，我把1000题写了2-3遍，第一遍写是听完网课后边翻书编写，这样虽然比较慢，但是每次翻书的时候会把知识点再过一遍，加深印象。第二遍第三遍刷1000题的时候就写的很快了，一个半小时就可以写完思修的选择题。不过不会的题一定要多看多去背，因为你会发现第二遍第三遍刷题错的也是同样的题。（1000题不用写大题的，大题一般都是剩下两三周时间背肖四或腿姐或者徐涛小黄书解决）。</p>
+<p>1000题在第二遍和第三遍的时候，我在每次写一章的题之前都会跑到图书馆楼下去背那一章的徐涛冲刺背诵笔记（知识点浓缩）（腿姐的浓缩笔记也很好），背了那个小册子好多遍啊，但是感觉自己记性很一般，即便这样选择题也只拿到了比较中庸的分数（好像是42分）。（但是不背的话真的就不会！）到了复习后期就拿到肖四肖八，肖八先到手。这就相当于模拟真题了，做的时候千万别翻书，时政不会写没关系，对完答案背就行了，大题也不用写，主要专注于选择题正确率。一套卷子选择题十几二十分钟就写完了，最好写得省一点…然后去背没掌握好的以及相关的知识点。哦对，这时候会发现身边一群大佬，自己的选择题都是三十三三十五分这样，但是大佬们就已经均分四十几分了。这时候一定不要自抱自泣，好好背知识点和错题，考研时候选择题40+不难。</p>
+<p>然后剩下大概两礼拜的时候肖四下来了。这时候就是整个考研阶段最重要，也最容易摆烂的时候。因为你发现肖四背了两三天过了一遍，重新开始背的时候发现没背过，“没关系，继续！”然后背了第二遍，过了一天重背第三遍，发现还是背不下来，又背了一遍，重新开始发现还是没背过哈哈（蟹！）这时候心态就发生了巨大的变化，你还有货银国金的理论没背熟，你的专业课简答题资料没有背，你还有公司理财和投资学的课后题和公式没背，你还有专业课真题的重点题目没写熟，你还有数学公式和模拟卷重点的题没背，还有政治时政、还有英语作文没……说什么都开摆！！（不是）然后我当时就开摆了，四五天时间，每天晚上八点回去打LOL（我在考试前两个礼拜给自己买了游戏本）…舍友和我一起开摆，俩人差不多已经放弃上岸的希望了。因为我就像上面说的那些，我想背的都没背，政治背又背不过。但是这段时间背下来学到的东西真的是整个考研阶段价值最高的！这时候一定不要学我，坚持到底坚持到最后才行。我要是当时没有摆烂说不定425+甚至430+都有可能。然后重振旗鼓后又拿起了肖四大题、专业课热点、简答题、课后题，每天在图书馆一楼角落巴拉巴拉巴拉，一背多半天，我想在图书馆东边三四楼的大都知道那个月有个二比整天在楼下对着墙背书。</p>
+<p>最后逼急了自己画思维导图来背肖四时政（还通过象形、逻辑、自己编口诀背），然后把肖四和那一堆资料啊真给背过了，真的感动…但是后来发现背过的都在题干里我是没想到的哈哈哈哈哈哈，这个真就看运气了，用同学背了腿姐的押题，今年押得很好，一考完就在群里“腿姐yyds!”。害嗨~不过我舍友是一摆到底了，考完给我说，发现专业课考的那些知识都是自己本来要背的、本来可以背过的。（哦对，他和我一起跨考金专）后来也很可惜没有上岸，所以大家不要在最后摆烂啊！！另外一个教训就是要早点开始背，后面需要背的实在太多辣！！</p>
+<h1 id="其他部分"><a href="#其他部分" class="headerlink" title="其他部分"></a>其他部分</h1><h2 id="关于睡觉"><a href="#关于睡觉" class="headerlink" title="关于睡觉"></a>关于睡觉</h2><p>建议能睡就睡~</p>
+<p>总结的一个学习公式：</p>
+<p><strong>考研成绩=运气<em>（时间</em>效率）^方向   </strong></p>
+<p>真实情况：一天玩游戏到半夜两点，内心自责，一定要早起学习，闹钟定到早晨七点。第二天早早爬起来去图书馆发现数学根本学不进去，扣扣指甲玩玩手机，早上没了。中午困了，大睡一觉，下午醒来发现三点了，继续浑浑噩噩看数学。一天下来发现好像啥也没学。</p>
+<p>不好好睡觉不仅降低学习效率，就连学习时间也难以保证，还降低自控力，除了缓和自责感毫无用处。当然也不排除有些人长期缺觉还能精神抖擞的，那就当我没说。<br><em><strong>建议无论摆烂到几点，好好睡觉，不搞自我感动。</strong></em></p>
+<h2 id="关于娱乐"><a href="#关于娱乐" class="headerlink" title="关于娱乐"></a>关于娱乐</h2><p>我每天的娱乐就是天天晚上八九点去健身房练上四十分钟，忘掉所有东西专注举铁。我认为这是一个很好的休息方式，持续时间短，不上瘾而且消除疲惫。玩游戏就算了，大多数人一玩游戏就很长时间，很容易开摆。</p>
+<h2 id="关于学习时间"><a href="#关于学习时间" class="headerlink" title="关于学习时间"></a>关于学习时间</h2><p>从早上九点到十一点（差不多一张数学卷子），吃完饭十一点半到下午五点（有时背完单词午休一小时）然后吃晚饭，再从六点到晚上九点去健身，十点到十一点多图书馆闭馆，大概十一到十二小时，不过这是最理想的状态，实际有时候状态差也会学八小时。不过每天回寝后就开始摆烂了哈哈。</p>
+<h2 id="关于考研期间的干扰"><a href="#关于考研期间的干扰" class="headerlink" title="关于考研期间的干扰"></a>关于考研期间的干扰</h2><p>大多数干扰因素，除了因为在职考研这种，都不会对结果有实质性影响的。心在考研，不怕困难~图书馆门口演唱会，那就边听音乐好了；上课老师不准写题，那就戴蓝牙耳机听网课好了；需要放假回家或者暑期实习，那就长途车上听歌网课好了；图书馆关门了，那就校外花钱找个自习室办卡好了。</p>
+<h3 id="其他要强调的"><a href="#其他要强调的" class="headerlink" title="其他要强调的"></a>其他要强调的</h3><p><strong>务必多去看经验贴，</strong> 而且隔一段时间就去回头去看经验贴，因为复习方向很容易跑偏，经验贴固然不能全信，不能直接复制，也不能轻信一家之言，但是对复习效率的帮助是不可或缺的。另外希望大家不要丢弃和朋友家人们的社交，所谓天时地利人和，“人和”在考研中也是很重要的，考研信息的传递，心里压力的缓解，甚至考研期间的快乐都离不开朋友与家人。</p>
+<p>有很长一段时间为了考研搬出校外住了，很孤独那段时间，很幸运有俩好兄弟天天陪着我。<br>他俩一个考上了清华车辆，一个申请到了华盛顿大学直博全奖。后来我把我的房子转租给考清华的哥们了，所以那间房子以后就叫考研成功房吧哈哈。</p>
+<h1 id="复试"><a href="#复试" class="headerlink" title="复试"></a>复试</h1><p>如果能通过初试，那么恭喜你，只要复试不乱来就很容易被录取了。</p>
+<p>先介绍一下复试的流程：</p>
+<p>一般会在三月下旬进行复试（今年在3月27日复试），从初试成绩出来到复试大概有一个月的时间。在这一个月期间除了需要准备复试外还需要官网确认参加复试、填写问卷星问卷、提交复试需要的材料（身份证、准考证、学生证或学籍认证报告、服饰承诺书等），在复试前两三天会有一次模拟面试来检测自己的复试环境以及网络状况。在正式复试时会短信给你考核序号（不会给具体时间），每个人有20分钟复试时间、腾讯会议作为平台，在腾讯会议邀请考生进入时你会直接被拉进去，压根没有提示啥的，所以可能进复试前的一两个小时都是比较紧张的状态，不知道什么时候会被邀请进去。复试时是需要准备双机位的，所以需要借一个腾讯会议的号，另外复试时还需要准备身份证进行身份验证的（所以保管好身份证啊！我舍友初试前一天晚上找不到自己身份证了，蟹）。服饰时候有七八位老师，每个老师都会问至少一个问题，第一个老师会让你做自我介绍并问英文问题。</p>
+<p>复试期间遇到任何问题（比如我传错材料）都可以给研招办发邮件或者打电话解决，不用担心。</p>
+<p>然后关于复试的考试内容：</p>
+<p>复试相当于初始的论述部分+热点+宏微观经济学（复旦的教材），但是实际上比初试的内容广泛得多。</p>
+<p>首先必须要准备好最基础的英文问题：自我介绍（这个中英文都要背）为什么转专业？为什么来上海？为什么选择复旦？未来的职业规划？你最感兴趣的金融理论？</p>
+<p>一般英文问题都会比较简单，大都是我们能准备到的。在中文问题上就只能尽人事听天命了。</p>
+<p>这些问题时我们准备复试压根准备不到的（往年的真题比如…郁金香泡沫、欧债危机等等），能做到的就是临场应变、不慌乱、讲礼貌、不打结巴。因为报了凯程的复试课，进行了好几次的模拟面试，所以复试并没表现出紧张。</p>
+<p>一般来说，跨专业考生老师不太会问宏微观经济学的知识，但是还是建议各位去学宏微观中的重点知识点，自己啃书太花时间而且抓不住重点，听定向课程为上。</p>
+<p>如果不是转专业的考试，那么有可能问你关于你以前的实习经历和毕设的事情，要重点温习。</p>
+<p>复试一个比较好的技巧就是在自己的自我介绍或者回答里面去挖坑让老师问，自己准备好自己挖的坑。比如我对XX比较感兴趣等等。</p>
+<p>比如我在自我介绍中会说我对新能源车比较感兴趣，那么就会去做好新能源车的行研，产业链、产业发展、企业业务、推荐个股等等。（虽然最后老师没问我）</p>
+<p>复试结束后两三天就可以收到自己的复试通过通知，当天晚上街上的我be like：<br>似乎其他的什么都不重要了。</p>
+<h1 id="写在后面"><a href="#写在后面" class="headerlink" title="写在后面"></a>写在后面</h1><p>考研占据了我青春差不多一年半的时间，曾因为独自住在出租屋而孤独抑郁，曾让我放下热爱的健身，也放弃了谈恋爱的打算，但它带我回到了三年前备战高考那段热血又纯粹的岁月，让我认识了很多可爱的朋友们，最喜欢夏天每天在图书馆看西交的晚霞。</p>
+<p>每个人每天坐回图书馆同一个位置，虽然不知道坐在身边的同学们的名字，只是有时候会因为多瞥一眼知道了他们要考的专业，但是每天走回我的座位看到熟悉的面孔不由得因为彼此的陪伴而感到幸福。<br>还要感谢考研中陪伴我的朋友家人们。<br>夫夷以近，则游者众；险以远，则至者少。而世之奇伟、瑰怪，非常之观，常在于险远，而人之所罕至焉，故非有志者不能至也。有志矣，不随以止也，然力不足者，亦不能至也。有志与力，而又不随以怠，至于幽暗昏惑而无物以相之，亦不能至也。然力足以至焉，于人为可讥，而在己为有悔；尽吾志也而不能至者，可以无悔矣，其孰能讥之乎？此余之所得也！</p>
+<p>和大家共勉！</p>
+
+        </div>
+        
+            <section class="post-copyright">
+                
+                
+                
+                
+                     <p class="copyright-item">
+                         <span>灯塔宗旨:</span>
+                         <span>XJTUers<br>愿你们在未来的每一步<strong>都坚实而有力量</strong></span>
+                     </p>
+                
+
+            </section>
+        
+        <section class="post-tags">
+            <div>
+                <span>标签:</span>
+                <span class="tag">
+                    
+                </span>
+            </div>
+            <div>
+                <a href="javascript:window.history.back();">返回</a>
+                <span>· </span>
+                <a href="/hhhh/">主页</a>
+            </div>
+        </section>
+
+        <section class="post-nav">
+            
+                <a class="prev" rel="prev" href="/hhhh/2022/09/24/%E8%80%83%E7%A0%9415/">考研NO.15|从西交口腔到北医口腔</a>
+            
+            
+            <a class="next" rel="next" href="/hhhh/2022/09/09/%E8%80%83%E7%A0%9414-2/">考研No.14|从西交能动到复旦金融(上)</a>
+            
+        </section>
+         <br>
+        
+            <section id="comments" class="comments">
+              <style>
+                  .comments{ margin-top: 30px;}
+                  .v .vlist .vcard .vcontent {padding-top: 0;}
+                  .vcontent p { color:grey; margin-bottom: 10px;}
+                  .v * {line-height: normal;}
+                  .v .vwrap  {border-radius: 0px; padding: 10px;}
+                  .v .vbtn {border-radius: 0px;}
+                  .v code, .v pre {border-radius: 0px;}
+                  .v .vlist .vcard .vhead .vsys {border-radius: 1px; padding: 2px;}
+                  .v .vlist .vcard .vhead .vnick {color: #2d96bd;}
+                  .v .vlist .vcard .vh .vmeta .vat{color: #c7254e;}
+                  .v .vlist .vcard {padding-top: 0;}
+                  .v .vlist .vcard .vimg { width: 2.5em; height: 2.5em; }
+                  .v .vlist .vcard .vquote .vimg { width: 2.5em; height: 2.5em; }
+              </style>
+              <div class="valine_comment"></div>
+<!--载入js，在</body>之前插入即可-->
+<!--Leancloud 操作库:-->
+<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<!--Valine 的核心代码库-->
+<script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+<script>
+    new Valine({
+        el: '.valine_comment',
+        app_id: 'OlOZQ7cjJE81tquJMz4o7DVt-gzGzoHsz',
+        app_key: 'n3MoqzwZo9E0zkeB4hjq2Rfa',
+        placeholder: '欢迎交流讨论...',
+        notify: 'false',
+        verify: 'false',
+        avatar: 'monsterid',
+        visitor: ''
+    });
+</script>
+            </section>
+        
+    </article>
+</div>
+
+            </div>
+            <footer id="footer" class="footer">
+    <div class="copyright">
+        <span>© 腾飞小灯塔 | Powered by <a href="https://hexo.io" target="_blank">Hexo</a> & <a href="https://github.com/Siricee/hexo-theme-Chic" target="_blank">Chic</a></span>
+    </div>
+</footer>
+
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta name="author" content="腾飞小灯塔">
+
+
+
+    <meta name="description" content="DO one thing well">
+
+
+
+<title>考研NO.16|从西交自动化到中科院自动化 | 腾飞小灯塔</title>
+
+
+
+    <link rel="icon" href="/hhhh/favicon.ico">
+
+
+
+
+    <!-- stylesheets list from _config.yml -->
+    
+    <link rel="stylesheet" href="/hhhh/css/style.css">
+    
+
+
+
+    <!-- scripts list from _config.yml -->
+    
+    <script src="/hhhh/js/script.js"></script>
+    
+    <script src="/hhhh/js/tocbot.min.js"></script>
+    
+
+
+
+    
+    
+        
+    
+
+
+<meta name="generator" content="Hexo 5.4.2"></head>
+
+<body>
+    <script>
+        // this function is used to check current theme before page loaded.
+        (() => {
+            const currentTheme = window.localStorage && window.localStorage.getItem('theme') || '';
+            const isDark = currentTheme === 'dark';
+            const pagebody = document.getElementsByTagName('body')[0]
+            if (isDark) {
+                pagebody.classList.add('dark-theme');
+                // mobile
+                document.getElementById("mobile-toggle-theme").innerText = "· Dark"
+            } else {
+                pagebody.classList.remove('dark-theme');
+                // mobile
+                document.getElementById("mobile-toggle-theme").innerText = "· Light"
+            }
+        })();
+    </script>
+
+    <div class="wrapper">
+        <header>
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-header header-logo"><a href="/hhhh/">腾飞小灯塔</a></div>
+            <div class="menu navbar-right">
+                
+                    <a class="menu-item" href="/hhhh/archives">文章</a>
+                
+                    <a class="menu-item" href="/hhhh/category">分类</a>
+                
+                    <a class="menu-item" href="/hhhh/tag">标签</a>
+                
+                    <a class="menu-item" href="/hhhh/about">关于</a>
+                
+                <input id="switch_default" type="checkbox" class="switch_default">
+                <label for="switch_default" class="toggleBtn"></label>
+            </div>
+        </div>
+    </nav>
+
+    
+    <nav class="navbar-mobile" id="nav-mobile">
+        <div class="container">
+            <div class="navbar-header">
+                <div>
+                    <a href="/hhhh/">腾飞小灯塔</a><a id="mobile-toggle-theme">·&nbsp;Light</a>
+                </div>
+                <div class="menu-toggle" onclick="mobileBtn()">&#9776; Menu</div>
+            </div>
+            <div class="menu" id="mobile-menu">
+                
+                    <a class="menu-item" href="/hhhh/archives">文章</a>
+                
+                    <a class="menu-item" href="/hhhh/category">分类</a>
+                
+                    <a class="menu-item" href="/hhhh/tag">标签</a>
+                
+                    <a class="menu-item" href="/hhhh/about">关于</a>
+                
+            </div>
+        </div>
+    </nav>
+
+</header>
+<script>
+    var mobileBtn = function f() {
+        var toggleMenu = document.getElementsByClassName("menu-toggle")[0];
+        var mobileMenu = document.getElementById("mobile-menu");
+        if(toggleMenu.classList.contains("active")){
+           toggleMenu.classList.remove("active")
+            mobileMenu.classList.remove("active")
+        }else{
+            toggleMenu.classList.add("active")
+            mobileMenu.classList.add("active")
+        }
+    }
+</script>
+            <div class="main">
+                <div class="container">
+    
+    
+        <div class="post-toc">
+    <div class="tocbot-list">
+    </div>
+    <div class="tocbot-list-menu">
+        <a class="tocbot-toc-expand" onclick="expand_toc()">Expand all</a>
+        <a onclick="go_top()">Back to top</a>
+        <a onclick="go_bottom()">Go to bottom</a>
+    </div>
+</div>
+
+<script>
+    var tocbot_timer;
+    var DEPTH_MAX = 6; // 为 6 时展开所有
+    var tocbot_default_config = {
+        tocSelector: '.tocbot-list',
+        contentSelector: '.post-content',
+        headingSelector: 'h1, h2, h3, h4, h5',
+        orderedList: false,
+        scrollSmooth: true,
+        onClick: extend_click,
+    };
+
+    function extend_click() {
+        clearTimeout(tocbot_timer);
+        tocbot_timer = setTimeout(function() {
+            tocbot.refresh(obj_merge(tocbot_default_config, {
+                hasInnerContainers: true
+            }));
+        }, 420); // 这个值是由 tocbot 源码里定义的 scrollSmoothDuration 得来的
+    }
+
+    document.ready(function() {
+        tocbot.init(obj_merge(tocbot_default_config, {
+            collapseDepth: 1
+        }));
+    });
+
+    function expand_toc() {
+        var b = document.querySelector('.tocbot-toc-expand');
+        var expanded = b.getAttribute('data-expanded');
+        expanded ? b.removeAttribute('data-expanded') : b.setAttribute('data-expanded', true);
+        tocbot.refresh(obj_merge(tocbot_default_config, {
+            collapseDepth: expanded ? 1 : DEPTH_MAX
+        }));
+        b.innerText = expanded ? 'Expand all' : 'Collapse all';
+    }
+
+    function go_top() {
+        window.scrollTo(0, 0);
+    }
+
+    function go_bottom() {
+        window.scrollTo(0, document.body.scrollHeight);
+    }
+
+    function obj_merge(target, source) {
+        for (var item in source) {
+            if (source.hasOwnProperty(item)) {
+                target[item] = source[item];
+            }
+        }
+        return target;
+    }
+</script>
+    
+
+    
+    <article class="post-wrap">
+        <header class="post-header">
+            <h1 class="post-title">考研NO.16|从西交自动化到中科院自动化</h1>
+            
+                <div class="post-meta">
+                    
+
+                    
+                    
+                        <span class="post-category">
+                    分类:
+                            
+                                <a href="/hhhh/categories/%E8%80%83%E7%A0%94/">考研</a>
+                            
+                        </span>
+                    
+
+                     
+                    <span id="/hhhh/2022/10/01/%E8%80%83%E7%A0%9416/" class="leancloud-visitors view" data-flag-title="考研NO.16|从西交自动化到中科院自动化">
+                        <text class="post-meta-item-text">
+                            <!--阅读数:-->
+                            <i class="iconfont icon-view"></i>
+                        </text>
+
+                        <text class="leancloud-visitors-count">   </text>
+                      </span>
+                    
+                </div>
+            
+        </header>
+
+        <div class="post-content">
+            <p>欢迎大家了解灯塔，同时也<em><strong>诚邀各位朋友投稿</strong></em>，为大家提供更多经验与帮助。投稿以个人经验、备考过程为主，若受院校和项目要求限制，可弱化复试及具体考核内容等；若关注个人隐私问题，可对分享稿件进行匿名化处理。具体投稿规则见 <strong><a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s/ZTUy56GrBbcmk7wQmwudPg">征稿说明。</a></strong></p>
+<p>禁止一切商用，不提供原作者其他联系方式。</p>
+<hr>
+<br>
+
+<h1 id="写在前面"><a href="#写在前面" class="headerlink" title="写在前面"></a>写在前面</h1><h2 id="01-灯塔特供"><a href="#01-灯塔特供" class="headerlink" title="01 灯塔特供"></a>01 灯塔特供</h2><p>本文写于四月初，开始写这篇经验帖时我还刚刚上岸，最早发在了知乎，现在借着机会投稿在灯塔上。</p>
+<p>一转眼又到了9月，对于23考研的同学来说，择校可能不会有什么变化了，所以在一开始更想和大家说一说坚定信念的话，以及希望给大三乃至大一大二的同学一些经验与建议吧。</p>
+<h2 id="02-To-23考研党"><a href="#02-To-23考研党" class="headerlink" title="02 To 23考研党"></a>02 To 23考研党</h2><p><strong>坚持！一定可以成功上岸！</strong></p>
+<p>不论是考外还是本校，西交出身的我们都占有很大的优势，高考能进入西交其实已经证明了我们的考试能力，尤其是考外的同学，不用担心遇到什么清北考研佬，最后三个月逼自己一把上岸没有问题。去年我身边有很多考外很优秀的同学，清北复交浙全都有，<em><strong>大家只要做好计划，一以贯之，初试拿高分对于我们西交学子真的很容易。</strong></em> 当然对于考本校的同学来说也千万不要放松，因为稍有不慎就可能被自己的同学挤下去。</p>
+<p>至于很多同学都焦虑的没有项目经历，没有科研获奖，其实不用透支焦虑，如果你的竞争对手真的这些都有，那他也不必考研了不是嘛。复试对于大多数高校来说在初试之后开始准备完全来得及，最后的三个月大家还是努力的提分，争取初试排名高一些。</p>
+<p>最后想说的一点就是心态，疫情当前，很多事都瞬息万变。去年西安疫情正好赶上考研，我当时在校外租房，封城的前一天，也就是考研的倒数第三天，我十分狼狈的打包搬回了宿舍（希望今年大家一切顺顺利利！），还好我心态一直比较稳，最后也没有影响到我的发挥。<em><strong>希望学弟学妹们到了最后的时候心态一定要稳住，不管发生什么事一切以考研为重。</strong></em> 最后祝大家今年成功上岸！！</p>
+<h2 id="03-To-低年级学弟学妹"><a href="#03-To-低年级学弟学妹" class="headerlink" title="03 To 低年级学弟学妹"></a>03 To 低年级学弟学妹</h2><p><strong>现在不论考研还是保研都是越来越卷了，身为18级自动化的摆烂生想给大家说几个经验，更多是教训吧：</strong></p>
+<h4 id="尽量弥补信息差。"><a href="#尽量弥补信息差。" class="headerlink" title="尽量弥补信息差。"></a>尽量弥补信息差。</h4><p>在大学里很多时候使我们落后于别人的是信息差，加上西交地处西安，和北上相比也会有一些差距，所以大家可以多和本校以及外校的大佬聊天，往往他们更开阔的视野以及更清晰的发展规划会对自己有一定的帮助。</p>
+<h4 id="提前接触科研项目。"><a href="#提前接触科研项目。" class="headerlink" title="提前接触科研项目。"></a>提前接触科研项目。</h4><p>大一大二其实就可以进实验室做项目了，盲目的卷gpa个人觉得意义不是太大，因为未来不管是就业还是升学，项目经历以及在这过程中自己掌握的技能才是终身受用的，尤其如果是自动化、计算机这类的专业。</p>
+<h4 id="做好规划。"><a href="#做好规划。" class="headerlink" title="做好规划。"></a>做好规划。</h4><p>提前规划好自己要做什么，什么时候去哪里实习，进什么实验室，未来是否出国等等，有了目标导向自己也会更有动力。</p>
+<h1 id="个人简介"><a href="#个人简介" class="headerlink" title="个人简介"></a>个人简介</h1><p>前面主要是一些“肺腑之言”吧，下面进入正题哈哈。本科西交自动化，平均分87/100，排名一般，有三段项目经历，但都很普通，也没有什么拿得出手的奖项。自动化所还是比较喜欢有机器学习/深度学习经历的同学，所以如果有时间有机会的话，建议大家大三下或者初试结束之后多丰富一下自己的个人经历。</p>
+<p>中科院自动化所的实力在国内数一数二，尤其是模式识别国家重点实验室，拥有众多大牛导师，本文也主要针对于目标自动化所模式识别方向（包含类脑等）的同学。相比于高校，个人觉得从学术研究的角度来说自动化所会香很多，因为有机会选择非常厉害的导师，而高校里相同level的大牛们名额可能相对来说更少一些。</p>
+<p>经过一年的努力，最终初试取得419分并列第四名，综合成绩排名第二，也选到了心仪的导师，算是为我的考研画上了完美的句号吧。</p>
+<h1 id="初试经验"><a href="#初试经验" class="headerlink" title="初试经验"></a>初试经验</h1><p>如果确定目标是自动化所模式识别，在考研越来越卷的大环境下，可能初试分数必须要争取上410。因为自动化所的专业课857自控很简单（考408不建议报自所），所以在正常阅卷的情况下上130分是很容易的，我在最开始给自己定的目标是尽量考420分（不过最后也没达到hh），根据自己的英语和数学水平分到单科上就是：数学135、自控135、英语75、政治75。</p>
+<h2 id="数学"><a href="#数学" class="headerlink" title="数学"></a>数学</h2><p>2022是偶数年，加上2020的题不好做，2021又很简单，整个考研过程中无处不弥漫着今年题会特别难的声音。但是，今年的题目却并没有传说中偶数年那么“难”，个人感觉更是一种回归基础概念、返璞归真的感觉。2023是奇数年，正常来说也不会特别变态，所以我觉得复习重点还是应该放在基础上，不需要刻意追求难题。</p>
+<p>我差不多从3月开始准备数学，但其实直到暑假前都是断断续续的，加上期末周和小学期没有时间复习考研，基本上小学期结束的时候之前看的内容也都忘的差不多了。这段时间我主要看的是张宇30讲和李永乐线代讲义，只能算是大概过了一遍数一三门学科的基础知识点吧。</p>
+<p>强化阶段个人觉得是最重要的，基本决定了最后考试能力的一个上限，时间差不多是7月中旬开始然后一直到9月中旬。高数和概率论我用的分别是张宇的高数18讲和概率论9讲，线代使用的仍然是李永乐线代讲义，比较建议跟着视频课同步学习，因为不论是张宇还是李永乐，都会在上课时讲到书上没有的一些思想方法。刷题在强化阶段也是必不可少的，我主要使用的是李林的880，加上张宇和李永乐书上自带的习题，一般来说肯定够用了。李林880中的一些难题好题可以标记出来，还是很值得二刷的。</p>
+<p>冲刺阶段我主要分为两部分，解决压轴题、定义题以及刷套卷。强烈建议尽早开始刷套卷，每次都要严格计时，这样不仅可以熟悉考场上的时间把握，还能保持做题的手感。我是从国庆节开始做试卷，基本保持着一周5张试卷，周一到周五每天一张，周末两天总结错题和生疏的知识点，进行复盘，相当于每周都是一个螺旋上升的过程。最先开始刷的是05-15年的真题，然后是前一年质量较好的模拟卷，等到最新的模拟卷出来之后再开始做最新的。做试卷的同时一定不能离开复盘和总结，可以允许自己出错，但要避免在同一处重复错误。也要根据实际情况进行计划的调整，例如连续两三天都发现某一章节学的不太扎实，那么可以先花一天两天稳固一下，然后再继续做试卷。最后临近初试的时候一定要避免手生，进入12月可以两天到三天一张试卷，之前留下的16年以后的真题卷可以留到这个时候再做，让自己更习惯真题的出题角度，防止被一些模拟卷带偏。</p>
+<p>具体模拟卷还是做那几个老师，也可以结合做过的同学的评价，宁缺毋滥，一张质量差的模拟卷不仅会浪费3个小时的时间，还会影响心态和做题手感。这里特别说一下李艳芳三套卷，她的试卷以难著称，所以想做的话尽量提早做，也不用因为很多题不会而怀疑自己，做她的试卷纯当开拓视野就好。</p>
+<h2 id="自控"><a href="#自控" class="headerlink" title="自控"></a>自控</h2><p>国科大857很简单，可以参考自控满分同学写的经验帖：国科大（中科院）专业课857自动控制原理满分复习经验，视频课除了卢京潮老师的，强烈推荐哈工大学长埃得加（b站搜up主Edgar埃得加），会从学生的角度讲解自控，舍弃那些不考的细枝末节。</p>
+<p>各种习题册比如题海、学练考等等我也都做过，从考试题来看还是最贴近题海的风格，别的练习册可以用来开拓思维。</p>
+<p>同时也要重视官方放出的往年题，回忆版的题目和答案有些可能有错误，大家复习的时候不必纠结其中。另外想说的就是通过和别的同学交流，似乎校正不用Bode图都扣分了，学弟学妹们考试的时候可以注意一下。</p>
+<h2 id="英语"><a href="#英语" class="headerlink" title="英语"></a>英语</h2><p>我的英语基础还不错，所以英语复习并没有占用太多时间，大三下就是每天背背单词，进入暑假之后开始做真题阅读。真题主要参考2010年以后的吧，2010年之前的阅读理解比较奇怪，体会体会就好。</p>
+<p>英语主要的部分就是阅读和作文，阅读在坚持背单词的基础上多做多练基本没啥问题，作文的话我个人不太建议直接背模板，尤其如果你英语水平还不错的话，可能你都会觉得市面上卖的一些作文模板还没有自己写的好。自己针对不同的话题整理一些好词好句，或者说整理出自己的模板还是挺重要的，因为这样你可以不断地打磨它，考场上也会有一个稳定发挥。</p>
+<p>然后说一下北京地区压分的问题，就今年来说我感觉压分不是很多，而且压分属于群体攻击，对考一个学校的同学是公平的，不会说你的英语水平比别人高结果因为压分导致不如别人，所以完全不用担心。</p>
+<p>使用的资料主要就是张剑的黄皮书，二刷可以买便宜一点的试卷，解析看黄皮书就好，说的都很详细，而且作文给的范文水平也挺高的，可以学一学。背单词的话我用的是墨墨背单词，习惯用书的也可以买单词书，重点不是形式，只要能记住就好。</p>
+<h2 id="政治"><a href="#政治" class="headerlink" title="政治"></a>政治</h2><p>政治我是从9月开始的，算是开始的比较早，其实最后感觉身边同学政治分数都差不多，而且政治是一门提分比较难的学科，所以不用太早担心政治的学习，当然如果开始的早可以防止考前心态出现波动。</p>
+<p>政治完全交给徐涛、腿姐、肖秀荣三位老师就好，先用徐涛的强化课来打基础，学懂政治各个学科在说什么，利用各种刷题小程序刷选择题，然后用腿姐的技巧课学习选择题和大题的答题技巧，最后背肖八肖四准备考试。基本这一套流程下来就基本可以保证你的政治分数不会拖后腿了，一般旱区可以70+，水区可以75+。</p>
+<h1 id="写在最后"><a href="#写在最后" class="headerlink" title="写在最后"></a>写在最后</h1><p>自动化所模式国重今年只招4个学生，加上类脑、智能感知可能也就10个不到，竞争还是很激烈的，所以还是建议本科成绩还可以，有决心有毅力的同学报考模式识别，当然如果只是想上岸可能不用考太高的分数（指370、380），相比于上交浙大的控制难度已经小很多了。</p>
+<p>整个考研阶段可能会遇到很多客观不可控的事，比如招生名额的变动还有疫情，都需要有强大的心理抗压能力，但考研的这段经历一定会让人受益匪浅。</p>
+<p>对于今年可能的一些变动，大家多多关注自动化所官网和国科大研招网，也可以打自所招生办电话或者邮件进行咨询，往年的数据在自所官网上基本都可以查到，最后祝所有的同学都可以上岸理想的学校，也欢迎大家有什么问题联系我。<br>如果对本文存疑，可通过 <strong><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/533005451">知乎</a></strong> 私信学长：</p>
+
+        </div>
+        
+            <section class="post-copyright">
+                
+                
+                
+                
+                     <p class="copyright-item">
+                         <span>灯塔宗旨:</span>
+                         <span>XJTUers<br>愿你们在未来的每一步<strong>都坚实而有力量</strong></span>
+                     </p>
+                
+
+            </section>
+        
+        <section class="post-tags">
+            <div>
+                <span>标签:</span>
+                <span class="tag">
+                    
+                    
+                        <a href="/hhhh/tags/%E8%87%AA%E5%8A%A8%E5%8C%96%E5%88%86%E5%A1%94/"># 自动化分塔</a>
+                    
+                        
+                </span>
+            </div>
+            <div>
+                <a href="javascript:window.history.back();">返回</a>
+                <span>· </span>
+                <a href="/hhhh/">主页</a>
+            </div>
+        </section>
+
+        <section class="post-nav">
+            
+                <a class="prev" rel="prev" href="/hhhh/2022/10/07/%E5%87%BA%E5%9B%BD6/">出国NO.6| 从西交金禾到剑桥金融经济学</a>
+            
+            
+            <a class="next" rel="next" href="/hhhh/2022/09/24/%E8%80%83%E7%A0%9415/">考研NO.15|从西交口腔到北医口腔</a>
+            
+        </section>
+         <br>
+        
+            <section id="comments" class="comments">
+              <style>
+                  .comments{ margin-top: 30px;}
+                  .v .vlist .vcard .vcontent {padding-top: 0;}
+                  .vcontent p { color:grey; margin-bottom: 10px;}
+                  .v * {line-height: normal;}
+                  .v .vwrap  {border-radius: 0px; padding: 10px;}
+                  .v .vbtn {border-radius: 0px;}
+                  .v code, .v pre {border-radius: 0px;}
+                  .v .vlist .vcard .vhead .vsys {border-radius: 1px; padding: 2px;}
+                  .v .vlist .vcard .vhead .vnick {color: #2d96bd;}
+                  .v .vlist .vcard .vh .vmeta .vat{color: #c7254e;}
+                  .v .vlist .vcard {padding-top: 0;}
+                  .v .vlist .vcard .vimg { width: 2.5em; height: 2.5em; }
+                  .v .vlist .vcard .vquote .vimg { width: 2.5em; height: 2.5em; }
+              </style>
+              <div class="valine_comment"></div>
+<!--载入js，在</body>之前插入即可-->
+<!--Leancloud 操作库:-->
+<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<!--Valine 的核心代码库-->
+<script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+<script>
+    new Valine({
+        el: '.valine_comment',
+        app_id: 'OlOZQ7cjJE81tquJMz4o7DVt-gzGzoHsz',
+        app_key: 'n3MoqzwZo9E0zkeB4hjq2Rfa',
+        placeholder: '欢迎交流讨论...',
+        notify: 'false',
+        verify: 'false',
+        avatar: 'monsterid',
+        visitor: ''
+    });
+</script>
+            </section>
+        
+    </article>
+</div>
+
+            </div>
+            <footer id="footer" class="footer">
+    <div class="copyright">
+        <span>© 腾飞小灯塔 | Powered by <a href="https://hexo.io" target="_blank">Hexo</a> & <a href="https://github.com/Siricee/hexo-theme-Chic" target="_blank">Chic</a></span>
+    </div>
+</footer>
+
+    </div>
+</body>
+
+</html>
