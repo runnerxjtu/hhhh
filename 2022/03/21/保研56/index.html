@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta name="author" content="腾飞小灯塔">
+
+
+
+    <meta name="description" content="DO one thing well">
+
+
+
+<title>保研NO.56|从西交自动化到清华法硕 | 腾飞小灯塔</title>
+
+
+
+    <link rel="icon" href="/hhhh/favicon.ico">
+
+
+
+
+    <!-- stylesheets list from _config.yml -->
+    
+    <link rel="stylesheet" href="/hhhh/css/style.css">
+    
+
+
+
+    <!-- scripts list from _config.yml -->
+    
+    <script src="/hhhh/js/script.js"></script>
+    
+    <script src="/hhhh/js/tocbot.min.js"></script>
+    
+
+
+
+    
+    
+        
+    
+
+
+<meta name="generator" content="Hexo 5.4.2"></head>
+
+<body>
+    <script>
+        // this function is used to check current theme before page loaded.
+        (() => {
+            const currentTheme = window.localStorage && window.localStorage.getItem('theme') || '';
+            const isDark = currentTheme === 'dark';
+            const pagebody = document.getElementsByTagName('body')[0]
+            if (isDark) {
+                pagebody.classList.add('dark-theme');
+                // mobile
+                document.getElementById("mobile-toggle-theme").innerText = "· Dark"
+            } else {
+                pagebody.classList.remove('dark-theme');
+                // mobile
+                document.getElementById("mobile-toggle-theme").innerText = "· Light"
+            }
+        })();
+    </script>
+
+    <div class="wrapper">
+        <header>
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-header header-logo"><a href="/hhhh/">腾飞小灯塔</a></div>
+            <div class="menu navbar-right">
+                
+                    <a class="menu-item" href="/hhhh/archives">文章</a>
+                
+                    <a class="menu-item" href="/hhhh/category">分类</a>
+                
+                    <a class="menu-item" href="/hhhh/tag">标签</a>
+                
+                    <a class="menu-item" href="/hhhh/about">关于</a>
+                
+                <input id="switch_default" type="checkbox" class="switch_default">
+                <label for="switch_default" class="toggleBtn"></label>
+            </div>
+        </div>
+    </nav>
+
+    
+    <nav class="navbar-mobile" id="nav-mobile">
+        <div class="container">
+            <div class="navbar-header">
+                <div>
+                    <a href="/hhhh/">腾飞小灯塔</a><a id="mobile-toggle-theme">·&nbsp;Light</a>
+                </div>
+                <div class="menu-toggle" onclick="mobileBtn()">&#9776; Menu</div>
+            </div>
+            <div class="menu" id="mobile-menu">
+                
+                    <a class="menu-item" href="/hhhh/archives">文章</a>
+                
+                    <a class="menu-item" href="/hhhh/category">分类</a>
+                
+                    <a class="menu-item" href="/hhhh/tag">标签</a>
+                
+                    <a class="menu-item" href="/hhhh/about">关于</a>
+                
+            </div>
+        </div>
+    </nav>
+
+</header>
+<script>
+    var mobileBtn = function f() {
+        var toggleMenu = document.getElementsByClassName("menu-toggle")[0];
+        var mobileMenu = document.getElementById("mobile-menu");
+        if(toggleMenu.classList.contains("active")){
+           toggleMenu.classList.remove("active")
+            mobileMenu.classList.remove("active")
+        }else{
+            toggleMenu.classList.add("active")
+            mobileMenu.classList.add("active")
+        }
+    }
+</script>
+            <div class="main">
+                <div class="container">
+    
+    
+        <div class="post-toc">
+    <div class="tocbot-list">
+    </div>
+    <div class="tocbot-list-menu">
+        <a class="tocbot-toc-expand" onclick="expand_toc()">Expand all</a>
+        <a onclick="go_top()">Back to top</a>
+        <a onclick="go_bottom()">Go to bottom</a>
+    </div>
+</div>
+
+<script>
+    var tocbot_timer;
+    var DEPTH_MAX = 6; // 为 6 时展开所有
+    var tocbot_default_config = {
+        tocSelector: '.tocbot-list',
+        contentSelector: '.post-content',
+        headingSelector: 'h1, h2, h3, h4, h5',
+        orderedList: false,
+        scrollSmooth: true,
+        onClick: extend_click,
+    };
+
+    function extend_click() {
+        clearTimeout(tocbot_timer);
+        tocbot_timer = setTimeout(function() {
+            tocbot.refresh(obj_merge(tocbot_default_config, {
+                hasInnerContainers: true
+            }));
+        }, 420); // 这个值是由 tocbot 源码里定义的 scrollSmoothDuration 得来的
+    }
+
+    document.ready(function() {
+        tocbot.init(obj_merge(tocbot_default_config, {
+            collapseDepth: 1
+        }));
+    });
+
+    function expand_toc() {
+        var b = document.querySelector('.tocbot-toc-expand');
+        var expanded = b.getAttribute('data-expanded');
+        expanded ? b.removeAttribute('data-expanded') : b.setAttribute('data-expanded', true);
+        tocbot.refresh(obj_merge(tocbot_default_config, {
+            collapseDepth: expanded ? 1 : DEPTH_MAX
+        }));
+        b.innerText = expanded ? 'Expand all' : 'Collapse all';
+    }
+
+    function go_top() {
+        window.scrollTo(0, 0);
+    }
+
+    function go_bottom() {
+        window.scrollTo(0, document.body.scrollHeight);
+    }
+
+    function obj_merge(target, source) {
+        for (var item in source) {
+            if (source.hasOwnProperty(item)) {
+                target[item] = source[item];
+            }
+        }
+        return target;
+    }
+</script>
+    
+
+    
+    <article class="post-wrap">
+        <header class="post-header">
+            <h1 class="post-title">保研NO.56|从西交自动化到清华法硕</h1>
+            
+                <div class="post-meta">
+                    
+
+                    
+                    
+                        <span class="post-category">
+                    分类:
+                            
+                                <a href="/hhhh/categories/%E4%BF%9D%E7%A0%94/">保研</a>
+                            
+                        </span>
+                    
+
+                     
+                    <span id="/hhhh/2022/03/21/%E4%BF%9D%E7%A0%9456/" class="leancloud-visitors view" data-flag-title="保研NO.56|从西交自动化到清华法硕">
+                        <text class="post-meta-item-text">
+                            <!--阅读数:-->
+                            <i class="iconfont icon-view"></i>
+                        </text>
+
+                        <text class="leancloud-visitors-count">   </text>
+                      </span>
+                    
+                </div>
+            
+        </header>
+
+        <div class="post-content">
+            <p>欢迎大家了解灯塔，同时也<em><strong>诚邀各位朋友投稿</strong></em>，为大家提供更多经验与帮助。投稿以个人经验、备考过程为主，若受院校和项目要求限制，可弱化复试及具体考核内容等；若关注个人隐私问题，可对分享稿件进行匿名化处理。具体投稿规则见 <strong><a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s/ZTUy56GrBbcmk7wQmwudPg">征稿说明。</a></strong></p>
+<p>禁止一切商用，不提供原作者其他联系方式。</p>
+<hr>
+<br>
+
+<h1 id="个人信息"><a href="#个人信息" class="headerlink" title="个人信息"></a>个人信息</h1><p><strong>姓名：</strong> 张亦斌</p>
+<p><strong>专业：</strong> 主修自动化 辅修建行金融科技菁英班</p>
+<p><strong>保研综合成绩：</strong> 94.37/100</p>
+<p><strong>保研排名：</strong> 6/197</p>
+<p><strong>语言成绩：</strong> CET-4：594    CET-6：550</p>
+<p><strong>获奖情况：</strong> 国家奖学金、CUPT国赛特等奖、数学竞赛省一、美赛H奖，腾飞杯校级金奖等</p>
+<p><strong>科研经历：</strong> CUPT相关（核刊一作×1）、CCF BDCI竞赛等</p>
+<p><strong>实习经历：</strong> 建行金融科技菁英班暑期实习</p>
+<p><strong>入营院校：</strong></p>
+<p>本专业类：清华工业工程、南大AI、浙大控制</p>
+<p>跨专业类：上交安泰、人大财金、上财金院、北大汇丰（以上均为金融专硕金融科技方向）、复旦管院DS&amp;BA、清华法硕（计算法学方向）</p>
+<p><strong>录取情况：</strong> 上交安泰（waiting转录取）、人大财金、上财金院、北大汇丰、清华法硕（waiting转录取）</p>
+<p><strong>最终去向：</strong> 清华大学法学院法律硕士（计算法学方向）</p>
+<h1 id="心路历程"><a href="#心路历程" class="headerlink" title="心路历程"></a>心路历程</h1><h3 id="1"><a href="#1" class="headerlink" title="1"></a>1</h3><p>保研期间一路看灯塔过来，早早就想好了要写这篇稿子，但真的动笔之时却发现无穷心绪萦绕心头不知从何谈起。转眼间在交大也已度过了三年半多的时光，无论是学业上思想上抑或是人际交往上都有所成长，且在此处聊作记录，倘能为后来者提供一些微不足道的帮助，也算是善事一桩。</p>
+<h3 id="2"><a href="#2" class="headerlink" title="2"></a>2</h3><p>考入交大是2018年的夏天，彼时全无高人指点，更无自由之思想，择校选专业尽听父母亲戚之言，辅之以知乎大V之见。一番调研之后确定了工科试验班（电类）作为目标，后以一分之差进入机类就读。纵观大一期间，思想十分单纯，未思恋爱之事，亦未沉溺游艺，一心想要大一下转至自动化专业就读。于是夙兴夜寐勤勤恳恳，在图书馆主楼和宿舍之间朝而往暮而归，度过了一段积极而上进的时光。期间认识了以杨姓学长为代表的一系列热心学长学姐，在学业上和转专业规划上都提供给了我许多的帮助，也间接促使我在大二之后加入了学辅等一众志愿组织，所谓“传递微光”。现在想来，与行政班诸位同学在高数线代等基础课上相互占座一同听课仍然是十分美好的回忆。许是越纯粹越幸运，大一的我在各门基础课上考得都不算太差，在学年末成功转到自动化专业的同时，也拿到了当年度大机类的国家奖学金。总体来看，我的大一，单纯而快乐，顺利也幸运。</p>
+<h3 id="3"><a href="#3" class="headerlink" title="3"></a>3</h3><p>圆满地完成了大一为自己制定的目标，坦白讲，彼时颇有一番春风得意马蹄疾之感，但也为后来一系列马失前蹄之举埋下了隐患。诚如诸多迷茫的学子一般，我在转到自动化专业之前，其实并没有对其培养方案、课程设置抑或未来职业发展道路等进行过充分的调研。于我而言，其反倒是更像一个符号，或是人生游戏中的一个主线任务，而对于这个主线任务完成后将要开启的后续关卡，我在没有明确过多其DLC的内容之时就将其购买了下来开始了游玩。保持着大一上进的惯性，我一边认真的学习着电路与数据结构等专业基础课，一边加入了人机所的科研项目开启了所谓的搬砖生活。但诚如俗话所言，人生不会一帆风顺，近一个学期过去，大学生活看起来变得糟糕了一些。于基础学业课程修读上，虽然承接于大一的上进心让我在大二上取得了一个还算可以的成绩，但对于专业内卷程度的低估还是给了我当头一棒，其彷佛从森林冰火人穿越到了魂系游戏之中，顺利保研的目标与竞争激烈的环境成为了面临的主要矛盾；于科研项目的初次探索上，在经历了基础的相关学习后，被分配的难度陡增的项目带来了正反馈机制的缺失，也产生了对自己水平的怀疑。加之彼时一些其它的压力，为我大二上学期末的大学生活蒙上了一层阴霾。当然阴霾也并非一件完全的坏事，福兮祸之所倚，祸兮福之所伏，正是在那段时间，我首次开始思考一些从未思考过的问题，一定程度上也带来了思想的提升与进步。</p>
+<h3 id="4"><a href="#4" class="headerlink" title="4"></a>4</h3><p>2020年的春天疫情肆虐神州大地，长达四个月的寒假让大二下的我无所适从。线上进行的课程尤其适合摆烂，那个学期的早课除了节节点名的模电之外皆在睡梦中度过（虽然几门课程成绩都还可以，但还是希望学弟学妹们不要效仿并引以为戒）。大二上全部课程出分后，位于保研边缘的成绩与并不是那么愉快的学习经历让我开始认真思考自己与专业的匹配度与可能的出路，所幸大学生活从来都不是串行总线，至今我仍庆幸那年的中国大学生物理学术竞赛（CUPT）让我看到了诸多可能。始于大一下的大学物理研讨课让我接触并感受到了主修专业外其它学科的研究方法，同时也在研讨课队友的鼓励下参与了2020年CUPT的校赛选拔。从4月份开始最终获得校赛第二，到暑假期间带队获得省赛与地区赛特等奖，再到最终被选拔进学校的国赛队员，几个月的实验与展示带给了我极大的自信心，也将我拉出了学期初摆烂的泥淖，找回了些许大一时的感觉。坦白讲，CUPT不是一个特别硬核的竞赛（当然大学期间大多数竞赛皆是如此），其辩论形式的赛制有时也显得与基础学科的严谨格格不入。但其确实锻炼了我从理论研究到实验操作再到展示与表达各方面的能力，也初步让我萌生了跳出原有专业窠臼，寻找更加适合自己道路的想法。那年十月我们拿下了全国亚军，追平了交大自参加此竞赛以来的最好成绩，也让我获得了足以保研的竞赛加分，可以在内卷的洪流中稍作喘息。那些和队友们共同奋斗的时光，与建立起的深厚友谊，也和比赛的奖杯一起，封存成了那段时间最为美好的回忆。</p>
+<h3 id="5"><a href="#5" class="headerlink" title="5"></a>5</h3><p>有了竞赛加分的保底，没有了太多保研的压力，大三学年，我一边稳住自己的学业成绩，一边开始探索更多的可能。学年伊始我加入了西安交通大学与中国建设银行联合开办的“建行金融科技菁英班”，以辅修形式开展金融科技相关内容的学习，这同样是我大学期间一个重要的转折点。大三上是自动化专业课程压力最大的时间段，也是菁英班开课的第一学期，一周六天半的课程安排既带来了非同寻常的学习压力，也带来了快速的成长。纵观整个建行菁英班的课程设置，其在经济学与金融知识上的教学为我们带来的收获倒是其次，更为重要的是其搭建了一个平台，汇集了来自全校各个理工科专业的学子，来自学院与来自企业的导师，在课程教学、实习及科创计划的过程中极大地开阔了我们的眼界，也让我们意识到了更多的可能性。2020年12月，为了完成课程大作业，我与同班同学组队参与了第八届BDCT竞赛，将所学知识应用于了“企业违法集资风险预测”赛题当中，这是一个金融、法律与计算机交叉的赛题，也正是在参与此次竞赛的过程中，我第一次感受到了交叉方向与学科知识迁移应用的魅力，也直接促使我在大三下学期的保研季将交叉学科作为了自己的主要申请方向。每个人都有适合他的道路，专业应当是知识积累的媒介而非局限我们的桎梏，我们的选择有无限可能。</p>
+<h1 id="保研之路"><a href="#保研之路" class="headerlink" title="保研之路"></a>保研之路</h1><p><em><strong>保研季一般从大三下3月份正式拉开序幕，经管法类项目大多集中于3<del>5月，理工类项目大多集中于6</del>7月，少数项目会在8月份举办，众多项目无夏令营批次或夏令营项目无正式录取，在9月份正式推免时招录学生。受疫情影响，近年来大多数项目均采用线上形式举办。保研期间信息来源可参考意向院校官网，也可关注保研人、保研声等公众号相关推送。建议简历、个人陈述及获奖证书等基本材料在大三寒假时即备好中英文初稿，保研时根据不同学校要求灵活修改，以不变应万变，避免手忙脚乱。以下是对个人一些参营经历的时间线回忆：</strong></em></p>
+<h3 id="早期阶段（4-6月）："><a href="#早期阶段（4-6月）：" class="headerlink" title="早期阶段（4~6月）："></a>早期阶段（4~6月）：</h3><p>4~6月举办的夏令营通常是金融类项目的第一批次，金融相关专业/有跨保意向同学可做相应参考。优质金融项目多集中在清北复交人等校，指路北大光华/北大经院/北大汇丰/清华经管/复旦管院/复旦泛海/复旦经院/上交高金/上交安泰/人大财金等学校及院系，其大多为多批次滚动式录取，建议根据自身经历及竞争力灵活选择批次申请。近年来众多金融专硕项目设置了金融科技方向，十分欢迎有相关经历的理工科学子申请。笔者跨保想法自大三时产生，相关经历不甚丰富，于是便只申请了复交二校部分项目，以下为上交安泰与复旦管院的参营记录。</p>
+<h4 id="上交安泰："><a href="#上交安泰：" class="headerlink" title="上交安泰："></a>上交安泰：</h4><p>笔者申请项目为上交安泰金融专硕（金融科技方向），为笔者最早参与的夏令营，在5月初期即截止投递，5月下旬线上参营。金融科技方向入营近30人。夏令营形式为一轮多对一面试，偏简历面技术面，会深挖简历上其感兴趣项目细节。英文问题约2~3个，会结合个人经历，笔者被问到了转专业相关问题。此项目整体录取比例约25%，参营者全部在候补名单内，笔者该项目即为候补录取。</p>
+<h4 id="复旦管院："><a href="#复旦管院：" class="headerlink" title="复旦管院："></a>复旦管院：</h4><p>笔者申请项目为复旦管院DS&amp;BA项目，第一批次于6月初举办，入营约100+人，第一轮为线上笔试，为高数线代概率论+统计学知识，共10道大题，证明类居多，难度大于工科生所学数学难度，对数学、统计等理科专业学生较为友好。笔者在笔试阶段过后未能收到面试通知，复旦也成为笔者四校中唯一没能拿到任何项目offer的学校，略显遗憾。</p>
+<h3 id="中期阶段（7-8月）："><a href="#中期阶段（7-8月）：" class="headerlink" title="中期阶段（7~8月）："></a>中期阶段（7~8月）：</h3><p>7~8月是夏令营全面开花的阶段，绝大多数夏令营都会在此时举办。对于交大大三学生而言，最重要的事情是协调好当年度专业实习与保研尤其是保外之间的时间，因专业实习大多无法请假，故不管采取分散实习的方式也好，其余方式也罢，建议提前研究明白学院政策，咨询好学长学姐，灵活处理。笔者在七月初夏令营撞车，选择了一部分参与，以下是对参营时间线的一些记录：</p>
+<h4 id="清华计算法学："><a href="#清华计算法学：" class="headerlink" title="清华计算法学："></a>清华计算法学：</h4><p>清华计算法学每年7月初举办线上夏令营，形式为大咖讲座+分组活动+自由展示，无正式offer发放，但参营体验极佳，间接促使笔者选择其作为研究生去向，具体内容在此不多赘述，有意咨询者可私戳笔者；</p>
+<h4 id="清华工业工程："><a href="#清华工业工程：" class="headerlink" title="清华工业工程："></a>清华工业工程：</h4><p>入营人数约50人，笔者入营未参营，同样无正式offer发放，待九月初会有正式推免环节。</p>
+<h4 id="南大AI："><a href="#南大AI：" class="headerlink" title="南大AI："></a>南大AI：</h4><p>入营人数约200+人，首先有一轮机试答题，以选择题为主，内容包罗万象，从高数线代概率论到C++语言算法与机器学习等均有涉及，题量较大。笔者未通过笔试环节，其面试及录取流程可参照CSDN等网站相关经验贴。</p>
+<h4 id="人大财金："><a href="#人大财金：" class="headerlink" title="人大财金："></a>人大财金：</h4><p>笔者申请项目为人大财金金融专硕（金融科技方向），入营录取比十分良心，约50人参营，直录25人，其余人皆在候补，且学院会公布所有人候补排名。夏令营形式为30min线上多对一面试，流程为自我介绍+抽题（高数+数据结构+英语翻译）+简历面，整体氛围轻松愉快。这是笔者第一个收到正式录取通知的项目，于7.24成功上岸，在此对人大的肯定表示衷心的感谢。</p>
+<h4 id="浙大控制："><a href="#浙大控制：" class="headerlink" title="浙大控制："></a>浙大控制：</h4><p>浙大控制夏令营为分组申报，申请时即需要选择对应组别，不同小组对应不同导师，大牛导师组往往申请人数最多最卷。夏令营形式为一定时间内完成项目并组内汇报，根据导师评分分发一定比例的特优/优秀/合格等评级，前两者可免除九月推免简历筛选直接进入下一环节。但总体而言耗费时间较长，性价比不高，可根据自身情况灵活参营。</p>
+<h4 id="上财金院："><a href="#上财金院：" class="headerlink" title="上财金院："></a>上财金院：</h4><p>笔者申请项目为上财金院金融专硕（金融科技方向），上财作为龙头211高校，也有众多985高校学子申请，但总体而言鸽子较多，不同方向间竞争压力差别很大，就金融科技方向而言，入营后即有很大可能获得offer。具体面试形式为20min线上多对一简历面，整体氛围轻松愉快。</p>
+<h4 id="北大汇丰："><a href="#北大汇丰：" class="headerlink" title="北大汇丰："></a>北大汇丰：</h4><p>8月底的北大汇丰预推免为保研季笔者参与所有项目中唯一线下举办的项目，笔者也借着这个机会去深圳旅游了一番。其形式为多对一简历面，纯英文面试（因为有外国老师在场），对英语口语水平要求较高，其询问问题与其它几个金融项目大致相同，但建议参营前提前练习英语口语，流畅的表达会在面试时加分许多。</p>
+<h3 id="正式推免阶段（9月）："><a href="#正式推免阶段（9月）：" class="headerlink" title="正式推免阶段（9月）："></a>正式推免阶段（9月）：</h3><p>9月是各大高校正式推免的阶段。笔者在该阶段仅参与了清华大学法学院计算法学项目的正式推免环节并最终获得录取。对于不同层次的同学而言，该阶段规划往往相差较大。对于前期已获满意预录取的同学而言，需要按部就班依照学院政策走完对应流程。对于已经上岸但对项目不甚满意的同学而言，可在原有基础上继续争取更高层次offer；而对于前期未上岸抑或刚刚知道自己能保研的同学而言，当务之急为找到保底的研究生录取项目。同时任何同学都应关注好院校的保研流程并及时填写系统，避免因操作不当而错失保研机会的事情发生，具体细节还有很多，尚需各位自己注意。</p>
+<h1 id="结语"><a href="#结语" class="headerlink" title="结语"></a>结语</h1><p>纵观大学前三年，笔者从大一时的迷惘的前行，到大二上的低谷期，再到大二下与大三上的转折期，在不断认清自我内心的同时，对于未来道路的规划也愈发清晰。努力很重要，选择亦很重要。好的选择可以让你的努力事半功倍，而努力可以让你拥有选择任何一条你希望的道路的底气。任何事物都不应成为束缚自我的桎梏，希望诸位都能有着“独立之精神，自由之思想”，在时光的绘卷上洋洋洒洒，写下属于自己的独特人生。</p>
+
+        </div>
+        
+            <section class="post-copyright">
+                
+                
+                
+                
+                     <p class="copyright-item">
+                         <span>灯塔宗旨:</span>
+                         <span>XJTUers<br>愿你们在未来的每一步<strong>都坚实而有力量</strong></span>
+                     </p>
+                
+
+            </section>
+        
+        <section class="post-tags">
+            <div>
+                <span>标签:</span>
+                <span class="tag">
+                    
+                    
+                        <a href="/hhhh/tags/%E8%87%AA%E5%8A%A8%E5%8C%96%E5%88%86%E5%A1%94/"># 自动化分塔</a>
+                    
+                        
+                </span>
+            </div>
+            <div>
+                <a href="javascript:window.history.back();">返回</a>
+                <span>· </span>
+                <a href="/hhhh/">主页</a>
+            </div>
+        </section>
+
+        <section class="post-nav">
+            
+                <a class="prev" rel="prev" href="/hhhh/2022/03/28/%E4%BF%9D%E7%A0%9457/">保研NO.57|从西交金禾到上交安泰</a>
+            
+            
+            <a class="next" rel="next" href="/hhhh/2022/03/14/%E4%BF%9D%E7%A0%9455/">保研 No.55 | 从西交信息到上交信息</a>
+            
+        </section>
+         <br>
+        
+            <section id="comments" class="comments">
+              <style>
+                  .comments{ margin-top: 30px;}
+                  .v .vlist .vcard .vcontent {padding-top: 0;}
+                  .vcontent p { color:grey; margin-bottom: 10px;}
+                  .v * {line-height: normal;}
+                  .v .vwrap  {border-radius: 0px; padding: 10px;}
+                  .v .vbtn {border-radius: 0px;}
+                  .v code, .v pre {border-radius: 0px;}
+                  .v .vlist .vcard .vhead .vsys {border-radius: 1px; padding: 2px;}
+                  .v .vlist .vcard .vhead .vnick {color: #2d96bd;}
+                  .v .vlist .vcard .vh .vmeta .vat{color: #c7254e;}
+                  .v .vlist .vcard {padding-top: 0;}
+                  .v .vlist .vcard .vimg { width: 2.5em; height: 2.5em; }
+                  .v .vlist .vcard .vquote .vimg { width: 2.5em; height: 2.5em; }
+              </style>
+              <div class="valine_comment"></div>
+<!--载入js，在</body>之前插入即可-->
+<!--Leancloud 操作库:-->
+<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<!--Valine 的核心代码库-->
+<script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+<script>
+    new Valine({
+        el: '.valine_comment',
+        app_id: 'OlOZQ7cjJE81tquJMz4o7DVt-gzGzoHsz',
+        app_key: 'n3MoqzwZo9E0zkeB4hjq2Rfa',
+        placeholder: '欢迎交流讨论...',
+        notify: 'false',
+        verify: 'false',
+        avatar: 'monsterid',
+        visitor: ''
+    });
+</script>
+            </section>
+        
+    </article>
+</div>
+
+            </div>
+            <footer id="footer" class="footer">
+    <div class="copyright">
+        <span>© 腾飞小灯塔 | Powered by <a href="https://hexo.io" target="_blank">Hexo</a> & <a href="https://github.com/Siricee/hexo-theme-Chic" target="_blank">Chic</a></span>
+    </div>
+</footer>
+
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta name="author" content="腾飞小灯塔">
+
+
+
+    <meta name="description" content="DO one thing well">
+
+
+
+<title>保研 No.55 | 从西交信息到上交信息 | 腾飞小灯塔</title>
+
+
+
+    <link rel="icon" href="/hhhh/favicon.ico">
+
+
+
+
+    <!-- stylesheets list from _config.yml -->
+    
+    <link rel="stylesheet" href="/hhhh/css/style.css">
+    
+
+
+
+    <!-- scripts list from _config.yml -->
+    
+    <script src="/hhhh/js/script.js"></script>
+    
+    <script src="/hhhh/js/tocbot.min.js"></script>
+    
+
+
+
+    
+    
+        
+    
+
+
+<meta name="generator" content="Hexo 5.4.2"></head>
+
+<body>
+    <script>
+        // this function is used to check current theme before page loaded.
+        (() => {
+            const currentTheme = window.localStorage && window.localStorage.getItem('theme') || '';
+            const isDark = currentTheme === 'dark';
+            const pagebody = document.getElementsByTagName('body')[0]
+            if (isDark) {
+                pagebody.classList.add('dark-theme');
+                // mobile
+                document.getElementById("mobile-toggle-theme").innerText = "· Dark"
+            } else {
+                pagebody.classList.remove('dark-theme');
+                // mobile
+                document.getElementById("mobile-toggle-theme").innerText = "· Light"
+            }
+        })();
+    </script>
+
+    <div class="wrapper">
+        <header>
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-header header-logo"><a href="/hhhh/">腾飞小灯塔</a></div>
+            <div class="menu navbar-right">
+                
+                    <a class="menu-item" href="/hhhh/archives">文章</a>
+                
+                    <a class="menu-item" href="/hhhh/category">分类</a>
+                
+                    <a class="menu-item" href="/hhhh/tag">标签</a>
+                
+                    <a class="menu-item" href="/hhhh/about">关于</a>
+                
+                <input id="switch_default" type="checkbox" class="switch_default">
+                <label for="switch_default" class="toggleBtn"></label>
+            </div>
+        </div>
+    </nav>
+
+    
+    <nav class="navbar-mobile" id="nav-mobile">
+        <div class="container">
+            <div class="navbar-header">
+                <div>
+                    <a href="/hhhh/">腾飞小灯塔</a><a id="mobile-toggle-theme">·&nbsp;Light</a>
+                </div>
+                <div class="menu-toggle" onclick="mobileBtn()">&#9776; Menu</div>
+            </div>
+            <div class="menu" id="mobile-menu">
+                
+                    <a class="menu-item" href="/hhhh/archives">文章</a>
+                
+                    <a class="menu-item" href="/hhhh/category">分类</a>
+                
+                    <a class="menu-item" href="/hhhh/tag">标签</a>
+                
+                    <a class="menu-item" href="/hhhh/about">关于</a>
+                
+            </div>
+        </div>
+    </nav>
+
+</header>
+<script>
+    var mobileBtn = function f() {
+        var toggleMenu = document.getElementsByClassName("menu-toggle")[0];
+        var mobileMenu = document.getElementById("mobile-menu");
+        if(toggleMenu.classList.contains("active")){
+           toggleMenu.classList.remove("active")
+            mobileMenu.classList.remove("active")
+        }else{
+            toggleMenu.classList.add("active")
+            mobileMenu.classList.add("active")
+        }
+    }
+</script>
+            <div class="main">
+                <div class="container">
+    
+    
+        <div class="post-toc">
+    <div class="tocbot-list">
+    </div>
+    <div class="tocbot-list-menu">
+        <a class="tocbot-toc-expand" onclick="expand_toc()">Expand all</a>
+        <a onclick="go_top()">Back to top</a>
+        <a onclick="go_bottom()">Go to bottom</a>
+    </div>
+</div>
+
+<script>
+    var tocbot_timer;
+    var DEPTH_MAX = 6; // 为 6 时展开所有
+    var tocbot_default_config = {
+        tocSelector: '.tocbot-list',
+        contentSelector: '.post-content',
+        headingSelector: 'h1, h2, h3, h4, h5',
+        orderedList: false,
+        scrollSmooth: true,
+        onClick: extend_click,
+    };
+
+    function extend_click() {
+        clearTimeout(tocbot_timer);
+        tocbot_timer = setTimeout(function() {
+            tocbot.refresh(obj_merge(tocbot_default_config, {
+                hasInnerContainers: true
+            }));
+        }, 420); // 这个值是由 tocbot 源码里定义的 scrollSmoothDuration 得来的
+    }
+
+    document.ready(function() {
+        tocbot.init(obj_merge(tocbot_default_config, {
+            collapseDepth: 1
+        }));
+    });
+
+    function expand_toc() {
+        var b = document.querySelector('.tocbot-toc-expand');
+        var expanded = b.getAttribute('data-expanded');
+        expanded ? b.removeAttribute('data-expanded') : b.setAttribute('data-expanded', true);
+        tocbot.refresh(obj_merge(tocbot_default_config, {
+            collapseDepth: expanded ? 1 : DEPTH_MAX
+        }));
+        b.innerText = expanded ? 'Expand all' : 'Collapse all';
+    }
+
+    function go_top() {
+        window.scrollTo(0, 0);
+    }
+
+    function go_bottom() {
+        window.scrollTo(0, document.body.scrollHeight);
+    }
+
+    function obj_merge(target, source) {
+        for (var item in source) {
+            if (source.hasOwnProperty(item)) {
+                target[item] = source[item];
+            }
+        }
+        return target;
+    }
+</script>
+    
+
+    
+    <article class="post-wrap">
+        <header class="post-header">
+            <h1 class="post-title">保研 No.55 | 从西交信息到上交信息</h1>
+            
+                <div class="post-meta">
+                    
+
+                    
+                    
+                        <span class="post-category">
+                    分类:
+                            
+                                <a href="/hhhh/categories/%E4%BF%9D%E7%A0%94/">保研</a>
+                            
+                        </span>
+                    
+
+                     
+                    <span id="/hhhh/2022/03/14/%E4%BF%9D%E7%A0%9455/" class="leancloud-visitors view" data-flag-title="保研 No.55 | 从西交信息到上交信息">
+                        <text class="post-meta-item-text">
+                            <!--阅读数:-->
+                            <i class="iconfont icon-view"></i>
+                        </text>
+
+                        <text class="leancloud-visitors-count">   </text>
+                      </span>
+                    
+                </div>
+            
+        </header>
+
+        <div class="post-content">
+            <p>欢迎大家了解灯塔，同时也<em><strong>诚邀各位朋友投稿</strong></em>，为大家提供更多经验与帮助。投稿以个人经验、备考过程为主，若受院校和项目要求限制，可弱化复试及具体考核内容等；若关注个人隐私问题，可对分享稿件进行匿名化处理。具体投稿规则见 <strong><a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s/ZTUy56GrBbcmk7wQmwudPg">征稿说明。</a></strong></p>
+<p>禁止一切商用，不提供原作者其他联系方式。</p>
+<hr>
+<br>
+
+<h1 id="个人信息"><a href="#个人信息" class="headerlink" title="个人信息"></a>个人信息</h1><p><em><strong>▪ 姓名：</strong></em> 赵翔宇</p>
+<p><em><strong>▪ 学院：</strong></em> 电信学部信息工程学院</p>
+<p><em><strong>▪ 专业：</strong></em> 信息工程</p>
+<p>大二大三学年综排均为1/166，竞赛数模省一、电赛省三、国家级大创、数段科研经历，华为西研所、中兴西研所实习，任职班长、朋辈辅导员。</p>
+<p><em><strong>▪ 荣誉：</strong></em>   国家奖学金、优秀班干部、优秀学生干部、优秀学生、优秀共青团员等等，以及赛艇奖项若干。</p>
+<p><em><strong>▪ 夏令营申请：</strong></em> 清华深研院电子信息（硕）、上交信息与通信工程（博）、中科院6系信息通信工程（硕博）、北大信科（硕）、浙大信息工程（博）、复旦电子系（硕）、南大电子系（硕）</p>
+<p><em><strong>▪ 入营：</strong></em> 上交信息与通信工程（博）、中科院6系信息通信工程（硕博）、浙大信息工程（博）、复旦电子系（硕）、南大电子系（硕）</p>
+<p><em><strong>▪ 去向：</strong></em> 上交信息与通信工程直博</p>
+<h1 id="写在前面"><a href="#写在前面" class="headerlink" title="写在前面"></a>写在前面</h1><p>保外的过程听学长学姐描述起来简单，自己实操的时候才知道有诸多不易。</p>
+<p>21年延续了20年疫情的影响，由于疫情线上面试的原因，许多学生都做海王，学校、老师和学生之间都在反复博弈，导致过程一波三折。越在这种情况下，越要对自己进行精准定位，选择好学校和方向。</p>
+<h1 id="夏令营之前的准备工作"><a href="#夏令营之前的准备工作" class="headerlink" title="夏令营之前的准备工作"></a>夏令营之前的准备工作</h1><h4 id="我个人保研准备工作的开始应该是在三四月份，"><a href="#我个人保研准备工作的开始应该是在三四月份，" class="headerlink" title="我个人保研准备工作的开始应该是在三四月份，"></a>我个人保研准备工作的开始应该是在三四月份，</h4><p>那个时候已经通过学长学姐了解到了很多保研的流程以及需要准备的东西。</p>
+<p>刚需就是个人简历、个人简介（两部分，个人陈述+中英文自我介绍，个人陈述报名用，中英文自我介绍面试用）、成绩单、四六级成绩单、获奖证书（全部彩色扫描成pdf方便整理发送以及打印）。剩余的部分根据各学校院系而定，比如说成绩排名认定，推荐信（文字可以提前写好，每个学校如果需要推荐信的话都会给模板，到时候直接打印给老师签字），有的学校还会要求做面试PPT。</p>
+<h4 id="三四月份的时候，"><a href="#三四月份的时候，" class="headerlink" title="三四月份的时候，"></a>三四月份的时候，</h4><p>我开始联系导师。对于工科类想要直博的学生，选泽导师/方向是极其重要的。从各个学校的学院官网上搜索老师，这个过程其实比较麻烦，毕竟每个学校学院的老师都很多，大家可以从导师评价网上筛选筛选。在这里尤其是想要去清北电子信息类的学弟学妹，一定要提早！21年因为国外形势混乱的原因，清北本校好多学生不出国了，生源一片大好，校内好老师很早就抢光了（好多老师说三月份名额就都满了），建议尽早联系，还有清华电子系是没有任何夏令营之类的提前招生工作的，只能等待九推。联系导师时的语言也要注意，可以自行去知乎搜索邮件怎么写，还有重要的一点就是不要同时联系一个院系当中一个研究所/方向的多位老师，因为老师之间是真的会互相讨论的，同时联系多个可能会事倍功半。</p>
+<h4 id="3-5月份时候联系老师其实很多老师都不回，"><a href="#3-5月份时候联系老师其实很多老师都不回，" class="headerlink" title="3-5月份时候联系老师其实很多老师都不回，"></a>3-5月份时候联系老师其实很多老师都不回，</h4><p>比如说上交就是夏令营开营之后老师才会开始收学生，那个时候联系最佳。这个时候大家不要心急，先忙完大三下学期的考试，因为你的成绩单上还是会印你大三下考完试的成绩的，因此大三的课也是非常重要的。当时有几个清北的老师回复了，有几个也说没名额了（好的老师有口皆碑，基本上很难抢，需要尽早），也有几个老师给出了回复，但是当时时间太早，也没能继续确定，有些可惜。</p>
+<h4 id="后面的话五六月份，"><a href="#后面的话五六月份，" class="headerlink" title="后面的话五六月份，"></a>后面的话五六月份，</h4><p>各个学校院系的夏令营通知也就陆续发出来了，这里可以关注几个保研公众号（具体名字我就不细说了，网上都有，微信一搜保研就能搜到），里面都会每日更新夏令营通知，建议多关注几个，因为有些公众号会漏掉一些。不同学校的要求都不一样，要提交的文件种类、格式都不同，建议分别建立文件夹整理收纳，有些学校还会要求寄送材料，这个就比较麻烦，还会指定用EMS寄送。这个时间段刚好和很多考试时间冲突，就只能边复习边做，同时不同专业的也该复习各自的专业课了，面试的时候会用到。</p>
+<h4 id="21年六月份考完试，"><a href="#21年六月份考完试，" class="headerlink" title="21年六月份考完试，"></a>21年六月份考完试，</h4><p>夏令营也就陆续出通知开营了。基本上都是分布在整个七月份，都是线上，除了上交是在线下面试（无任何补助，不提供餐饮住行，来面个试就让你走），这个时候大家就要合理安排时间，觉得不想去的或者冲突了不能去的要尽快通知主办方，不要确认了又不去参加。</p>
+<h1 id="夏令营"><a href="#夏令营" class="headerlink" title="夏令营"></a>夏令营</h1><p>七月份就是一整个月都在参加各种夏令营，21年除了上交是线下以外全部都是线上，并且前面的几所学校时间都完美岔开。线上有个好处就是基本上只需要参加面试那半个小时，极大的节省了来回通勤的各种时间，对于学生来说可以说是非常方便。</p>
+<p>面试的主要问题基本上是自我介绍（中英文），对于某些课程知识的提问（信息问信息论的很多），对自己科研经历以及获奖的阐述，再加上对学校的印象等等问题，建议提前准备。浙大和复旦的面试就比较套路，并且需要制作PPT，感觉比较格式化；而上交和中科大的面试就没有什么固定章程，老师想到什么就问什么，比较随机一些，不同学校不同院系之间的风格都差得很大，甚至不同面试老师之间的风格都各不相同，因此前期准备真的非常重要，学弟学妹都应该仔细梳理自己做过的项目、学过的重要学科知识。</p>
+<p>浙大、中科大和上交都是面试通过之后就自行联系老师，只有联系到老师确认之后才会算真正上岸，因此在面试通过之后联系老师才是真正需要费心思的。老师和学生互相博弈，既有学生鸽老师的情况也有老师鸽学生的情况。根据我自身的经历来看，既不要在一棵树上吊死，也不要同时和好多老师承诺。并且在这期间和老师的沟通是很重要的，如果觉得一个老师很对胃口并且对方也对你表示有兴趣的话一定要把握住！这种形势下大家都是海王，如果不把握住的话说不定就有别人抢占位置，一定要及时和老师沟通，避免出现老师以为你不是很想来的这种情况。</p>
+<p>在上交和中科大分别联系了几个老师，中间过程多有波折，一度丧失了很多机会，但是最后还是柳暗花明。在上交一个老师那里拿到直博名额并确认以后，后期又有很多老师，包括上交或者中科大的老师有了新回复，但是由于当时已经身心俱疲，并且已经和这个老师确认，在道德层面也不能反悔，就没有再做决定，全部拒绝了。至此，我的保研之路正式结束。</p>
+<h1 id="结语"><a href="#结语" class="headerlink" title="结语"></a>结语</h1><p>回顾从四月到八月的保研之路，大起大落，中间跌跌撞撞，由于没有正确评估自身而多次碰壁、导致心态崩盘的事情比比皆是。其实痛苦正是在于想要得到的太多，总是在想着拿到一个最优解，但无论如何，现实生活不是优化算法；要努力争取，但有的时候，得到的其实就是最好的。希望大家也都能放平心态。</p>
+<p><em><strong>祝学弟学妹都能拿到想要的offer！</strong></em></p>
+
+        </div>
+        
+            <section class="post-copyright">
+                
+                
+                
+                
+                     <p class="copyright-item">
+                         <span>灯塔宗旨:</span>
+                         <span>XJTUers<br>愿你们在未来的每一步<strong>都坚实而有力量</strong></span>
+                     </p>
+                
+
+            </section>
+        
+        <section class="post-tags">
+            <div>
+                <span>标签:</span>
+                <span class="tag">
+                    
+                    
+                        <a href="/hhhh/tags/%E7%94%B5%E4%BF%A1%E5%88%86%E5%A1%94/"># 电信分塔</a>
+                    
+                        
+                </span>
+            </div>
+            <div>
+                <a href="javascript:window.history.back();">返回</a>
+                <span>· </span>
+                <a href="/hhhh/">主页</a>
+            </div>
+        </section>
+
+        <section class="post-nav">
+            
+                <a class="prev" rel="prev" href="/hhhh/2022/03/21/%E4%BF%9D%E7%A0%9456/">保研NO.56|从西交自动化到清华法硕</a>
+            
+            
+            <a class="next" rel="next" href="/hhhh/2022/03/07/%E4%BF%9D%E7%A0%9454/">保研NO.54|从西交基础到协和基础</a>
+            
+        </section>
+         <br>
+        
+            <section id="comments" class="comments">
+              <style>
+                  .comments{ margin-top: 30px;}
+                  .v .vlist .vcard .vcontent {padding-top: 0;}
+                  .vcontent p { color:grey; margin-bottom: 10px;}
+                  .v * {line-height: normal;}
+                  .v .vwrap  {border-radius: 0px; padding: 10px;}
+                  .v .vbtn {border-radius: 0px;}
+                  .v code, .v pre {border-radius: 0px;}
+                  .v .vlist .vcard .vhead .vsys {border-radius: 1px; padding: 2px;}
+                  .v .vlist .vcard .vhead .vnick {color: #2d96bd;}
+                  .v .vlist .vcard .vh .vmeta .vat{color: #c7254e;}
+                  .v .vlist .vcard {padding-top: 0;}
+                  .v .vlist .vcard .vimg { width: 2.5em; height: 2.5em; }
+                  .v .vlist .vcard .vquote .vimg { width: 2.5em; height: 2.5em; }
+              </style>
+              <div class="valine_comment"></div>
+<!--载入js，在</body>之前插入即可-->
+<!--Leancloud 操作库:-->
+<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<!--Valine 的核心代码库-->
+<script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+<script>
+    new Valine({
+        el: '.valine_comment',
+        app_id: 'OlOZQ7cjJE81tquJMz4o7DVt-gzGzoHsz',
+        app_key: 'n3MoqzwZo9E0zkeB4hjq2Rfa',
+        placeholder: '欢迎交流讨论...',
+        notify: 'false',
+        verify: 'false',
+        avatar: 'monsterid',
+        visitor: ''
+    });
+</script>
+            </section>
+        
+    </article>
+</div>
+
+            </div>
+            <footer id="footer" class="footer">
+    <div class="copyright">
+        <span>© 腾飞小灯塔 | Powered by <a href="https://hexo.io" target="_blank">Hexo</a> & <a href="https://github.com/Siricee/hexo-theme-Chic" target="_blank">Chic</a></span>
+    </div>
+</footer>
+
+    </div>
+</body>
+
+</html>

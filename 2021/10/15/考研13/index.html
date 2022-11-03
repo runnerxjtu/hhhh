@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta name="author" content="腾飞小灯塔">
+
+
+
+    <meta name="description" content="DO one thing well">
+
+
+
+<title>考研NO.13|从西交计算机到国防科大计算机 | 腾飞小灯塔</title>
+
+
+
+    <link rel="icon" href="/hhhh/favicon.ico">
+
+
+
+
+    <!-- stylesheets list from _config.yml -->
+    
+    <link rel="stylesheet" href="/hhhh/css/style.css">
+    
+
+
+
+    <!-- scripts list from _config.yml -->
+    
+    <script src="/hhhh/js/script.js"></script>
+    
+    <script src="/hhhh/js/tocbot.min.js"></script>
+    
+
+
+
+    
+    
+        
+    
+
+
+<meta name="generator" content="Hexo 5.4.2"></head>
+
+<body>
+    <script>
+        // this function is used to check current theme before page loaded.
+        (() => {
+            const currentTheme = window.localStorage && window.localStorage.getItem('theme') || '';
+            const isDark = currentTheme === 'dark';
+            const pagebody = document.getElementsByTagName('body')[0]
+            if (isDark) {
+                pagebody.classList.add('dark-theme');
+                // mobile
+                document.getElementById("mobile-toggle-theme").innerText = "· Dark"
+            } else {
+                pagebody.classList.remove('dark-theme');
+                // mobile
+                document.getElementById("mobile-toggle-theme").innerText = "· Light"
+            }
+        })();
+    </script>
+
+    <div class="wrapper">
+        <header>
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-header header-logo"><a href="/hhhh/">腾飞小灯塔</a></div>
+            <div class="menu navbar-right">
+                
+                    <a class="menu-item" href="/hhhh/archives">文章</a>
+                
+                    <a class="menu-item" href="/hhhh/category">分类</a>
+                
+                    <a class="menu-item" href="/hhhh/tag">标签</a>
+                
+                    <a class="menu-item" href="/hhhh/about">关于</a>
+                
+                <input id="switch_default" type="checkbox" class="switch_default">
+                <label for="switch_default" class="toggleBtn"></label>
+            </div>
+        </div>
+    </nav>
+
+    
+    <nav class="navbar-mobile" id="nav-mobile">
+        <div class="container">
+            <div class="navbar-header">
+                <div>
+                    <a href="/hhhh/">腾飞小灯塔</a><a id="mobile-toggle-theme">·&nbsp;Light</a>
+                </div>
+                <div class="menu-toggle" onclick="mobileBtn()">&#9776; Menu</div>
+            </div>
+            <div class="menu" id="mobile-menu">
+                
+                    <a class="menu-item" href="/hhhh/archives">文章</a>
+                
+                    <a class="menu-item" href="/hhhh/category">分类</a>
+                
+                    <a class="menu-item" href="/hhhh/tag">标签</a>
+                
+                    <a class="menu-item" href="/hhhh/about">关于</a>
+                
+            </div>
+        </div>
+    </nav>
+
+</header>
+<script>
+    var mobileBtn = function f() {
+        var toggleMenu = document.getElementsByClassName("menu-toggle")[0];
+        var mobileMenu = document.getElementById("mobile-menu");
+        if(toggleMenu.classList.contains("active")){
+           toggleMenu.classList.remove("active")
+            mobileMenu.classList.remove("active")
+        }else{
+            toggleMenu.classList.add("active")
+            mobileMenu.classList.add("active")
+        }
+    }
+</script>
+            <div class="main">
+                <div class="container">
+    
+    
+        <div class="post-toc">
+    <div class="tocbot-list">
+    </div>
+    <div class="tocbot-list-menu">
+        <a class="tocbot-toc-expand" onclick="expand_toc()">Expand all</a>
+        <a onclick="go_top()">Back to top</a>
+        <a onclick="go_bottom()">Go to bottom</a>
+    </div>
+</div>
+
+<script>
+    var tocbot_timer;
+    var DEPTH_MAX = 6; // 为 6 时展开所有
+    var tocbot_default_config = {
+        tocSelector: '.tocbot-list',
+        contentSelector: '.post-content',
+        headingSelector: 'h1, h2, h3, h4, h5',
+        orderedList: false,
+        scrollSmooth: true,
+        onClick: extend_click,
+    };
+
+    function extend_click() {
+        clearTimeout(tocbot_timer);
+        tocbot_timer = setTimeout(function() {
+            tocbot.refresh(obj_merge(tocbot_default_config, {
+                hasInnerContainers: true
+            }));
+        }, 420); // 这个值是由 tocbot 源码里定义的 scrollSmoothDuration 得来的
+    }
+
+    document.ready(function() {
+        tocbot.init(obj_merge(tocbot_default_config, {
+            collapseDepth: 1
+        }));
+    });
+
+    function expand_toc() {
+        var b = document.querySelector('.tocbot-toc-expand');
+        var expanded = b.getAttribute('data-expanded');
+        expanded ? b.removeAttribute('data-expanded') : b.setAttribute('data-expanded', true);
+        tocbot.refresh(obj_merge(tocbot_default_config, {
+            collapseDepth: expanded ? 1 : DEPTH_MAX
+        }));
+        b.innerText = expanded ? 'Expand all' : 'Collapse all';
+    }
+
+    function go_top() {
+        window.scrollTo(0, 0);
+    }
+
+    function go_bottom() {
+        window.scrollTo(0, document.body.scrollHeight);
+    }
+
+    function obj_merge(target, source) {
+        for (var item in source) {
+            if (source.hasOwnProperty(item)) {
+                target[item] = source[item];
+            }
+        }
+        return target;
+    }
+</script>
+    
+
+    
+    <article class="post-wrap">
+        <header class="post-header">
+            <h1 class="post-title">考研NO.13|从西交计算机到国防科大计算机</h1>
+            
+                <div class="post-meta">
+                    
+
+                    
+                    
+                        <span class="post-category">
+                    分类:
+                            
+                                <a href="/hhhh/categories/%E8%80%83%E7%A0%94/">考研</a>
+                            
+                        </span>
+                    
+
+                     
+                    <span id="/hhhh/2021/10/15/%E8%80%83%E7%A0%9413/" class="leancloud-visitors view" data-flag-title="考研NO.13|从西交计算机到国防科大计算机">
+                        <text class="post-meta-item-text">
+                            <!--阅读数:-->
+                            <i class="iconfont icon-view"></i>
+                        </text>
+
+                        <text class="leancloud-visitors-count">   </text>
+                      </span>
+                    
+                </div>
+            
+        </header>
+
+        <div class="post-content">
+            <p>欢迎大家了解灯塔，同时也<em><strong>诚邀各位朋友投稿</strong></em>，为大家提供更多经验与帮助。投稿以个人经验、备考过程为主，若受院校和项目要求限制，可弱化复试及具体考核内容等；若关注个人隐私问题，可对分享稿件进行匿名化处理。具体投稿规则见 <strong><a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s/ZTUy56GrBbcmk7wQmwudPg">征稿说明。</a></strong></p>
+<p>禁止一切商用，不提供原作者其他联系方式。</p>
+<hr>
+<br>
+
+<h1 id="基本情况"><a href="#基本情况" class="headerlink" title="基本情况"></a>基本情况</h1><p><em><strong>姓名：</strong></em> 王瑞琦</p>
+<p><em><strong>班级：</strong></em> 计算机76班</p>
+<p><em><strong>最终去向：</strong></em> 国防科技大学计算机科学与技术（无军籍学术硕士）</p>
+<p><em><strong>语言成绩：</strong></em> CET-6（考研前449分，考研后593分）</p>
+<p><em><strong>竞赛和科研经历：</strong></em> 全国航空航天设计挑战赛全国二等奖、国家级大创、中科院“空间达芬奇计划”星上视觉导航（后因考研半途而废）</p>
+<p><em><strong>初试成绩：</strong></em> 总分399分（政治79，英语一80，数学一113，专业课127）</p>
+<p><em><strong>初试排名：</strong></em> 2/229</p>
+<p><em><strong>最终排名：</strong></em> 1/229</p>
+<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>大二和大三上学期，我还在社团里参加飞行器竞赛，成绩滑坡厉害，单靠分数已无保研希望。大三结束后，我得知自己的国家奖不能加分，就踏上了考研的路。我从8月17日开始备考，10月底才确定报考国防科大，准备时间短，没有特别拿得出手的竞赛和科研经历。但我还是成为了今年学硕仅仅录取的3个幸运儿之一，最后还成为了计算机院院长的学生。</p>
+<p>因为我入校后才确定课题组，所以现在才完成这篇帖子，似乎晚了点，但也能对同学有所启发。接下来我会详细介绍我的初试和复试备考过程、学习经验和教训、方向和导师选择等等我认为有价值的东西，并且在专业课着重讲408统考的心得，同时对比部分自命题的特点，我已经倾囊相助了，希望帮到大家。</p>
+<h1 id="择校"><a href="#择校" class="headerlink" title="择校"></a>择校</h1><p>备考伊始，我就只想考计算机A+的几所院校。我也有名校情节，想考北大、浙大。但后来我发现这些名校的课题组之间的差距还挺大的，而好的导师基本没有什么招生名额了，我想有更多导师选择权，后来也决定往底层的计算机系统方向走，同时我还是一个军迷，种种原因促使我10月底报考国防科大，复习的专业课也从408改成了自命题。</p>
+<p>大家都知道今年计算机考研相当难了，雪上加霜的是，10月末国防科大公布无军籍学术硕士只招3人，专硕招55人。就在这最后两天，大量同学将志愿改成了专硕。同样的考试科目下，最后初试上400分的有20多人，最高分429，但是只有一个400+的报了学硕，考研就是这样，它虽然不需要博弈论的知识，但还是要点选择的艺术和勇气的。我不想让自己以后后悔，而且连我自己都很害怕报学硕，别人肯定更害怕咯，所以决定克服恐惧，报了学硕，备考期间也顶住了相当大的心理压力。</p>
+<h1 id="初试篇"><a href="#初试篇" class="headerlink" title="初试篇"></a>初试篇</h1><h3 id="政治"><a href="#政治" class="headerlink" title="政治"></a>政治</h3><p>我政治选择题46分，主观题33分，11月8日开始复习，资料有徐涛的视频（强化班）+《核心考案》+肖四肖八。这门课没什么好说的，就是来走个过场的。后期我和研友对比发现，政治刷太多题还不如好好把徐涛的课和《核心考案》认真过一遍，心中有知识框架。这也保证了我的选择题正确率一直比较高。肖四肖八必买，考研政治会有好几道分析题和选择题提前印在这两本书上。考前几天，我跟着up主空卡的视频把肖四大题背了下来。我觉得大题我已经答得很好了，但还是扣了好多分。</p>
+<h3 id="英语"><a href="#英语" class="headerlink" title="英语"></a>英语</h3><p>英语一我的完形错了2个，阅读错5个，翻译和作文扣了9分。我10月13日开始背英语单词，使用的资料有“不背单词”App、英语一真题（其他卷子可以扔掉）、张剑作文黄皮书。我六级经历了大三时的449分，去年9月份的514分，以及今年的593分（并且阅读和写译基本没有什么提升空间了）。考研是提升英语水平的绝佳机会。</p>
+<p>考研英语最重要的就是背单词和多阅读。阅读只用看历年的真题，并且多做几遍。背单词的原则就是：根据遗忘曲线重复背。因为单词不复习，等于白背诵！如果真能过目不忘，那么艾宾浩斯这家伙一辈子的研究不都白搞了嘛。可以跟着很多App来背诵和复习，背的时候顺带记下一些漂亮的词和例句，用在作文里。词根词缀记忆方法则可以进一步提高记忆的效率。我背单词已经很晚了，7周的时间里背完了6500个单词，高峰时期每天新背150个单词，复习300个，如果没有多多复习，我不可能记住这些单词。<br>考试有一些题材比较常见，比如法律、金融、教育、科学研究、美帝国主义的政治制度，一些单词几乎年年出现，比如constitution、inflation、democratic…都是老面孔，长难句也不慌，练习一下拆解句子即可。作文和翻译则靠平时积累，不要考场上才第一次写，每次练习都把自己积累的句子用上，多记一些万能句子如“为实现中华民族的伟大复兴而努力”：Make contributions to Chinese great rejuvenation，这句子几乎在每篇作文结尾都用得到。考场上的高级词汇、漂亮句子就是这么来的。</p>
+<p>我建议平时完整做完试卷之后再细读文章，这样才知道每一部分自己要花多少时间，考场上才能把握好节奏。21年的英语一号称近10年最难，其实是难在阅读上，完形最简单，很多同学的习惯是先写作文再写阅读，最后写完型，于是卡在4篇阅读上，乱了节奏，后面没时间做其他题目。</p>
+<h3 id="数学"><a href="#数学" class="headerlink" title="数学"></a>数学</h3><p>我数学一113分，从第一天开始，每天上午都在看数学。我没想到自己数学会考成这样子，总结下来，有几点教训：1、题目做得少，套卷练习更不够；2、一些冷门知识点掉以轻心，假设检验第二类错误、欧拉方程我复习到了，但是都忘记了；3、考场上自乱阵脚，选择填空题难，大题简单，结果前面花了太多时间，大题没多少时间做。</p>
+<p>我用的资料有《张宇高数 18 讲》《李永乐线代》《张宇概率论》《李林4套卷》《2010-2020年真题》，我发现很多同学后期已经做了很多套卷了，这一阶段恰恰是很能够提升分数的阶段，而我做的很少。今年也考到了很多容易被忽视的考点，所以知识点一定要地毯式轰炸，多复习几轮，不要忘记。选填我错了3道，后面的大题很简单我也扣了22分，这些题平时让我做肯定十拿九稳，难的是经历前面极大的脑力消耗还要保持足够的耐性，面对很少的剩余时间和顶着好几道填空不会的心理压力去做后面的题。这是一种“极限状态下的能力缺失”，所以平时一定要注意训练。</p>
+<h3 id="专业课"><a href="#专业课" class="headerlink" title="专业课"></a>专业课</h3><p>我用的教辅书是天勤的数据结构+王道的另外几本，不管是408统考还是自命题王道书都必看，知识点和重难点往往不会相差太大。辅助的书籍有《深入理解计算机系统》（CSAPP）、《操作系用概念》（恐龙书）、《编码：隐匿在计算机软硬件背后的语言》、《算法笔记》。考研要不要看黑书？我的建议是当字典看，遇到不会的就去翻黑书，全看是肯定没必要的。</p>
+<h4 id="1、-计算机组成原理"><a href="#1、-计算机组成原理" class="headerlink" title="1、 计算机组成原理"></a>1、 计算机组成原理</h4><p>王道的“数据的表示与运算”这一章写的不好，浮点数讲了很多乱七八糟的东西，关键还没讲IEEE 754标准（每年必考），所以这部分可以直接看CSAPP上的讲解或者相关慕课，不看王道。考试并不会考Booth乘法、除法这些东西，不看也无所谓。请注意，408主要考CISC指令系统，一些自命题用的是RISC指令系统（比如国防科大考MIPS指令）。所以408很少考流水线，考了也很简单，微程序还考的更多，而国防科大总是喜欢出流水线压轴大题。</p>
+<p>我建议花个5-7天的闲暇时间，当小说一样看一看《编码》这本书，其精华是从11章的门电路到17章的自动操作，其他章节可以不看。你会学习如何从零搭建自己的计算机：用开关和继电器（或者晶体管）搭建成门电路，再构造出锁存器、触发器、振荡器、译码器、加法减法器…然后组装内存，设计自己的指令系统和对应的各种电路，组装CPU，实现自动操作。看完这里，会对计算机结构有一个十分透彻的认知，再学习计组会非常轻松。</p>
+<h4 id="2、-操作系统"><a href="#2、-操作系统" class="headerlink" title="2、 操作系统"></a>2、 操作系统</h4><p>操作系统很多概念都令人感到虚无缥缈，比如文件系统、进程、线程等等，所以不懂的地方要参考恐龙书。之所以推荐恐龙书是因为计算机系的教材就这本书，而且比《现代操作系统》容易，更精炼，文件系统部分几乎和王道一样，贴近考试。</p>
+<p>408每年的操作系统的题目套路比较固定，大题有一道是进程同步，另一道从内存管理、文件系统、磁盘管理出一道，还很喜欢和计组结合在一起考，比如段页式内存管理和cache结合：虚拟地址如何经过TLB或者页目录表和页表转换成物理地址，缺页时的操作，然后如何根据物理地址在cache中查找数据，不命中又会发生什么操作。这个过程很容易混淆，而且有相当多的考点，每年都会成为考试的重点关注对象。这一块最好看恐龙书，过程理解的越透彻越好，包括控制寄存器和页表基址寄存器指向的位置这些细节知识。文件系统和磁盘管理也要看恐龙书，因为太抽象了，直接写题目会比较吃力。另外，21年408的装系统的大题可以在恐龙书上找到答案，磁盘格式化以及操作系统启动过程书里都说的很清楚，黑书就是这样，会讲的很全面，所以有时间就多看。CSAPP的异常控制流和系统级IO（涉及文件系统）两章讲的也很好，可做参考。</p>
+<h4 id="3、-数据结构"><a href="#3、-数据结构" class="headerlink" title="3、 数据结构"></a>3、 数据结构</h4><p>我只看过天勤上的选择题和408真题，没做过其他题目。这门课不用做太多的题，最好的学习方式就是把书上算法都实现一遍。我过《算法笔记》这本书，虽然这本书是为浙大PAT考试设计的，但是数据结构和常规算法的几章（二叉树、堆、图、KMP、DFS和BFS搜索）讲的很好，学起来也会更轻松。比如你会发现Dijkstra算法和Kruskal最小生成树算法几乎一样。408的数据结构的两道大题，一道是算法设计题，可能有点难度，准备起来也比较麻烦，除了数据结构的知识，还需要掌握二分法、DFS和BFS搜索这些常规算法，思路也很灵活，复习时就当顺便准备机试和提高程序设计能力了，另一道题比较八股，简单。</p>
+<h4 id="4、-计算机网络"><a href="#4、-计算机网络" class="headerlink" title="4、 计算机网络"></a>4、 计算机网络</h4><p>网络这门课分数最少，但知识点繁琐，重点也比较多，除了死记硬背也没什么方法了。翻阅往年408的卷子会发现考试喜欢考大题里没考过的，可以据此缩小命题范围，预测一波大题。</p>
+<h1 id="心态和生活篇"><a href="#心态和生活篇" class="headerlink" title="心态和生活篇"></a>心态和生活篇</h1><p>考研让人感觉累并不是身体上的原因，毕竟身体上的累对于准备为了未来而决一死战的年轻人是不在话下的，也是容易恢复的，真正令人感到累的是心理上的变化，从一开始壮志凌云到背了又忘，时常觉得自己考不上，考试的脚步越来越近但还没复习的内容依然堆积如山。这些我都经历过，我也经过发烧，被各种事情扰乱，也会心态失控：看着身边的同学都保研了，自己却冒着极大的风险考研，越想越难受。一定要调整自己的心态，向家人和亲近的同学倾诉往往会使心情舒畅很多。长时间学习容易拖垮身体，所以每个星期要坚持3~4次运动，比如跑步、打球、游泳（别提打游戏）。也可以每隔一段时间去电影院，释放压力…</p>
+<h1 id="复试篇"><a href="#复试篇" class="headerlink" title="复试篇"></a>复试篇</h1><p>各校的复试笔试和机试差异较大，加之今年我们因为疫情又取消了这些内容，所以只讨论复试的面试。面试的内容主要是口语、专业问题和自由问答，说容易也容易，说难也难（这不废话吗？）。</p>
+<p>口语最重要的是“说”而不是“说了什么”。就算听不懂，也要张口说，语言流利通畅，这样分都低不到哪去，也不要求什么高级词汇和句式。最忌讳的就是一个劲的重复Excuse me, Can I beg your pardon？（这也是必备句式)。专业问题会问计算机的基本知识，还有一些开放性问题（比如我们学校的老师一般都会猜到10个同学里面至少有9个是要做AI的，所以准备了大量AI的问题）。回答开放性问题时，真被问到了自己不擅长的领域也别慌，自己懂多少说多少，老师也能理解学生不可能啥都很懂。</p>
+<p>自由问答环节，着重突出自己的优势和特点，就算比赛不是很知名也没关系，比如我自己的比赛，一般人会想计算机系的去参加什么飞行器比赛，我就介绍了自己的工作、在团队里当队长的收获，并介绍了飞控系统的一些底层编程模型以及如何实现自动投弹等等功能，老师也觉得很酷。对于想在复试突围的同学，在初试结束到复试的这3个月的时间，可以自己做一些项目，至少有以下几种选择：</p>
+<h4 id="1、-操作系统的设计与实现"><a href="#1、-操作系统的设计与实现" class="headerlink" title="1、 操作系统的设计与实现"></a>1、 操作系统的设计与实现</h4><p>国内外许多学校有开放的课程实验，比如MIT的xv6给了一个框架，需要完成若干模块核心功能。也可以自己完成一个几千行代码，有MBR、内核加载器、段页式内存管理、特权级变换、中断处理、打印函数、用户进程、内核线程、任务调度、互斥锁和信号量、键盘驱动、系统调用、文件系统、Shell和管道操作的小型OS。能做多少就做多少，我花了一个多月的时间做到了打印函数，3个月的时间还是能有不少工作的。《30天自制操作系统》不是很推荐，30days OS界面好看，但是简单了点，现代OS不会这么设计，强烈推荐《操作系统真象还原》，写的太细了，很适合小白。我参考的就是这本书，当然写OS要做好打持久战的准备，并且需要沉下心来，因为得到的结果往往只是黑窗口的一堆信息而已。</p>
+<h4 id="2、-自制程序设计语言"><a href="#2、-自制程序设计语言" class="headerlink" title="2、 自制程序设计语言"></a>2、 自制程序设计语言</h4><p>可以做一个编译器或者脚本语言解释器，现在很多的语言比如java和python都是基于字节码和虚拟机机制了，因此做一个字节码虚拟机也是一个不错的选择。市面上也有很多相关书籍，比如《两周自制脚本语言》是用java开发了一个名为stone的脚本语言，代码量比较少；而《自制编程语言：基于C语言》开发一个虚拟机，还实现了Class、线程对象、list、map、range、string、system等内建类，完成垃圾回收，代码量在6000行，难度比操作系统的实现要低。</p>
+<h4 id="3、-一个小型的数据库"><a href="#3、-一个小型的数据库" class="headerlink" title="3、 一个小型的数据库"></a>3、 一个小型的数据库</h4><p>实现SQL解析、B+树索引、事务ACID等，可参考SQLite。</p>
+<p>上面只列举了几个例子，做抛砖引玉之用，选择一个就够了。也有很多同学选择实现某一篇论文，或者做机器学习、深度学习的项目，这就看自己的兴趣了。当大家做的都是爬虫、网站、应用软件，你造的是这些轮子，差距就体现出来了。</p>
+<h1 id="方向和导师选择"><a href="#方向和导师选择" class="headerlink" title="方向和导师选择"></a>方向和导师选择</h1><p>计算机的研究方向有很多，光是国防科大就可以列举出如下的方向：<br>恕我直言，10个同学里大概会有9个想做应用，尤其是跨考的同学。System的门槛较高，做研究碰到的很多都是硬骨头，好处是学的东西有效期长，工作的可替代性低，现在国家的需求量也很大；而应用层则上手快，发文章容易，尤其AI（有多少问题就有多少文章，问题不够还能够自定义），比如在我面试结束时就来找我的一个图形学和视觉的牛导，他们组光是研一的几个学生里就有3个发表了CCF A类论文。但应用层波涛汹涌，更新速度太快，而且比较内卷。</p>
+<p>选择大导师还是小导师一直存在争议，小导师能提供详尽的指导，而大导师则在关键的时刻起到重要作用。两头都能占到肯定更好了。在选导师时也要全面细致的和老师多交流几次，不要拍脑袋就进了某个课题组，要能听得出老师是真的为你好，还是仅仅想把你拉进组里。</p>
+<h1 id="结语"><a href="#结语" class="headerlink" title="结语"></a>结语</h1><p>总的来说，我很庆幸自己能够上岸，遇到特别厉害的大导师和对我特别负责的小导师，我也确实凭借考研打了一场翻身仗。篇幅有限，我不能把所有的经验和心得记录下来，以上也仅仅是我的一面之词，请大家判性地接受。关于本校考研和国防科大的考研我在知乎上写过两篇回答，可以作为参考：</p>
+<p><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/275356402/answer/1881135981"></a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/321962109/answer/1867042750"></a><br>如果有问题，可以通过我的主页找到我私聊。最后祝大家成功上岸，乌拉！</p>
+
+        </div>
+        
+            <section class="post-copyright">
+                
+                
+                
+                
+                     <p class="copyright-item">
+                         <span>灯塔宗旨:</span>
+                         <span>XJTUers<br>愿你们在未来的每一步<strong>都坚实而有力量</strong></span>
+                     </p>
+                
+
+            </section>
+        
+        <section class="post-tags">
+            <div>
+                <span>标签:</span>
+                <span class="tag">
+                    
+                    
+                        <a href="/hhhh/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%88%86%E5%A1%94/"># 计算机分塔</a>
+                    
+                        
+                </span>
+            </div>
+            <div>
+                <a href="javascript:window.history.back();">返回</a>
+                <span>· </span>
+                <a href="/hhhh/">主页</a>
+            </div>
+        </section>
+
+        <section class="post-nav">
+            
+                <a class="prev" rel="prev" href="/hhhh/2022/02/21/%E6%95%B0%E6%8D%AE16/">数据No.16|22届能动C保研数据</a>
+            
+            
+            <a class="next" rel="next" href="/hhhh/2021/07/26/%E5%87%BA%E5%9B%BD4/">出国NO.4|从UCLA签证停办到NUS再出发，疫情年的申请经验分享</a>
+            
+        </section>
+         <br>
+        
+            <section id="comments" class="comments">
+              <style>
+                  .comments{ margin-top: 30px;}
+                  .v .vlist .vcard .vcontent {padding-top: 0;}
+                  .vcontent p { color:grey; margin-bottom: 10px;}
+                  .v * {line-height: normal;}
+                  .v .vwrap  {border-radius: 0px; padding: 10px;}
+                  .v .vbtn {border-radius: 0px;}
+                  .v code, .v pre {border-radius: 0px;}
+                  .v .vlist .vcard .vhead .vsys {border-radius: 1px; padding: 2px;}
+                  .v .vlist .vcard .vhead .vnick {color: #2d96bd;}
+                  .v .vlist .vcard .vh .vmeta .vat{color: #c7254e;}
+                  .v .vlist .vcard {padding-top: 0;}
+                  .v .vlist .vcard .vimg { width: 2.5em; height: 2.5em; }
+                  .v .vlist .vcard .vquote .vimg { width: 2.5em; height: 2.5em; }
+              </style>
+              <div class="valine_comment"></div>
+<!--载入js，在</body>之前插入即可-->
+<!--Leancloud 操作库:-->
+<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<!--Valine 的核心代码库-->
+<script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+<script>
+    new Valine({
+        el: '.valine_comment',
+        app_id: 'OlOZQ7cjJE81tquJMz4o7DVt-gzGzoHsz',
+        app_key: 'n3MoqzwZo9E0zkeB4hjq2Rfa',
+        placeholder: '欢迎交流讨论...',
+        notify: 'false',
+        verify: 'false',
+        avatar: 'monsterid',
+        visitor: ''
+    });
+</script>
+            </section>
+        
+    </article>
+</div>
+
+            </div>
+            <footer id="footer" class="footer">
+    <div class="copyright">
+        <span>© 腾飞小灯塔 | Powered by <a href="https://hexo.io" target="_blank">Hexo</a> & <a href="https://github.com/Siricee/hexo-theme-Chic" target="_blank">Chic</a></span>
+    </div>
+</footer>
+
+    </div>
+</body>
+
+</html>

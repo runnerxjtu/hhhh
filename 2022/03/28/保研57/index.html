@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta name="author" content="腾飞小灯塔">
+
+
+
+    <meta name="description" content="DO one thing well">
+
+
+
+<title>保研NO.57|从西交金禾到上交安泰 | 腾飞小灯塔</title>
+
+
+
+    <link rel="icon" href="/hhhh/favicon.ico">
+
+
+
+
+    <!-- stylesheets list from _config.yml -->
+    
+    <link rel="stylesheet" href="/hhhh/css/style.css">
+    
+
+
+
+    <!-- scripts list from _config.yml -->
+    
+    <script src="/hhhh/js/script.js"></script>
+    
+    <script src="/hhhh/js/tocbot.min.js"></script>
+    
+
+
+
+    
+    
+        
+    
+
+
+<meta name="generator" content="Hexo 5.4.2"></head>
+
+<body>
+    <script>
+        // this function is used to check current theme before page loaded.
+        (() => {
+            const currentTheme = window.localStorage && window.localStorage.getItem('theme') || '';
+            const isDark = currentTheme === 'dark';
+            const pagebody = document.getElementsByTagName('body')[0]
+            if (isDark) {
+                pagebody.classList.add('dark-theme');
+                // mobile
+                document.getElementById("mobile-toggle-theme").innerText = "· Dark"
+            } else {
+                pagebody.classList.remove('dark-theme');
+                // mobile
+                document.getElementById("mobile-toggle-theme").innerText = "· Light"
+            }
+        })();
+    </script>
+
+    <div class="wrapper">
+        <header>
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-header header-logo"><a href="/hhhh/">腾飞小灯塔</a></div>
+            <div class="menu navbar-right">
+                
+                    <a class="menu-item" href="/hhhh/archives">文章</a>
+                
+                    <a class="menu-item" href="/hhhh/category">分类</a>
+                
+                    <a class="menu-item" href="/hhhh/tag">标签</a>
+                
+                    <a class="menu-item" href="/hhhh/about">关于</a>
+                
+                <input id="switch_default" type="checkbox" class="switch_default">
+                <label for="switch_default" class="toggleBtn"></label>
+            </div>
+        </div>
+    </nav>
+
+    
+    <nav class="navbar-mobile" id="nav-mobile">
+        <div class="container">
+            <div class="navbar-header">
+                <div>
+                    <a href="/hhhh/">腾飞小灯塔</a><a id="mobile-toggle-theme">·&nbsp;Light</a>
+                </div>
+                <div class="menu-toggle" onclick="mobileBtn()">&#9776; Menu</div>
+            </div>
+            <div class="menu" id="mobile-menu">
+                
+                    <a class="menu-item" href="/hhhh/archives">文章</a>
+                
+                    <a class="menu-item" href="/hhhh/category">分类</a>
+                
+                    <a class="menu-item" href="/hhhh/tag">标签</a>
+                
+                    <a class="menu-item" href="/hhhh/about">关于</a>
+                
+            </div>
+        </div>
+    </nav>
+
+</header>
+<script>
+    var mobileBtn = function f() {
+        var toggleMenu = document.getElementsByClassName("menu-toggle")[0];
+        var mobileMenu = document.getElementById("mobile-menu");
+        if(toggleMenu.classList.contains("active")){
+           toggleMenu.classList.remove("active")
+            mobileMenu.classList.remove("active")
+        }else{
+            toggleMenu.classList.add("active")
+            mobileMenu.classList.add("active")
+        }
+    }
+</script>
+            <div class="main">
+                <div class="container">
+    
+    
+        <div class="post-toc">
+    <div class="tocbot-list">
+    </div>
+    <div class="tocbot-list-menu">
+        <a class="tocbot-toc-expand" onclick="expand_toc()">Expand all</a>
+        <a onclick="go_top()">Back to top</a>
+        <a onclick="go_bottom()">Go to bottom</a>
+    </div>
+</div>
+
+<script>
+    var tocbot_timer;
+    var DEPTH_MAX = 6; // 为 6 时展开所有
+    var tocbot_default_config = {
+        tocSelector: '.tocbot-list',
+        contentSelector: '.post-content',
+        headingSelector: 'h1, h2, h3, h4, h5',
+        orderedList: false,
+        scrollSmooth: true,
+        onClick: extend_click,
+    };
+
+    function extend_click() {
+        clearTimeout(tocbot_timer);
+        tocbot_timer = setTimeout(function() {
+            tocbot.refresh(obj_merge(tocbot_default_config, {
+                hasInnerContainers: true
+            }));
+        }, 420); // 这个值是由 tocbot 源码里定义的 scrollSmoothDuration 得来的
+    }
+
+    document.ready(function() {
+        tocbot.init(obj_merge(tocbot_default_config, {
+            collapseDepth: 1
+        }));
+    });
+
+    function expand_toc() {
+        var b = document.querySelector('.tocbot-toc-expand');
+        var expanded = b.getAttribute('data-expanded');
+        expanded ? b.removeAttribute('data-expanded') : b.setAttribute('data-expanded', true);
+        tocbot.refresh(obj_merge(tocbot_default_config, {
+            collapseDepth: expanded ? 1 : DEPTH_MAX
+        }));
+        b.innerText = expanded ? 'Expand all' : 'Collapse all';
+    }
+
+    function go_top() {
+        window.scrollTo(0, 0);
+    }
+
+    function go_bottom() {
+        window.scrollTo(0, document.body.scrollHeight);
+    }
+
+    function obj_merge(target, source) {
+        for (var item in source) {
+            if (source.hasOwnProperty(item)) {
+                target[item] = source[item];
+            }
+        }
+        return target;
+    }
+</script>
+    
+
+    
+    <article class="post-wrap">
+        <header class="post-header">
+            <h1 class="post-title">保研NO.57|从西交金禾到上交安泰</h1>
+            
+                <div class="post-meta">
+                    
+
+                    
+                    
+                        <span class="post-category">
+                    分类:
+                            
+                                <a href="/hhhh/categories/%E4%BF%9D%E7%A0%94/">保研</a>
+                            
+                        </span>
+                    
+
+                     
+                    <span id="/hhhh/2022/03/28/%E4%BF%9D%E7%A0%9457/" class="leancloud-visitors view" data-flag-title="保研NO.57|从西交金禾到上交安泰">
+                        <text class="post-meta-item-text">
+                            <!--阅读数:-->
+                            <i class="iconfont icon-view"></i>
+                        </text>
+
+                        <text class="leancloud-visitors-count">   </text>
+                      </span>
+                    
+                </div>
+            
+        </header>
+
+        <div class="post-content">
+            <p>欢迎大家了解灯塔，同时也<em><strong>诚邀各位朋友投稿</strong></em>，为大家提供更多经验与帮助。投稿以个人经验、备考过程为主，若受院校和项目要求限制，可弱化复试及具体考核内容等；若关注个人隐私问题，可对分享稿件进行匿名化处理。具体投稿规则见 <strong><a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s/ZTUy56GrBbcmk7wQmwudPg">征稿说明。</a></strong></p>
+<p>禁止一切商用，不提供原作者其他联系方式。</p>
+<hr>
+<br>
+
+<h1 id="个人信息"><a href="#个人信息" class="headerlink" title="个人信息"></a>个人信息</h1><p><strong>姓名：</strong> 焦玮琳</p>
+<p><strong>主修专业：</strong>  数量经济与金融</p>
+<p><strong>辅修专业：</strong> 法学</p>
+<p><strong>夏令营排名：</strong> 4/31   </p>
+<p><strong>最终保研排名：</strong> 3/31</p>
+<p><strong>实习经历：</strong> 一段消费品公司实习，一段方正证券行研实习</p>
+<p><strong>项目/科研经历：</strong> 一段科研训练，一段计量科研（后用作参营论文），一个政府项目，一段商赛，一次腾飞杯</p>
+<p><strong>获奖情况：</strong> 国家奖学金、校友奖学金、优秀学生干部、优秀学生</p>
+<p><strong>参营院校：</strong> 同济经管、上交安泰、深高金</p>
+<p><strong>最终去向：</strong> 上交安泰</p>
+<h1 id="写在前面的话"><a href="#写在前面的话" class="headerlink" title="写在前面的话"></a>写在前面的话</h1><p><strong>前一期的斌榜过于优秀，压力来到了我这边。</strong><br>前半部分对自己大学经历的一个回顾，写给自己；<br>后半部分对保研过程的一个复盘，写给有需要的学弟学妹，希望帮到你们。</p>
+<h1 id="学习经历"><a href="#学习经历" class="headerlink" title="学习经历"></a>学习经历</h1><p><em><strong>过去三年我的心态在肉眼可见地变好。我要感谢金禾，它极好地锻炼了我的抗压能力和心理自我建设能力，也要感谢金禾每一位同学，你们的优秀曾经给了我很多个焦虑的夜晚，但最终也历练出了我强悍的心态，也有可能是我已经麻木了。</strong></em></p>
+<h4 id="我的大一平淡如水，"><a href="#我的大一平淡如水，" class="headerlink" title="我的大一平淡如水，"></a>我的大一平淡如水，</h4><p>彼时圈子里尚未结交到爱整花活的牛马，加之早有转专业的想法，便将大部分精力都投入到学业上。但由于大一一年不出具排名，你永远不知道早早交卷的那个老哥是水平太好还是太烂，也不清楚自己能够处于一个什么样的位次，加之保研尚远，因此对保研也没思虑太多，一心只专注于学业。大一时心态尚好，除了一年两度的体测800米会令我黯然伤神。</p>
+<h4 id="在大一结束之际，"><a href="#在大一结束之际，" class="headerlink" title="在大一结束之际，"></a>在大一结束之际，</h4><p>我以机类第8的分流成绩从3D打印如愿转进了金禾；两年后听说同级3D打印23人保研了21个时，我潸然泪下，突然间有了五分羡慕、三分唏嘘和两分后悔。但另一边的我也不是全无收获，金禾的同学来自于全校各个专业，因此也恭喜我在大一末刚对自己的水平有了一点认知之后，喜提另一个未知的环境。</p>
+<h4 id="大二上学期是我学习状态最差的一个学期，"><a href="#大二上学期是我学习状态最差的一个学期，" class="headerlink" title="大二上学期是我学习状态最差的一个学期，"></a>大二上学期是我学习状态最差的一个学期，</h4><p>也是我心态崩盘的一个学期。因为有了大一的成绩做参考，也确定了专业，我便定下了保研的目标。但也自此，我陷入了严重的焦虑，开始变得对成绩特别敏感，同学们的优秀也给我带来了巨大的压力，再加之学习状态差，我曾经一度看不清自己的目标。坦白说，大二的上学期是我大学最混沌的一段时间，一切都在宣告着这学期的成绩要烂到家了。</p>
+<h4 id="大二上结束了，"><a href="#大二上结束了，" class="headerlink" title="大二上结束了，"></a>大二上结束了，</h4><p>我均分91.8，很幸运的是名次没有退步，我还是第八，只不过基数从机类的1200+人变成了金禾的30人。</p>
+<p>大二上的名次给了我沉重的打击，但也令我垂死病中惊坐起；我开始反思自身的原因，并不断调整状态。我不再把“保研”刻进我的学习和生活，也不再为别人的成就而感到压力，而是更加专注于自身的节奏发展；我不再学一门课的时候就在想能不能考好它，而是学的时候就单纯地好好学，专注于当下，不再胡思乱想。</p>
+<p>慢慢地，在自我心理建设下，我的心态一路变好，状态也调整了回来。在接下来的两个学期，我很少感到焦虑，学习状态更加纯净，均分也陆续上升到了94.3和95.6，最后顺利取得了保研资格。</p>
+<p>保研资格的后面是一个焦虑的夏令营申请季，我重回噩梦。</p>
+<p>噩梦太长，好在最后醒了。</p>
+<h4 id="最最后，我现在正在过我快乐的大四，"><a href="#最最后，我现在正在过我快乐的大四，" class="headerlink" title="最最后，我现在正在过我快乐的大四，"></a>最最后，我现在正在过我快乐的大四，</h4><p>也希望各个年级的你们在努力的时候也不要被焦虑绑架，能够善于自我排解，拥有一个积极的心态。</p>
+<h1 id="保研经验分享"><a href="#保研经验分享" class="headerlink" title="保研经验分享"></a>保研经验分享</h1><h3 id="上交安泰应用经济学直博"><a href="#上交安泰应用经济学直博" class="headerlink" title="上交安泰应用经济学直博"></a>上交安泰应用经济学直博</h3><h4 id="申请-入营-参营-发offer时间节点："><a href="#申请-入营-参营-发offer时间节点：" class="headerlink" title="申请/入营/参营/发offer时间节点："></a>申请/入营/参营/发offer时间节点：</h4><p>2021-04-23开始申请—&gt;2021-06-15申请截止—&gt;2021-07-02发放入营—&gt;2021-07-15线上面试—&gt;2021-07-21电话通知拟录取—&gt;2021-07-28邮件正式通知预录取</p>
+<h4 id="竞争压力分析："><a href="#竞争压力分析：" class="headerlink" title="竞争压力分析："></a>竞争压力分析：</h4><p>2020年入营25个，录取5个；2021年入营42个，录取6个；总体来说优营率较低。</p>
+<h4 id="面试时间："><a href="#面试时间：" class="headerlink" title="面试时间："></a>面试时间：</h4><p>20-30分钟区间</p>
+<h4 id="面试题型及语言："><a href="#面试题型及语言：" class="headerlink" title="面试题型及语言："></a>面试题型及语言：</h4><p>中文3分钟自我介绍+多个论文问题+1个基于论文的中文专业问题+1个英文专业问题+简历面+其他问题</p>
+<h4 id="自我介绍："><a href="#自我介绍：" class="headerlink" title="自我介绍："></a>自我介绍：</h4><p>建议把1-3分钟的中英文自我介绍多准备几版；据2020年该项目参营学长姐，有的被要求1分钟英文自我介绍，有的甚至直接被面试老师免了自我介绍。自我介绍的语言和时长具有一定随机性，准备多个版本比较稳妥一些。</p>
+<h4 id="论文类问题："><a href="#论文类问题：" class="headerlink" title="论文类问题："></a>论文类问题：</h4><p>论文占了我面试内容的大头，直博项目比较看重学生的科研能力。</p>
+<h4 id="被提问到的问题包括："><a href="#被提问到的问题包括：" class="headerlink" title="被提问到的问题包括："></a>被提问到的问题包括：</h4><p>（1）为什么做这个题目；（2）关于题目的底层逻辑；（3）解释论文中用到的模型；（4）对结论的稳健性检验，如何排除的干扰项等等。</p>
+<h4 id="专业知识类："><a href="#专业知识类：" class="headerlink" title="专业知识类："></a>专业知识类：</h4><p>解释DID模型（中文）；时间序列分析问题，“how to identify stationary process and non-stationary process”（英文）。</p>
+<h4 id="职业规划类："><a href="#职业规划类：" class="headerlink" title="职业规划类："></a>职业规划类：</h4><p>想从事的研究方向和职业规划。</p>
+<h4 id="简历面："><a href="#简历面：" class="headerlink" title="简历面："></a>简历面：</h4><p>简历上关于个人经历的问题。</p>
+<h4 id="深高金商业分析项目体验营第二批（全英文笔面试）"><a href="#深高金商业分析项目体验营第二批（全英文笔面试）" class="headerlink" title="深高金商业分析项目体验营第二批（全英文笔面试）"></a>深高金商业分析项目体验营第二批（全英文笔面试）</h4><h4 id="申请提示："><a href="#申请提示：" class="headerlink" title="申请提示："></a>申请提示：</h4><p>（1）参加深高金夏令营不需要保研资格；（2）深高金入学需雅思或托福成绩，夏令营时没有也可直接提交四六级成绩，只需在入学之前考出即可。（3）2021年的深高金夏令营分为Mini营和体验营，每个营又会有2-3个批次，参加前面批次的夏令营没有通过，还可以继续申请后面的批次。（两种营没有本质区别，但体验营的项目稍多一些，原本定在线下的深圳场体验营还有参观校园、深圳名企等项目）</p>
+<h4 id="申请-入营-参营-发offer时间节点：-1"><a href="#申请-入营-参营-发offer时间节点：-1" class="headerlink" title="申请/入营/参营/发offer时间节点："></a>申请/入营/参营/发offer时间节点：</h4><p>第二轮次深圳场体验营的时间线——5月3号申请开始—&gt;6月20号申请截止—&gt;6月30号入营通知—&gt;7月24号-7月26号参加线上夏令营—&gt;8月19号发放offer</p>
+<h4 id="笔试题型："><a href="#笔试题型：" class="headerlink" title="笔试题型："></a>笔试题型：</h4><p>英文，选择题和简答题，没记错的话，一共13道，前面10道是选择，后面3道是简答</p>
+<h4 id="笔试时长："><a href="#笔试时长：" class="headerlink" title="笔试时长："></a>笔试时长：</h4><p>1小时，做完可提前离开</p>
+<h4 id="笔试考核范围-知识点："><a href="#笔试考核范围-知识点：" class="headerlink" title="笔试考核范围/知识点："></a>笔试考核范围/知识点：</h4><p>每个项目的考核范围不同，但可以在笔试之前直接给他们发邮件问考试范围！对于商业分析项目，官方回复的是”include but not limited to probability, derivative, logic, calculus and so on”，有的项目还会考察python，建议笔试之前直接问一下范围。</p>
+<h4 id="笔试真题（只记得部分）："><a href="#笔试真题（只记得部分）：" class="headerlink" title="笔试真题（只记得部分）："></a>笔试真题（只记得部分）：</h4><p>指数分布、求积分的数学题，看图找规律、通过字母和数字转换找规律的智力题，说3种人工智能在生活中的应用（简答题），辨析人工智能、机器学习、数据科学的区别（简答题）。</p>
+<h4 id="面试流程："><a href="#面试流程：" class="headerlink" title="面试流程："></a>面试流程：</h4><p>首先是30分钟的群面，每组6或7名同学，无领导小组讨论，进行案例分析，语言为中文；群面结束后立即进行个人全英文单面，每人10-15分钟。</p>
+<h4 id="自我介绍类："><a href="#自我介绍类：" class="headerlink" title="自我介绍类："></a>自我介绍类：</h4><p>普通的英文自我介绍，甚至没有规定时间，面试老师只是说介绍一下你自己，但由于单面时长在10-15分钟，所以最好把自我介绍控制在1-2分钟。</p>
+<h4 id="简历类："><a href="#简历类：" class="headerlink" title="简历类："></a>简历类：</h4><p>1、老师提到了简历上一个研究项目，让我介绍了一下项目内容和我本人的参与情况。</p>
+<p>2、问我为什么辅修法学。</p>
+<p>3、回答“为什么辅修法学”时，我大概提到“finance is a strictly regulated industry, so learning about commercial law and economic law can help me know what restrictions finance industry faces and what kind of law it should observe. It’s helpful for me to work in the financial filed in the future”，但这个回答也为自己挖下了坑，听完老师就追问说，感觉我的方向更偏向于金融学项目，为什么申请了商业分析项目呢，后面我就主要围绕“traditional finance isn’t enough in the era of technology”和“the important role of big data”这两点阐述（努力找补）。</p>
+<p>等等</p>
+<h3 id="同济经管应用经济学硕博"><a href="#同济经管应用经济学硕博" class="headerlink" title="同济经管应用经济学硕博"></a>同济经管应用经济学硕博</h3><h4 id="面试时间：-1"><a href="#面试时间：-1" class="headerlink" title="面试时间："></a>面试时间：</h4><p>30分钟，时间卡的蛮严。</p>
+<h4 id="面试语言："><a href="#面试语言：" class="headerlink" title="面试语言："></a>面试语言：</h4><p>先是英文面，感觉英文问题问了快十几分钟，之后转中文面。</p>
+<h4 id="面试内容（记不全）："><a href="#面试内容（记不全）：" class="headerlink" title="面试内容（记不全）："></a>面试内容（记不全）：</h4><p>首先是政治问题，问到了习近平新时代中国特色社会主义思想（没答上来，我反省），接着让我说一件自己最近关注的社会事件（当然也要附上自己的看法）。</p>
+<h4 id="英文part："><a href="#英文part：" class="headerlink" title="英文part："></a>英文part：</h4><p>（1）自我介绍；<br>（2）为什么转专业；<br>（3）为什么辅修法学；<br>（4）你最喜欢的一门课；<br>（5）在这门课里，你最喜欢哪个模型；<br>（6）解释一下这个模型；<br>（7）简述一下你这篇论文。  </p>
+<h4 id="中文part："><a href="#中文part：" class="headerlink" title="中文part："></a>中文part：</h4><p>（1）为什么想读博；<br>（2）最刺激的是我报考的导师问我为什么没有联系她。  </p>
+<h1 id="结语"><a href="#结语" class="headerlink" title="结语"></a>结语</h1><p>鲜衣怒马少年时，不负韶华行且知，愿我们努力且积极，愿我读博不后悔、顺利毕业！（五年后顺利毕业了我就来还愿）</p>
+<p>最后，应自动化张同学和我的好朋友dcc的要求（绑架），我在这里发自内心不明缘由地感谢一下他们。</p>
+
+        </div>
+        
+            <section class="post-copyright">
+                
+                
+                
+                
+                     <p class="copyright-item">
+                         <span>灯塔宗旨:</span>
+                         <span>XJTUers<br>愿你们在未来的每一步<strong>都坚实而有力量</strong></span>
+                     </p>
+                
+
+            </section>
+        
+        <section class="post-tags">
+            <div>
+                <span>标签:</span>
+                <span class="tag">
+                    
+                    
+                        <a href="/hhhh/tags/%E9%87%91%E7%A6%BE%E5%88%86%E5%A1%94/"># 金禾分塔</a>
+                    
+                        
+                </span>
+            </div>
+            <div>
+                <a href="javascript:window.history.back();">返回</a>
+                <span>· </span>
+                <a href="/hhhh/">主页</a>
+            </div>
+        </section>
+
+        <section class="post-nav">
+            
+                <a class="prev" rel="prev" href="/hhhh/2022/09/03/%E5%87%BA%E5%9B%BD5/">出国NO.5| 从西交自动化到南加大CS</a>
+            
+            
+            <a class="next" rel="next" href="/hhhh/2022/03/21/%E4%BF%9D%E7%A0%9456/">保研NO.56|从西交自动化到清华法硕</a>
+            
+        </section>
+         <br>
+        
+            <section id="comments" class="comments">
+              <style>
+                  .comments{ margin-top: 30px;}
+                  .v .vlist .vcard .vcontent {padding-top: 0;}
+                  .vcontent p { color:grey; margin-bottom: 10px;}
+                  .v * {line-height: normal;}
+                  .v .vwrap  {border-radius: 0px; padding: 10px;}
+                  .v .vbtn {border-radius: 0px;}
+                  .v code, .v pre {border-radius: 0px;}
+                  .v .vlist .vcard .vhead .vsys {border-radius: 1px; padding: 2px;}
+                  .v .vlist .vcard .vhead .vnick {color: #2d96bd;}
+                  .v .vlist .vcard .vh .vmeta .vat{color: #c7254e;}
+                  .v .vlist .vcard {padding-top: 0;}
+                  .v .vlist .vcard .vimg { width: 2.5em; height: 2.5em; }
+                  .v .vlist .vcard .vquote .vimg { width: 2.5em; height: 2.5em; }
+              </style>
+              <div class="valine_comment"></div>
+<!--载入js，在</body>之前插入即可-->
+<!--Leancloud 操作库:-->
+<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<!--Valine 的核心代码库-->
+<script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+<script>
+    new Valine({
+        el: '.valine_comment',
+        app_id: 'OlOZQ7cjJE81tquJMz4o7DVt-gzGzoHsz',
+        app_key: 'n3MoqzwZo9E0zkeB4hjq2Rfa',
+        placeholder: '欢迎交流讨论...',
+        notify: 'false',
+        verify: 'false',
+        avatar: 'monsterid',
+        visitor: ''
+    });
+</script>
+            </section>
+        
+    </article>
+</div>
+
+            </div>
+            <footer id="footer" class="footer">
+    <div class="copyright">
+        <span>© 腾飞小灯塔 | Powered by <a href="https://hexo.io" target="_blank">Hexo</a> & <a href="https://github.com/Siricee/hexo-theme-Chic" target="_blank">Chic</a></span>
+    </div>
+</footer>
+
+    </div>
+</body>
+
+</html>
